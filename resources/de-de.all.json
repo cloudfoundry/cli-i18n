@@ -7205,11 +7205,11 @@
   },
   {
     "id": "domain {{.DomainName}} is a shared domain, not an owned domain.",
-    "translation": "Domäne {{.DomainName}} ist eine gemeinsam genutzte und keine eigene Domäne\n\nTIPP:\nVerwenden Sie `cf delete-shared-domain`, um gemeinsam genutzte Domänen zu löschen."
+    "translation": "Domäne {{.DomainName}} ist eine gemeinsam genutzte und keine eigene Domäne."
   },
   {
     "id": "domain {{.DomainName}} is an owned domain, not a shared domain.",
-    "translation": "Domäne {{.DomainName}} ist eine eigene und keine gemeinsam genutzte Domäne.\n\nTIPP:\nVerwenden Sie `cf delete-domain`, um eigene Domänen zu löschen."
+    "translation": "Domäne {{.DomainName}} ist eine eigene und keine gemeinsam genutzte Domäne."
   },
   {
     "id": "domains:",

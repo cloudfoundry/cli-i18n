@@ -7205,11 +7205,11 @@
   },
   {
     "id": "domain {{.DomainName}} is a shared domain, not an owned domain.",
-    "translation": "{{.DomainName}} 도메인은 공유 도메인이며 소유 도메인이 아닙니다.\n\n팁:\n공유 도메인을 삭제하려면 `cf delete-shared-domain`을 사용하십시오."
+    "translation": "{{.DomainName}} 도메인은 공유 도메인이며 소유 도메인이 아닙니다."
   },
   {
     "id": "domain {{.DomainName}} is an owned domain, not a shared domain.",
-    "translation": "{{.DomainName}} 도메인은 소유 도메인이며 공유 도메인이 아닙니다.\n\n팁:\n소유 도메인을 삭제하려면 `cf delete-domain`을 사용하십시오."
+    "translation": "{{.DomainName}} 도메인은 소유 도메인이며 공유 도메인이 아닙니다."
   },
   {
     "id": "domains:",

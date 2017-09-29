@@ -7205,11 +7205,11 @@
   },
   {
     "id": "domain {{.DomainName}} is a shared domain, not an owned domain.",
-    "translation": "ドメイン {{.DomainName}} は共有ドメインであって、所有ドメインではありません。\n\nヒント:\n共有ドメインを削除するには、`cf delete-shared-domain` を使用します。"
+    "translation": "ドメイン {{.DomainName}} は共有ドメインであって、所有ドメインではありません。"
   },
   {
     "id": "domain {{.DomainName}} is an owned domain, not a shared domain.",
-    "translation": "ドメイン {{.DomainName}} は所有ドメインであって、共有ドメインではありません。\n\nヒント:\n所有ドメインを削除するには、`cf delete-domain` を使用します。"
+    "translation": "ドメイン {{.DomainName}} は所有ドメインであって、共有ドメインではありません。"
   },
   {
     "id": "domains:",

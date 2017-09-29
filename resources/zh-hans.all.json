@@ -7205,11 +7205,11 @@
   },
   {
     "id": "domain {{.DomainName}} is a shared domain, not an owned domain.",
-    "translation": "域 {{.DomainName}} 是共享域，而不是自有域。\n\n提示: \n使用 'cf delete-shared-domain' 可删除共享域。"
+    "translation": "域 {{.DomainName}} 是共享域，而不是自有域。"
   },
   {
     "id": "domain {{.DomainName}} is an owned domain, not a shared domain.",
-    "translation": "域 {{.DomainName}} 是自有域，而不是共享域。\n\n提示: \n使用 'cf delete-domain' 可删除自有域。"
+    "translation": "域 {{.DomainName}} 是自有域，而不是共享域。"
   },
   {
     "id": "domains:",
