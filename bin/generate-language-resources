@@ -3,5 +3,6 @@
 set -e
 
 go get github.com/jteeuwen/go-bindata/...
+go-bindata --version
 go-bindata -nometadata  -pkg resources -ignore ".go" -o resources/i18n_resources.go resources/*.all.json
 go fmt ./...
