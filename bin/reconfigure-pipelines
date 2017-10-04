@@ -28,8 +28,6 @@ check_installed fly
 # Make sure we're up to date and that we're logged in.
 lpass sync
 
-pipelines_path=$(cd $(dirname $0)/.. && pwd)
-
 configure_pipeline cli-i18n \
-  $pipelines_path/cli-i18n/pipeline.yml
+  ci/pipeline.yml
 

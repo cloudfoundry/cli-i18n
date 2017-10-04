@@ -60,7 +60,7 @@ jobs:
          channel: '#cli-firehose'
          text: "build i18n JSON failed :("
     on_success:
-       put: slack_alert
+       put: slack-alert
        params:
          channel: '#cli-firehose'
          text: "NEW i18n JSON files ready for translations"
