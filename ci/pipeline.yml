@@ -24,15 +24,6 @@ resources:
     private_key: {{cli-i18n-github-private-key}}
     trigger: true
 
-- name: cli-ci
-  type: git
-  source:
-    uri: https://github.com/cloudfoundry/cli
-    branch: master
-    paths:
-    - bin
-    - ci
-
 - name: slack-alert
   type: slack-notification
   source:
@@ -50,10 +41,9 @@ jobs:
   - aggregate:
     - get: cli
       trigger: true
-    - get: cli-ci
     - get: cli-i18n
   - task: build-i18n
-    file: cli-ci/ci/cli-i18n/tasks/generate-i18n-json.yml
+    file: cli-i18n/ci/tasks/generate-i18n-json.yml
     on_failure:
        put: slack-alert
        params:
