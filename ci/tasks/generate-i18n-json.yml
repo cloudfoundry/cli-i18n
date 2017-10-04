@@ -28,8 +28,10 @@ run:
 
     cd ../updated-cli-i18n
 
-    git config --global user.name "CI Bot"
-    git config --global user.email "cf-cli+i18n@pivotal.io"
+    if [[ -n $(git status --porcelain) ]]; then
+      git config --global user.name "CI Bot"
+      git config --global user.email "cf-cli+i18n@pivotal.io"
 
-    git add .
-    git commit -m "updated translation files"
+      git add .
+      git commit -m "updated translation files"
+    fi
