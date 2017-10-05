@@ -97,7 +97,7 @@
   },
   {
     "id": " (Default: {{.DefaultValue}})",
-    "translation": ""
+    "translation": " (Default: {{.DefaultValue}})"
   },
   {
     "id": " added as '",
@@ -153,15 +153,15 @@
   },
   {
     "id": "'--docker-username' requires '--docker-image' to be specified",
-    "translation": ""
+    "translation": "'--docker-username' requires '--docker-image' to be specified"
   },
   {
     "id": "'docker.image' must be a string",
-    "translation": ""
+    "translation": "'docker.image' must be a string"
   },
   {
     "id": "'docker.username' must be a string",
-    "translation": ""
+    "translation": "'docker.username' must be a string"
   },
   {
     "id": "'routes' should be a list",
@@ -177,7 +177,7 @@
   },
   {
     "id": "*** Global attributes/inheritance in app manifest are not supported in v2-push, delegating to old push ***",
-    "translation": ""
+    "translation": "*** Global attributes/inheritance in app manifest are not supported in v2-push, delegating to old push ***"
   },
   {
     "id": "**Attention: Plugins are binaries written by potentially untrusted authors. Install and use plugins at your own risk.**\n\nDo you want to install the plugin {{.Plugin}}?",
@@ -185,11 +185,11 @@
   },
   {
     "id": "2006-01-02 15:04:05 PM",
-    "translation": ""
+    "translation": "2006-01-02 15:04:05 PM"
   },
   {
     "id": "\u003call\u003e",
-    "translation": ""
+    "translation": "\u003call\u003e"
   },
   {
     "id": "A command line tool to interact with Cloud Foundry",
@@ -205,11 +205,11 @@
   },
   {
     "id": "ADD/REMOVE PLUGIN REPOSITORY:",
-    "translation": ""
+    "translation": "ADD/REMOVE PLUGIN REPOSITORY:"
   },
   {
     "id": "ADD/REMOVE PLUGIN:",
-    "translation": ""
+    "translation": "ADD/REMOVE PLUGIN:"
   },
   {
     "id": "ADVANCED",
@@ -217,7 +217,7 @@
   },
   {
     "id": "ADVANCED:",
-    "translation": ""
+    "translation": "ADVANCED:"
   },
   {
     "id": "ALIAS:",
@@ -237,7 +237,7 @@
   },
   {
     "id": "API endpoint not found at '{{.URL}}'",
-    "translation": ""
+    "translation": "API endpoint not found at '{{.URL}}'"
   },
   {
     "id": "API endpoint:",
@@ -261,7 +261,7 @@
   },
   {
     "id": "APPS:",
-    "translation": ""
+    "translation": "APPS:"
   },
   {
     "id": "APP_INSTANCES",
@@ -317,7 +317,7 @@
   },
   {
     "id": "All available CLI commands",
-    "translation": ""
+    "translation": "All available CLI commands"
   },
   {
     "id": "Allow SSH access for the space",
@@ -325,7 +325,7 @@
   },
   {
     "id": "Allow use of a feature",
-    "translation": ""
+    "translation": "Allow use of a feature"
   },
   {
     "id": "Also delete any mapped routes",
@@ -345,7 +345,7 @@
   },
   {
     "id": "App has no processes",
-    "translation": ""
+    "translation": "App has no processes"
   },
   {
     "id": "App instance limit",
@@ -353,11 +353,11 @@
   },
   {
     "id": "App is not staged.",
-    "translation": ""
+    "translation": "App is not staged."
   },
   {
     "id": "App lifecycle type to stage and run the app",
-    "translation": ""
+    "translation": "App lifecycle type to stage and run the app"
   },
   {
     "id": "App name is a required field",
@@ -365,11 +365,11 @@
   },
   {
     "id": "App process to scale",
-    "translation": ""
+    "translation": "App process to scale"
   },
   {
     "id": "App process to update",
-    "translation": ""
+    "translation": "App process to update"
   },
   {
     "id": "App {{.AppName}} already exists",
@@ -377,7 +377,7 @@
   },
   {
     "id": "App {{.AppName}} does not exist",
-    "translation": ""
+    "translation": "App {{.AppName}} does not exist"
   },
   {
     "id": "App {{.AppName}} does not exist.",
@@ -393,23 +393,23 @@
   },
   {
     "id": "App {{.AppName}} is already started",
-    "translation": ""
+    "translation": "App {{.AppName}} is already started"
   },
   {
     "id": "App {{.AppName}} is already started.",
-    "translation": ""
+    "translation": "App {{.AppName}} is already started."
   },
   {
     "id": "App {{.AppName}} is already stopped",
-    "translation": ""
+    "translation": "App {{.AppName}} is already stopped"
   },
   {
     "id": "App {{.AppName}} not found",
-    "translation": ""
+    "translation": "App {{.AppName}} not found"
   },
   {
     "id": "Append API request diagnostics to a log file",
-    "translation": ""
+    "translation": "Append API request diagnostics to a log file"
   },
   {
     "id": "Application health check type (Default: 'port', 'none' accepted for 'process', 'http' implies endpoint '/')",
@@ -421,19 +421,19 @@
   },
   {
     "id": "Application instance index (Default: 0)",
-    "translation": ""
+    "translation": "Application instance index (Default: 0)"
   },
   {
     "id": "Application lifecycle:",
-    "translation": ""
+    "translation": "Application lifecycle:"
   },
   {
     "id": "Application {{.AppName}} must not be configured with both 'buildpack' and 'docker'",
-    "translation": ""
+    "translation": "Application {{.AppName}} must not be configured with both 'buildpack' and 'docker'"
   },
   {
     "id": "Application {{.AppName}} must not be configured with both 'docker' and 'path'",
-    "translation": ""
+    "translation": "Application {{.AppName}} must not be configured with both 'docker' and 'path'"
   },
   {
     "id": "Application {{.AppName}} must not be configured with both 'routes' and 'domain'/'domains'",
@@ -449,15 +449,15 @@
   },
   {
     "id": "Applications in spaces of this org that have no isolation segment assigned will be placed in the platform default isolation segment.",
-    "translation": ""
+    "translation": "Applications in spaces of this org that have no isolation segment assigned will be placed in the platform default isolation segment."
   },
   {
     "id": "Applications in this space will be placed in isolation segment {{.orgIsolationSegment}}.",
-    "translation": ""
+    "translation": "Applications in this space will be placed in isolation segment {{.orgIsolationSegment}}."
   },
   {
     "id": "Applications in this space will be placed in the platform default isolation segment.",
-    "translation": ""
+    "translation": "Applications in this space will be placed in the platform default isolation segment."
   },
   {
     "id": "Apps:",
@@ -517,7 +517,7 @@
   },
   {
     "id": "Attention: Plugins are binaries written by potentially untrusted authors.",
-    "translation": ""
+    "translation": "Attention: Plugins are binaries written by potentially untrusted authors."
   },
   {
     "id": "Attention: The plan `{{.PlanName}}` of service `{{.ServiceName}}` is not free.  The instance `{{.ServiceInstanceName}}` will incur a cost.  Contact your administrator if you think this is in error.",
@@ -549,7 +549,7 @@
   },
   {
     "id": "BUILDPACKS:",
-    "translation": ""
+    "translation": "BUILDPACKS:"
   },
   {
     "id": "Basic ",
@@ -557,7 +557,7 @@
   },
   {
     "id": "Before getting started:",
-    "translation": ""
+    "translation": "Before getting started:"
   },
   {
     "id": "Bind a security group to a particular space, or all existing spaces of an org",
@@ -601,7 +601,7 @@
   },
   {
     "id": "Binding service {{.ServiceName}} to app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Binding service {{.ServiceName}} to app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Binding service {{.ServiceName}} to app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -609,7 +609,7 @@
   },
   {
     "id": "Binding services...",
-    "translation": ""
+    "translation": "Binding services..."
   },
   {
     "id": "Binding {{.URL}} to {{.AppName}}...",
@@ -633,11 +633,11 @@
   },
   {
     "id": "CANCELING",
-    "translation": ""
+    "translation": "CANCELING"
   },
   {
     "id": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [(--protocol (tcp | udp) --port RANGE)]\\n\\nEXAMPLES:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090",
-    "translation": ""
+    "translation": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [(--protocol (tcp | udp) --port RANGE)]\\n\\nEXAMPLES:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090"
   },
   {
     "id": "CF_NAME add-plugin-repo PrivateRepo https://myprivaterepo.com/repo/",
@@ -785,7 +785,7 @@
   },
   {
     "id": "CF_NAME create-isolation-segment SEGMENT_NAME\\n\\nNOTES:\\n   The isolation segment name must match the placement tag applied to the Diego cell.",
-    "translation": ""
+    "translation": "CF_NAME create-isolation-segment SEGMENT_NAME\\n\\nNOTES:\\n   The isolation segment name must match the placement tag applied to the Diego cell."
   },
   {
     "id": "CF_NAME create-org ORG",
@@ -949,7 +949,7 @@
   },
   {
     "id": "CF_NAME delete-isolation-segment SEGMENT_NAME",
-    "translation": ""
+    "translation": "CF_NAME delete-isolation-segment SEGMENT_NAME"
   },
   {
     "id": "CF_NAME delete-org ORG [-f]",
@@ -1033,7 +1033,7 @@
   },
   {
     "id": "CF_NAME disable-org-isolation ORG_NAME SEGMENT_NAME",
-    "translation": ""
+    "translation": "CF_NAME disable-org-isolation ORG_NAME SEGMENT_NAME"
   },
   {
     "id": "CF_NAME disable-service-access SERVICE [-p PLAN] [-o ORG]",
@@ -1125,7 +1125,7 @@
   },
   {
     "id": "CF_NAME isolation-segments",
-    "translation": ""
+    "translation": "CF_NAME isolation-segments"
   },
   {
     "id": "CF_NAME list-plugin-repos",
@@ -1201,7 +1201,7 @@
   },
   {
     "id": "CF_NAME network-policies [--source SOURCE_APP]",
-    "translation": ""
+    "translation": "CF_NAME network-policies [--source SOURCE_APP]"
   },
   {
     "id": "CF_NAME oauth-token",
@@ -1213,7 +1213,7 @@
   },
   {
     "id": "CF_NAME org ORG [--guid]",
-    "translation": ""
+    "translation": "CF_NAME org ORG [--guid]"
   },
   {
     "id": "CF_NAME org-users ORG",
@@ -1233,7 +1233,7 @@
   },
   {
     "id": "CF_NAME plugins [--checksum | --outdated]",
-    "translation": ""
+    "translation": "CF_NAME plugins [--checksum | --outdated]"
   },
   {
     "id": "CF_NAME purge-service-instance SERVICE_INSTANCE",
@@ -1261,7 +1261,7 @@
   },
   {
     "id": "CF_NAME remove-network-policy SOURCE_APP --destination-app DESTINATION_APP --protocol (tcp | udp) --port RANGE\\n\\nEXAMPLES:\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090",
-    "translation": ""
+    "translation": "CF_NAME remove-network-policy SOURCE_APP --destination-app DESTINATION_APP --protocol (tcp | udp) --port RANGE\\n\\nEXAMPLES:\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090"
   },
   {
     "id": "CF_NAME remove-plugin-repo PrivateRepo",
@@ -1313,11 +1313,11 @@
   },
   {
     "id": "CF_NAME reset-org-default-isolation-segment ORG_NAME",
-    "translation": ""
+    "translation": "CF_NAME reset-org-default-isolation-segment ORG_NAME"
   },
   {
     "id": "CF_NAME reset-space-isolation-segment SPACE_NAME",
-    "translation": ""
+    "translation": "CF_NAME reset-space-isolation-segment SPACE_NAME"
   },
   {
     "id": "CF_NAME restage APP_NAME",
@@ -1421,7 +1421,7 @@
   },
   {
     "id": "CF_NAME set-org-default-isolation-segment ORG_NAME SEGMENT_NAME",
-    "translation": ""
+    "translation": "CF_NAME set-org-default-isolation-segment ORG_NAME SEGMENT_NAME"
   },
   {
     "id": "CF_NAME set-org-role USERNAME ORG ROLE\n\n",
@@ -1485,7 +1485,7 @@
   },
   {
     "id": "CF_NAME space SPACE [--guid] [--security-group-rules]",
-    "translation": ""
+    "translation": "CF_NAME space SPACE [--guid] [--security-group-rules]"
   },
   {
     "id": "CF_NAME space-quota SPACE_QUOTA_NAME",
@@ -1509,7 +1509,7 @@
   },
   {
     "id": "CF_NAME ssh APP_NAME [-i INDEX] [-c COMMAND]... [-L [BIND_ADDRESS:]PORT:HOST:HOST_PORT] [--skip-host-validation] [--skip-remote-execution] [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty]",
-    "translation": ""
+    "translation": "CF_NAME ssh APP_NAME [-i INDEX] [-c COMMAND]... [-L [BIND_ADDRESS:]PORT:HOST:HOST_PORT] [--skip-host-validation] [--skip-remote-execution] [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty]"
   },
   {
     "id": "CF_NAME ssh APP_NAME [-i app-instance-index] [-c command] [-L [bind_address:]port:host:hostport] [--skip-host-validation] [--skip-remote-execution] [--request-pseudo-tty] [--force-pseudo-tty] [--disable-pseudo-tty]",
@@ -1553,11 +1553,11 @@
   },
   {
     "id": "CF_NAME tasks APP_NAME",
-    "translation": ""
+    "translation": "CF_NAME tasks APP_NAME"
   },
   {
     "id": "CF_NAME terminate-task APP_NAME TASK_ID\\n\\nEXAMPLES:\\n   CF_NAME terminate-task my-app 3",
-    "translation": ""
+    "translation": "CF_NAME terminate-task APP_NAME TASK_ID\\n\\nEXAMPLES:\\n   CF_NAME terminate-task my-app 3"
   },
   {
     "id": "CF_NAME unbind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-f]",
@@ -1745,11 +1745,11 @@
   },
   {
     "id": "CF_NAME v3-apps",
-    "translation": ""
+    "translation": "CF_NAME v3-apps"
   },
   {
     "id": "CF_NAME v3-create-app APP_NAME [--app-type (buildpack | docker)]",
-    "translation": ""
+    "translation": "CF_NAME v3-create-app APP_NAME [--app-type (buildpack | docker)]"
   },
   {
     "id": "CF_NAME v3-create-package APP_NAME [--docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG]]",
@@ -1757,7 +1757,7 @@
   },
   {
     "id": "CF_NAME v3-delete APP_NAME [-f]",
-    "translation": ""
+    "translation": "CF_NAME v3-delete APP_NAME [-f]"
   },
   {
     "id": "CF_NAME v3-droplets APP_NAME",
@@ -1765,11 +1765,11 @@
   },
   {
     "id": "CF_NAME v3-env APP_NAME",
-    "translation": ""
+    "translation": "CF_NAME v3-env APP_NAME"
   },
   {
     "id": "CF_NAME v3-get-health-check APP_NAME",
-    "translation": ""
+    "translation": "CF_NAME v3-get-health-check APP_NAME"
   },
   {
     "id": "CF_NAME v3-packages APP_NAME",
@@ -1777,7 +1777,7 @@
   },
   {
     "id": "CF_NAME v3-restart APP_NAME",
-    "translation": ""
+    "translation": "CF_NAME v3-restart APP_NAME"
   },
   {
     "id": "CF_NAME v3-restart-app-instance APP_NAME INDEX [--process PROCESS]",
@@ -1793,7 +1793,7 @@
   },
   {
     "id": "CF_NAME v3-set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE",
-    "translation": ""
+    "translation": "CF_NAME v3-set-env APP_NAME ENV_VAR_NAME ENV_VAR_VALUE"
   },
   {
     "id": "CF_NAME v3-set-health-check APP_NAME (process | port | http [--endpoint PATH]) [--process PROCESS]\\n\\nEXAMPLES:\\n   cf v3-set-health-check worker-app process --process worker\\n   cf v3-set-health-check my-web-app http --endpoint /foo",
@@ -1809,11 +1809,11 @@
   },
   {
     "id": "CF_NAME v3-stop APP_NAME",
-    "translation": ""
+    "translation": "CF_NAME v3-stop APP_NAME"
   },
   {
     "id": "CF_NAME v3-unset-env APP_NAME ENV_VAR_NAME",
-    "translation": ""
+    "translation": "CF_NAME v3-unset-env APP_NAME ENV_VAR_NAME"
   },
   {
     "id": "CF_NAME version",
@@ -1821,7 +1821,7 @@
   },
   {
     "id": "CF_NAME version\\n\\n   'cf -v' and 'cf --version' are also accepted.",
-    "translation": ""
+    "translation": "CF_NAME version\\n\\n   'cf -v' and 'cf --version' are also accepted."
   },
   {
     "id": "CF_TRACE ERROR CREATING LOG FILE {{.Path}}:\n{{.Err}}",
@@ -1829,11 +1829,11 @@
   },
   {
     "id": "CLI plugin management:",
-    "translation": ""
+    "translation": "CLI plugin management:"
   },
   {
     "id": "COLOR must be \"true\" or \"false\"",
-    "translation": ""
+    "translation": "COLOR must be \"true\" or \"false\""
   },
   {
     "id": "Can not provision instances of paid service plans",
@@ -1865,7 +1865,7 @@
   },
   {
     "id": "Cannot specify 'null' or 'default' with other buildpacks",
-    "translation": ""
+    "translation": "Cannot specify 'null' or 'default' with other buildpacks"
   },
   {
     "id": "Cannot specify both lock and unlock options.",
@@ -1897,11 +1897,11 @@
   },
   {
     "id": "Change type of health check performed on an app",
-    "translation": ""
+    "translation": "Change type of health check performed on an app"
   },
   {
     "id": "Change type of health check performed on an app's process",
-    "translation": ""
+    "translation": "Change type of health check performed on an app's process"
   },
   {
     "id": "Change user password",
@@ -1917,7 +1917,7 @@
   },
   {
     "id": "Cloud Foundry API version {{.APIVersion}} requires CLI version {{.MinCLIVersion}}. You are currently on version {{.BinaryVersion}}. To upgrade your CLI, please visit: https://github.com/cloudfoundry/cli#downloads",
-    "translation": ""
+    "translation": "Cloud Foundry API version {{.APIVersion}} requires CLI version {{.MinCLIVersion}}. You are currently on version {{.BinaryVersion}}. To upgrade your CLI, please visit: https://github.com/cloudfoundry/cli#downloads"
   },
   {
     "id": "Cloud Foundry API version {{.APIVer}} requires CLI version {{.CLIMin}}.  You are currently on version {{.CLIVer}}. To upgrade your CLI, please visit: https://github.com/cloudfoundry/cli#downloads",
@@ -1925,7 +1925,7 @@
   },
   {
     "id": "Cloud Foundry command line tool",
-    "translation": ""
+    "translation": "Cloud Foundry command line tool"
   },
   {
     "id": "Comma delimited list of ports the application may listen on",
@@ -1953,11 +1953,11 @@
   },
   {
     "id": "Commands offered by installed plugins:",
-    "translation": ""
+    "translation": "Commands offered by installed plugins:"
   },
   {
     "id": "Comparing local files to remote cache...",
-    "translation": ""
+    "translation": "Comparing local files to remote cache..."
   },
   {
     "id": "Compute and show the sha1 value of the plugin binary file",
@@ -1969,7 +1969,7 @@
   },
   {
     "id": "Computing sha1 for installed plugins, this may take a while...",
-    "translation": ""
+    "translation": "Computing sha1 for installed plugins, this may take a while..."
   },
   {
     "id": "Connected, dumping recent logs for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...\n",
@@ -1989,7 +1989,7 @@
   },
   {
     "id": "Could not add repository '{{.RepositoryName}}' from {{.RepositoryURL}}: {{.Message}}",
-    "translation": ""
+    "translation": "Could not add repository '{{.RepositoryName}}' from {{.RepositoryURL}}: {{.Message}}"
   },
   {
     "id": "Could not bind to service {{.ServiceName}}\nError: {{.Err}}",
@@ -2065,7 +2065,7 @@
   },
   {
     "id": "Create a V3 App",
-    "translation": ""
+    "translation": "Create a V3 App"
   },
   {
     "id": "Create a buildpack",
@@ -2081,7 +2081,7 @@
   },
   {
     "id": "Create a new droplet for an app",
-    "translation": ""
+    "translation": "Create a new droplet for an app"
   },
   {
     "id": "Create a new user",
@@ -2133,7 +2133,7 @@
   },
   {
     "id": "Create an isolation segment",
-    "translation": ""
+    "translation": "Create an isolation segment"
   },
   {
     "id": "Create an org",
@@ -2157,7 +2157,7 @@
   },
   {
     "id": "Creating V3 app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Creating V3 app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}..."
   },
   {
     "id": "Creating an app manifest from current settings of app ",
@@ -2169,11 +2169,11 @@
   },
   {
     "id": "Creating app with these attributes...",
-    "translation": ""
+    "translation": "Creating app with these attributes..."
   },
   {
     "id": "Creating app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Creating app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}..."
   },
   {
     "id": "Creating app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -2181,7 +2181,7 @@
   },
   {
     "id": "Creating app {{.AppName}}...",
-    "translation": ""
+    "translation": "Creating app {{.AppName}}..."
   },
   {
     "id": "Creating buildpack {{.BuildpackName}}...",
@@ -2197,7 +2197,7 @@
   },
   {
     "id": "Creating isolation segment {{.SegmentName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Creating isolation segment {{.SegmentName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Creating org {{.OrgName}} as {{.Username}}...",
@@ -2217,7 +2217,7 @@
   },
   {
     "id": "Creating route {{.Route}} for org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Creating route {{.Route}} for org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Creating route {{.URL}} for org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -2261,7 +2261,7 @@
   },
   {
     "id": "Creating task for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Creating task for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Creating user provided service {{.ServiceName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -2305,7 +2305,7 @@
   },
   {
     "id": "DOMAINS:",
-    "translation": ""
+    "translation": "DOMAINS:"
   },
   {
     "id": "Dashboard: {{.URL}}",
@@ -2325,7 +2325,7 @@
   },
   {
     "id": "Delete a V3 App",
-    "translation": ""
+    "translation": "Delete a V3 App"
   },
   {
     "id": "Delete a buildpack",
@@ -2393,7 +2393,7 @@
   },
   {
     "id": "Delete an isolation segment",
-    "translation": ""
+    "translation": "Delete an isolation segment"
   },
   {
     "id": "Delete an org",
@@ -2405,7 +2405,7 @@
   },
   {
     "id": "Delete space within specified org",
-    "translation": ""
+    "translation": "Delete space within specified org"
   },
   {
     "id": "Deletes a security group",
@@ -2425,7 +2425,7 @@
   },
   {
     "id": "Deleting isolation segment {{.SegmentName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Deleting isolation segment {{.SegmentName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Deleting key {{.ServiceKeyName}} for service instance {{.ServiceInstanceName}} as {{.CurrentUser}}...",
@@ -2441,7 +2441,7 @@
   },
   {
     "id": "Deleting route {{.Route}} ...",
-    "translation": ""
+    "translation": "Deleting route {{.Route}} ..."
   },
   {
     "id": "Deleting route {{.Route}}...",
@@ -2553,7 +2553,7 @@
   },
   {
     "id": "Do not colorize output",
-    "translation": ""
+    "translation": "Do not colorize output"
   },
   {
     "id": "Do not execute a remote command",
@@ -2561,7 +2561,7 @@
   },
   {
     "id": "Do not map a route to this app",
-    "translation": ""
+    "translation": "Do not map a route to this app"
   },
   {
     "id": "Do not map a route to this app and remove routes from previous pushes of this app",
@@ -2573,19 +2573,19 @@
   },
   {
     "id": "Do you want to install the plugin {{.Path}}?",
-    "translation": ""
+    "translation": "Do you want to install the plugin {{.Path}}?"
   },
   {
     "id": "Do you want to uninstall the existing plugin and install {{.Path}} {{.PluginVersion}}?",
-    "translation": ""
+    "translation": "Do you want to uninstall the existing plugin and install {{.Path}} {{.PluginVersion}}?"
   },
   {
     "id": "Docker image to use (e.g. user/docker-image-name)",
-    "translation": ""
+    "translation": "Docker image to use (e.g. user/docker-image-name)"
   },
   {
     "id": "Docker password",
-    "translation": ""
+    "translation": "Docker password"
   },
   {
     "id": "Docker-image to be used (e.g. user/docker-image-name)",
@@ -2601,15 +2601,15 @@
   },
   {
     "id": "Domain not found",
-    "translation": ""
+    "translation": "Domain not found"
   },
   {
     "id": "Domain with GUID {{.DomainGUID}} not found",
-    "translation": ""
+    "translation": "Domain with GUID {{.DomainGUID}} not found"
   },
   {
     "id": "Domain {{.DomainName}} not found",
-    "translation": ""
+    "translation": "Domain {{.DomainName}} not found"
   },
   {
     "id": "Domains:",
@@ -2629,7 +2629,7 @@
   },
   {
     "id": "Downloaded plugin binary's checksum does not match repo metadata.\nPlease try again or contact the plugin author.",
-    "translation": ""
+    "translation": "Downloaded plugin binary's checksum does not match repo metadata.\nPlease try again or contact the plugin author."
   },
   {
     "id": "Dump recent logs instead of tailing",
@@ -2641,15 +2641,15 @@
   },
   {
     "id": "ENVIRONMENT VARIABLE GROUPS:",
-    "translation": ""
+    "translation": "ENVIRONMENT VARIABLE GROUPS:"
   },
   {
     "id": "ENVIRONMENT VARIABLES:",
-    "translation": ""
+    "translation": "ENVIRONMENT VARIABLES:"
   },
   {
     "id": "ENVIRONMENT:",
-    "translation": ""
+    "translation": "ENVIRONMENT:"
   },
   {
     "id": "EXAMPLES",
@@ -2661,7 +2661,7 @@
   },
   {
     "id": "Enable HTTP proxying for API requests",
-    "translation": ""
+    "translation": "Enable HTTP proxying for API requests"
   },
   {
     "id": "Enable access for a specified organization",
@@ -2725,7 +2725,7 @@
   },
   {
     "id": "Entitle an organization to an isolation segment",
-    "translation": ""
+    "translation": "Entitle an organization to an isolation segment"
   },
   {
     "id": "Env variable {{.VarName}} was not set.",
@@ -2733,7 +2733,7 @@
   },
   {
     "id": "Environment variable CF_DOCKER_PASSWORD not set.",
-    "translation": ""
+    "translation": "Environment variable CF_DOCKER_PASSWORD not set."
   },
   {
     "id": "Error accessing org {{.OrgName}} for GUID': ",
@@ -2749,7 +2749,7 @@
   },
   {
     "id": "Error creating manifest file: {{.Error}}",
-    "translation": ""
+    "translation": "Error creating manifest file: {{.Error}}"
   },
   {
     "id": "Error creating request:\n{{.Err}}",
@@ -2769,7 +2769,7 @@
   },
   {
     "id": "Error creating user {{.User}}.",
-    "translation": ""
+    "translation": "Error creating user {{.User}}."
   },
   {
     "id": "Error deleting buildpack {{.Name}}\n{{.Error}}",
@@ -2985,7 +2985,7 @@
   },
   {
     "id": "Error running task: {{.CloudControllerMessage}}",
-    "translation": ""
+    "translation": "Error running task: {{.CloudControllerMessage}}"
   },
   {
     "id": "Error saving manifest: {{.Error}}",
@@ -2997,7 +2997,7 @@
   },
   {
     "id": "Error staging application: {{.Message}}",
-    "translation": ""
+    "translation": "Error staging application: {{.Message}}"
   },
   {
     "id": "Error staging application: {{.Message}}\n\nTIP: Use '{{.BuildpackCommand}}' to see a list of supported buildpacks.",
@@ -3089,7 +3089,7 @@
   },
   {
     "id": "FEATURE FLAGS:",
-    "translation": ""
+    "translation": "FEATURE FLAGS:"
   },
   {
     "id": "Failed assigning org role to user: ",
@@ -3181,7 +3181,7 @@
   },
   {
     "id": "File not found locally, make sure the file exists at given path {{.FilePath}}",
-    "translation": ""
+    "translation": "File not found locally, make sure the file exists at given path {{.FilePath}}"
   },
   {
     "id": "File not found locally, make sure the file exists at given path {{.filepath}}",
@@ -3221,11 +3221,11 @@
   },
   {
     "id": "GETTING STARTED:",
-    "translation": ""
+    "translation": "GETTING STARTED:"
   },
   {
     "id": "GLOBAL OPTIONS:",
-    "translation": ""
+    "translation": "GLOBAL OPTIONS:"
   },
   {
     "id": "Get a one time password for ssh clients",
@@ -3241,7 +3241,7 @@
   },
   {
     "id": "Getting app info...",
-    "translation": ""
+    "translation": "Getting app info..."
   },
   {
     "id": "Getting apps in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -3289,7 +3289,7 @@
   },
   {
     "id": "Getting isolation segments as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Getting isolation segments as {{.CurrentUser}}..."
   },
   {
     "id": "Getting key {{.ServiceKeyName}} for service instance {{.ServiceInstanceName}} as {{.CurrentUser}}...",
@@ -3301,7 +3301,7 @@
   },
   {
     "id": "Getting orgs as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Getting orgs as {{.CurrentUser}}..."
   },
   {
     "id": "Getting orgs as {{.Username}}...\n",
@@ -3317,7 +3317,7 @@
   },
   {
     "id": "Getting process health check types for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Getting process health check types for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Getting quota {{.QuotaName}} info as {{.Username}}...",
@@ -3333,7 +3333,7 @@
   },
   {
     "id": "Getting routes as {{.CurrentUser}} ...",
-    "translation": ""
+    "translation": "Getting routes as {{.CurrentUser}} ..."
   },
   {
     "id": "Getting routes as {{.Username}} ...\n",
@@ -3353,7 +3353,7 @@
   },
   {
     "id": "Getting security groups as {{.UserName}}...",
-    "translation": ""
+    "translation": "Getting security groups as {{.UserName}}..."
   },
   {
     "id": "Getting security groups as {{.username}}",
@@ -3425,7 +3425,7 @@
   },
   {
     "id": "Getting spaces in org {{.OrgName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Getting spaces in org {{.OrgName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Getting spaces in org {{.TargetOrgName}} as {{.CurrentUser}}...\n",
@@ -3441,7 +3441,7 @@
   },
   {
     "id": "Getting tasks for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Getting tasks for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Getting users in org {{.TargetOrg}} / space {{.TargetSpace}} as {{.CurrentUser}}",
@@ -3453,7 +3453,7 @@
   },
   {
     "id": "Global options:",
-    "translation": ""
+    "translation": "Global options:"
   },
   {
     "id": "HEALTH_CHECK_TYPE must be \"port\", \"process\", or \"http\"",
@@ -3501,7 +3501,7 @@
   },
   {
     "id": "INSTALLED PLUGIN COMMANDS:",
-    "translation": ""
+    "translation": "INSTALLED PLUGIN COMMANDS:"
   },
   {
     "id": "INSTANCE_MEMORY",
@@ -3509,7 +3509,7 @@
   },
   {
     "id": "ISOLATION SEGMENTS:",
-    "translation": ""
+    "translation": "ISOLATION SEGMENTS:"
   },
   {
     "id": "Ignore manifest file",
@@ -3525,7 +3525,7 @@
   },
   {
     "id": "In order to move running applications to this isolation segment, they must be restarted.",
-    "translation": ""
+    "translation": "In order to move running applications to this isolation segment, they must be restarted."
   },
   {
     "id": "Include response headers in the output",
@@ -3737,15 +3737,15 @@
   },
   {
     "id": "Incorrect Usage: '{{.Arg1}}' and '{{.Arg2}}' must be used together.",
-    "translation": ""
+    "translation": "Incorrect Usage: '{{.Arg1}}' and '{{.Arg2}}' must be used together."
   },
   {
     "id": "Incorrect Usage: --protocol and --port flags must be specified together",
-    "translation": ""
+    "translation": "Incorrect Usage: --protocol and --port flags must be specified together"
   },
   {
     "id": "Incorrect Usage: Command line flags (except -f) cannot be applied when pushing multiple apps from a manifest file.",
-    "translation": ""
+    "translation": "Incorrect Usage: Command line flags (except -f) cannot be applied when pushing multiple apps from a manifest file."
   },
   {
     "id": "Incorrect Usage: The following arguments cannot be used together: {{.Args}}",
@@ -3753,11 +3753,11 @@
   },
   {
     "id": "Incorrect Usage: the required argument `{{.ArgumentName}}` was not provided",
-    "translation": ""
+    "translation": "Incorrect Usage: the required argument `{{.ArgumentName}}` was not provided"
   },
   {
     "id": "Incorrect Usage: the required arguments `{{.ArgumentName1}}`, `{{.ArgumentName2}}`, and `{{.ArgumentName3}}` were not provided",
-    "translation": ""
+    "translation": "Incorrect Usage: the required arguments `{{.ArgumentName1}}`, `{{.ArgumentName2}}`, and `{{.ArgumentName3}}` were not provided"
   },
   {
     "id": "Incorrect json format: file: {{.JSONFile}}\n\t\t\nValid json file example:\n[\n  {\n    \"protocol\": \"tcp\",\n    \"destination\": \"10.244.1.18\",\n    \"ports\": \"3306\"\n  }\n]",
@@ -3765,15 +3765,15 @@
   },
   {
     "id": "Incorrect usage: --sso-passcode flag cannot be used with --sso",
-    "translation": ""
+    "translation": "Incorrect usage: --sso-passcode flag cannot be used with --sso"
   },
   {
     "id": "Incorrect usage: The push command requires an app name. The app name can be supplied as an argument or with a manifest.yml file.",
-    "translation": ""
+    "translation": "Incorrect usage: The push command requires an app name. The app name can be supplied as an argument or with a manifest.yml file."
   },
   {
     "id": "Incorrect usage: Value for {{.ArgumentName}} must be {{.ExpectedType}}",
-    "translation": ""
+    "translation": "Incorrect usage: Value for {{.ArgumentName}} must be {{.ExpectedType}}"
   },
   {
     "id": "Incorrect usage: invalid healthcheck type",
@@ -3785,11 +3785,11 @@
   },
   {
     "id": "Install and use plugins at your own risk.",
-    "translation": ""
+    "translation": "Install and use plugins at your own risk."
   },
   {
     "id": "Installing plugin {{.Name}}...",
-    "translation": ""
+    "translation": "Installing plugin {{.Name}}..."
   },
   {
     "id": "Installing plugin {{.PluginPath}}...",
@@ -3809,11 +3809,11 @@
   },
   {
     "id": "Instance {{.InstanceIndex}} of process {{.ProcessType}} not found",
-    "translation": ""
+    "translation": "Instance {{.InstanceIndex}} of process {{.ProcessType}} not found"
   },
   {
     "id": "Invalid JSON content from server: {{.Err}}",
-    "translation": ""
+    "translation": "Invalid JSON content from server: {{.Err}}"
   },
   {
     "id": "Invalid JSON response from server",
@@ -3929,19 +3929,19 @@
   },
   {
     "id": "Isolation segment '{{.Name}}' not found.",
-    "translation": ""
+    "translation": "Isolation segment '{{.Name}}' not found."
   },
   {
     "id": "Isolation segment {{.IsolationSegmentName}} already exists.",
-    "translation": ""
+    "translation": "Isolation segment {{.IsolationSegmentName}} already exists."
   },
   {
     "id": "Isolation segment {{.IsolationSegmentName}} does not exist.",
-    "translation": ""
+    "translation": "Isolation segment {{.IsolationSegmentName}} does not exist."
   },
   {
     "id": "Job ({{.JobGUID}}) failed: {{.Message}}",
-    "translation": ""
+    "translation": "Job ({{.JobGUID}}) failed: {{.Message}}"
   },
   {
     "id": "Job ({{.JobGUID}}) polling timeout has been reached. The operation may still be running on the CF instance. Your CF operator may have more information.",
@@ -3953,7 +3953,7 @@
   },
   {
     "id": "Lifecycle phase the group applies to",
-    "translation": ""
+    "translation": "Lifecycle phase the group applies to"
   },
   {
     "id": "Lifecycle value 'staging' requires CF API version {{.MinimumVersion}} or higher. Your target is {{.CurrentVersion}}.",
@@ -3977,7 +3977,7 @@
   },
   {
     "id": "List all isolation segments",
-    "translation": ""
+    "translation": "List all isolation segments"
   },
   {
     "id": "List all orgs",
@@ -4029,11 +4029,11 @@
   },
   {
     "id": "List commands of installed plugins",
-    "translation": ""
+    "translation": "List commands of installed plugins"
   },
   {
     "id": "List direct network traffic policies",
-    "translation": ""
+    "translation": "List direct network traffic policies"
   },
   {
     "id": "List domains in the target org",
@@ -4041,7 +4041,7 @@
   },
   {
     "id": "List droplets of an app",
-    "translation": ""
+    "translation": "List droplets of an app"
   },
   {
     "id": "List keys for a service instance",
@@ -4049,7 +4049,7 @@
   },
   {
     "id": "List packages of an app",
-    "translation": ""
+    "translation": "List packages of an app"
   },
   {
     "id": "List router groups",
@@ -4077,7 +4077,7 @@
   },
   {
     "id": "List tasks of an app",
-    "translation": ""
+    "translation": "List tasks of an app"
   },
   {
     "id": "Listing Installed Plugins...",
@@ -4085,11 +4085,11 @@
   },
   {
     "id": "Listing droplets of app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Listing droplets of app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}..."
   },
   {
     "id": "Listing installed plugins...",
-    "translation": ""
+    "translation": "Listing installed plugins..."
   },
   {
     "id": "Listing network policies in org {{.Org}} / space {{.Space}} as {{.User}}...",
@@ -4097,11 +4097,11 @@
   },
   {
     "id": "Listing network policies of app {{.SrcAppName}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
-    "translation": ""
+    "translation": "Listing network policies of app {{.SrcAppName}} in org {{.Org}} / space {{.Space}} as {{.User}}..."
   },
   {
     "id": "Listing packages of app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Listing packages of app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}..."
   },
   {
     "id": "Local port forward specification. This flag can be defined more than once.",
@@ -4149,7 +4149,7 @@
   },
   {
     "id": "Manifest file created successfully at {{.FilePath}}",
-    "translation": ""
+    "translation": "Manifest file created successfully at {{.FilePath}}"
   },
   {
     "id": "Map a TCP route",
@@ -4169,7 +4169,7 @@
   },
   {
     "id": "Mapping routes...",
-    "translation": ""
+    "translation": "Mapping routes..."
   },
   {
     "id": "Max wait time for app instance startup, in minutes",
@@ -4181,7 +4181,7 @@
   },
   {
     "id": "Max wait time to establish a connection, including name resolution, in seconds",
-    "translation": ""
+    "translation": "Max wait time to establish a connection, including name resolution, in seconds"
   },
   {
     "id": "Maximum amount of memory an application instance can have (e.g. 1024M, 1G, 10G)",
@@ -4225,7 +4225,7 @@
   },
   {
     "id": "NETWORK POLICIES:",
-    "translation": ""
+    "translation": "NETWORK POLICIES:"
   },
   {
     "id": "NEW_NAME",
@@ -4249,7 +4249,7 @@
   },
   {
     "id": "Name to give the task (generated if omitted)",
-    "translation": ""
+    "translation": "Name to give the task (generated if omitted)"
   },
   {
     "id": "New Password",
@@ -4265,15 +4265,15 @@
   },
   {
     "id": "No Authorization Endpoint Found",
-    "translation": ""
+    "translation": "No Authorization Endpoint Found"
   },
   {
     "id": "No Docker password was provided. Please provide the password by setting the CF_DOCKER_PASSWORD environment variable.",
-    "translation": ""
+    "translation": "No Docker password was provided. Please provide the password by setting the CF_DOCKER_PASSWORD environment variable."
   },
   {
     "id": "No UAA Endpoint Found",
-    "translation": ""
+    "translation": "No UAA Endpoint Found"
   },
   {
     "id": "No api endpoint set. Use '{{.Name}}' to set an endpoint",
@@ -4309,7 +4309,7 @@
   },
   {
     "id": "No droplets found",
-    "translation": ""
+    "translation": "No droplets found"
   },
   {
     "id": "No events for app {{.AppName}}",
@@ -4341,19 +4341,19 @@
   },
   {
     "id": "No orgs found.",
-    "translation": ""
+    "translation": "No orgs found."
   },
   {
     "id": "No packages found",
-    "translation": ""
+    "translation": "No packages found"
   },
   {
     "id": "No plugin repositories registered to search for plugin updates.",
-    "translation": ""
+    "translation": "No plugin repositories registered to search for plugin updates."
   },
   {
     "id": "No private or shared domains found in this organization",
-    "translation": ""
+    "translation": "No private or shared domains found in this organization"
   },
   {
     "id": "No router groups found",
@@ -4413,7 +4413,7 @@
   },
   {
     "id": "No spaces found.",
-    "translation": ""
+    "translation": "No spaces found."
   },
   {
     "id": "No staging env variables have been set",
@@ -4433,7 +4433,7 @@
   },
   {
     "id": "No user-provided env variables have been set",
-    "translation": ""
+    "translation": "No user-provided env variables have been set"
   },
   {
     "id": "No value provided for flag: ",
@@ -4469,7 +4469,7 @@
   },
   {
     "id": "ORG",
-    "translation": ""
+    "translation": "ORG"
   },
   {
     "id": "ORG ADMIN",
@@ -4477,7 +4477,7 @@
   },
   {
     "id": "ORG ADMIN:",
-    "translation": ""
+    "translation": "ORG ADMIN:"
   },
   {
     "id": "ORG AUDITOR",
@@ -4493,11 +4493,11 @@
   },
   {
     "id": "ORGS:",
-    "translation": ""
+    "translation": "ORGS:"
   },
   {
     "id": "One-time passcode",
-    "translation": ""
+    "translation": "One-time passcode"
   },
   {
     "id": "Option '--app-ports'",
@@ -4549,7 +4549,7 @@
   },
   {
     "id": "Org management:",
-    "translation": ""
+    "translation": "Org management:"
   },
   {
     "id": "Org that contains the target application",
@@ -4577,19 +4577,19 @@
   },
   {
     "id": "Organization '{{.Name}}' not found.",
-    "translation": ""
+    "translation": "Organization '{{.Name}}' not found."
   },
   {
     "id": "Origin for mapping a user account to a user in an external identity provider",
-    "translation": ""
+    "translation": "Origin for mapping a user account to a user in an external identity provider"
   },
   {
     "id": "Override path to default config directory",
-    "translation": ""
+    "translation": "Override path to default config directory"
   },
   {
     "id": "Override path to default plugin config directory",
-    "translation": ""
+    "translation": "Override path to default plugin config directory"
   },
   {
     "id": "Override restart of the application in target environment after copy-source completes",
@@ -4601,7 +4601,7 @@
   },
   {
     "id": "PENDING",
-    "translation": ""
+    "translation": "PENDING"
   },
   {
     "id": "PORT",
@@ -4609,23 +4609,23 @@
   },
   {
     "id": "PORT must be a positive integer",
-    "translation": ""
+    "translation": "PORT must be a positive integer"
   },
   {
     "id": "PORT syntax must match integer[-integer]",
-    "translation": ""
+    "translation": "PORT syntax must match integer[-integer]"
   },
   {
     "id": "POSITION",
-    "translation": ""
+    "translation": "POSITION"
   },
   {
     "id": "PROTOCOL must be \"tcp\" or \"udp\"",
-    "translation": ""
+    "translation": "PROTOCOL must be \"tcp\" or \"udp\""
   },
   {
     "id": "Package staged",
-    "translation": ""
+    "translation": "Package staged"
   },
   {
     "id": "Paid service plans",
@@ -4649,7 +4649,7 @@
   },
   {
     "id": "Password used for private docker repository",
-    "translation": ""
+    "translation": "Password used for private docker repository"
   },
   {
     "id": "Password verification does not match",
@@ -4693,11 +4693,11 @@
   },
   {
     "id": "Path used in combination with HOSTNAME and DOMAIN to specify the route to bind",
-    "translation": ""
+    "translation": "Path used in combination with HOSTNAME and DOMAIN to specify the route to bind"
   },
   {
     "id": "Path used in combination with HOSTNAME and DOMAIN to specify the route to unbind",
-    "translation": ""
+    "translation": "Path used in combination with HOSTNAME and DOMAIN to specify the route to unbind"
   },
   {
     "id": "Path used to identify the HTTP route",
@@ -4753,11 +4753,11 @@
   },
   {
     "id": "Plugin installation cancelled.",
-    "translation": ""
+    "translation": "Plugin installation cancelled."
   },
   {
     "id": "Plugin list download failed; repository {{.RepositoryName}} returned {{.ErrorMessage}}.",
-    "translation": ""
+    "translation": "Plugin list download failed; repository {{.RepositoryName}} returned {{.ErrorMessage}}."
   },
   {
     "id": "Plugin name {{.PluginName}} does not exist",
@@ -4773,7 +4773,7 @@
   },
   {
     "id": "Plugin repo named '{{.RepositoryName}}' already exists, please use another name.",
-    "translation": ""
+    "translation": "Plugin repo named '{{.RepositoryName}}' already exists, please use another name."
   },
   {
     "id": "Plugin repository {{.Name}} not found.\nUse 'cf list-plugin-repos' to list registered repos.",
@@ -4785,11 +4785,11 @@
   },
   {
     "id": "Plugin requested has no binary available for your platform.",
-    "translation": ""
+    "translation": "Plugin requested has no binary available for your platform."
   },
   {
     "id": "Plugin {{.Name}} successfully uninstalled.",
-    "translation": ""
+    "translation": "Plugin {{.Name}} successfully uninstalled."
   },
   {
     "id": "Plugin {{.Name}} {{.Version}} could not be installed. A plugin with that name is already installed.\nTIP: Use '{{.BinaryName}} install-plugin -f' to force a reinstall.",
@@ -4797,15 +4797,15 @@
   },
   {
     "id": "Plugin {{.Name}} {{.Version}} is already installed. Uninstalling existing plugin...",
-    "translation": ""
+    "translation": "Plugin {{.Name}} {{.Version}} is already installed. Uninstalling existing plugin..."
   },
   {
     "id": "Plugin {{.Name}} {{.Version}} successfully installed.",
-    "translation": ""
+    "translation": "Plugin {{.Name}} {{.Version}} successfully installed."
   },
   {
     "id": "Plugin {{.PluginName}} does not exist.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} does not exist."
   },
   {
     "id": "Plugin {{.PluginName}} not found in repository {{.RepositoryName}}.\nUse '{{.BinaryName}} repo-plugins -r {{.RepositoryName}}' to list plugins available in the repo.",
@@ -4813,7 +4813,7 @@
   },
   {
     "id": "Plugin {{.PluginName}} not found on disk or in any registered repo.\nUse '{{.BinaryName}} repo-plugins' to list plugins available in the repos.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} not found on disk or in any registered repo.\nUse '{{.BinaryName}} repo-plugins' to list plugins available in the repos."
   },
   {
     "id": "Plugin {{.PluginName}} successfully uninstalled.",
@@ -4821,19 +4821,19 @@
   },
   {
     "id": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with aliases that are already used: {{.CommandAliases}}.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with aliases that are already used: {{.CommandAliases}}."
   },
   {
     "id": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with names and aliases that are already used: {{.CommandNamesAndAliases}}.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with names and aliases that are already used: {{.CommandNamesAndAliases}}."
   },
   {
     "id": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with names or aliases that are already used.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with names or aliases that are already used."
   },
   {
     "id": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with names that are already used: {{.CommandNames}}.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} v{{.PluginVersion}} could not be installed as it contains commands with names that are already used: {{.CommandNames}}."
   },
   {
     "id": "Plugin {{.PluginName}} v{{.Version}} successfully installed.",
@@ -4845,15 +4845,15 @@
   },
   {
     "id": "Plugin {{.PluginName}} {{.PluginVersion}} is already installed.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} {{.PluginVersion}} is already installed."
   },
   {
     "id": "Plugin {{.PluginName}} {{.PluginVersion}} successfully uninstalled.",
-    "translation": ""
+    "translation": "Plugin {{.PluginName}} {{.PluginVersion}} successfully uninstalled."
   },
   {
     "id": "Policy does not exist.",
-    "translation": ""
+    "translation": "Policy does not exist."
   },
   {
     "id": "Port for the TCP route",
@@ -4861,7 +4861,7 @@
   },
   {
     "id": "Port not allowed in HTTP domain {{.Domain}}",
-    "translation": ""
+    "translation": "Port not allowed in HTTP domain {{.Domain}}"
   },
   {
     "id": "Port not allowed in HTTP route {{.RouteName}}",
@@ -4873,7 +4873,7 @@
   },
   {
     "id": "Port or range of ports that destination app is connected with",
-    "translation": ""
+    "translation": "Port or range of ports that destination app is connected with"
   },
   {
     "id": "Port used to identify the TCP route",
@@ -4881,11 +4881,11 @@
   },
   {
     "id": "Prevent use of a feature",
-    "translation": ""
+    "translation": "Prevent use of a feature"
   },
   {
     "id": "Print API request diagnostics to stdout",
-    "translation": ""
+    "translation": "Print API request diagnostics to stdout"
   },
   {
     "id": "Print out a list of files in a directory or the contents of a specific file of an app running on the DEA backend",
@@ -4905,15 +4905,15 @@
   },
   {
     "id": "Process to restart",
-    "translation": ""
+    "translation": "Process to restart"
   },
   {
     "id": "Process {{.ProcessType}} not found",
-    "translation": ""
+    "translation": "Process {{.ProcessType}} not found"
   },
   {
     "id": "Prompt for a one-time passcode to login",
-    "translation": ""
+    "translation": "Prompt for a one-time passcode to login"
   },
   {
     "id": "Property '{{.PropertyName}}' found in manifest. This feature is no longer supported. Please remove it and try again.",
@@ -4921,7 +4921,7 @@
   },
   {
     "id": "Protocol that apps are connected with",
-    "translation": ""
+    "translation": "Protocol that apps are connected with"
   },
   {
     "id": "Protocol to connect apps with (Default: tcp)",
@@ -4981,7 +4981,7 @@
   },
   {
     "id": "ROLE must be \"SpaceManager\", \"SpaceDeveloper\" and \"SpaceAuditor\"",
-    "translation": ""
+    "translation": "ROLE must be \"SpaceManager\", \"SpaceDeveloper\" and \"SpaceAuditor\""
   },
   {
     "id": "ROLES:\n",
@@ -4993,11 +4993,11 @@
   },
   {
     "id": "ROUTES:",
-    "translation": ""
+    "translation": "ROUTES:"
   },
   {
     "id": "RUNNING",
-    "translation": ""
+    "translation": "RUNNING"
   },
   {
     "id": "Read-only access to org info and reports\n",
@@ -5005,7 +5005,7 @@
   },
   {
     "id": "Really delete orphaned routes?",
-    "translation": ""
+    "translation": "Really delete orphaned routes?"
   },
   {
     "id": "Really delete orphaned routes?{{.Prompt}}",
@@ -5017,7 +5017,7 @@
   },
   {
     "id": "Really delete the isolation segment {{.IsolationSegmentName}}?",
-    "translation": ""
+    "translation": "Really delete the isolation segment {{.IsolationSegmentName}}?"
   },
   {
     "id": "Really delete the org {{.OrgName}}, including its spaces, apps, service instances, routes, private domains and space-scoped service brokers?",
@@ -5025,7 +5025,7 @@
   },
   {
     "id": "Really delete the space {{.SpaceName}}?",
-    "translation": ""
+    "translation": "Really delete the space {{.SpaceName}}?"
   },
   {
     "id": "Really delete the {{.ModelType}} {{.ModelName}} and everything associated with it?",
@@ -5053,7 +5053,7 @@
   },
   {
     "id": "Recreate the app's executable artifact using the latest pushed app files and the latest environment (variables, service bindings, buildpack, stack, etc.)",
-    "translation": ""
+    "translation": "Recreate the app's executable artifact using the latest pushed app files and the latest environment (variables, service bindings, buildpack, stack, etc.)"
   },
   {
     "id": "Recursively remove a service and child objects from Cloud Foundry database without making requests to a service broker",
@@ -5085,7 +5085,7 @@
   },
   {
     "id": "Remove an env variable from an app",
-    "translation": ""
+    "translation": "Remove an env variable from an app"
   },
   {
     "id": "Remove an org role from a user",
@@ -5101,7 +5101,7 @@
   },
   {
     "id": "Removing env variable {{.EnvVarName}} from app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Removing env variable {{.EnvVarName}} from app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Removing env variable {{.VarName}} from app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -5189,7 +5189,7 @@
   },
   {
     "id": "Repository username; used with password from environment variable CF_DOCKER_PASSWORD",
-    "translation": ""
+    "translation": "Repository username; used with password from environment variable CF_DOCKER_PASSWORD"
   },
   {
     "id": "Repository: ",
@@ -5217,7 +5217,7 @@
   },
   {
     "id": "Reset the default isolation segment used for apps in spaces of an org",
-    "translation": ""
+    "translation": "Reset the default isolation segment used for apps in spaces of an org"
   },
   {
     "id": "Reset the space's isolation segment to the org default",
@@ -5225,15 +5225,15 @@
   },
   {
     "id": "Resetting default isolation segment of org {{.OrgName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Resetting default isolation segment of org {{.OrgName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Resetting isolation segment assignment of space {{.SpaceName}} in org {{.OrgName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Resetting isolation segment assignment of space {{.SpaceName}} in org {{.OrgName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Resource matching API timed out; pushing all app files.",
-    "translation": ""
+    "translation": "Resource matching API timed out; pushing all app files."
   },
   {
     "id": "Restage an app",
@@ -5249,11 +5249,11 @@
   },
   {
     "id": "Restarting app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Restarting app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}..."
   },
   {
     "id": "Restarting instance {{.InstanceIndex}} of process {{.ProcessType}} of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Restarting instance {{.InstanceIndex}} of process {{.ProcessType}} of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Restarting instance {{.Instance}} of application {{.AppName}} as {{.Username}}",
@@ -5261,7 +5261,7 @@
   },
   {
     "id": "Restrict search for plugin to this registered repository",
-    "translation": ""
+    "translation": "Restrict search for plugin to this registered repository"
   },
   {
     "id": "Retrieve an individual feature flag with status",
@@ -5313,11 +5313,11 @@
   },
   {
     "id": "Retrieve the rules for all the security groups associated with the space.",
-    "translation": ""
+    "translation": "Retrieve the rules for all the security groups associated with the space."
   },
   {
     "id": "Retrieving logs for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Retrieving logs for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Retrieving status of all flagged features as {{.Username}}...",
@@ -5337,15 +5337,15 @@
   },
   {
     "id": "Retrying upload due to an error...",
-    "translation": ""
+    "translation": "Retrying upload due to an error..."
   },
   {
     "id": "Revoke an organization's entitlement to an isolation segment",
-    "translation": ""
+    "translation": "Revoke an organization's entitlement to an isolation segment"
   },
   {
     "id": "Route and domain management:",
-    "translation": ""
+    "translation": "Route and domain management:"
   },
   {
     "id": "Route {{.HostName}}.{{.DomainName}} {{.Existence}}",
@@ -5357,11 +5357,11 @@
   },
   {
     "id": "Route {{.Route}} already exists.",
-    "translation": ""
+    "translation": "Route {{.Route}} already exists."
   },
   {
     "id": "Route {{.Route}} has been created.",
-    "translation": ""
+    "translation": "Route {{.Route}} has been created."
   },
   {
     "id": "Route {{.Route}} was not bound to service instance {{.ServiceInstance}}.",
@@ -5393,7 +5393,7 @@
   },
   {
     "id": "Run a one-off task on an app",
-    "translation": ""
+    "translation": "Run a one-off task on an app"
   },
   {
     "id": "Running Environment Variable Groups:",
@@ -5401,7 +5401,7 @@
   },
   {
     "id": "Running applications need a restart to be moved there.",
-    "translation": ""
+    "translation": "Running applications need a restart to be moved there."
   },
   {
     "id": "SECURITY GROUP",
@@ -5409,15 +5409,15 @@
   },
   {
     "id": "SECURITY GROUP:",
-    "translation": ""
+    "translation": "SECURITY GROUP:"
   },
   {
     "id": "SECURITY_GROUP",
-    "translation": ""
+    "translation": "SECURITY_GROUP"
   },
   {
     "id": "SEE ALSO:",
-    "translation": ""
+    "translation": "SEE ALSO:"
   },
   {
     "id": "SERVICE",
@@ -5429,7 +5429,7 @@
   },
   {
     "id": "SERVICE ADMIN:",
-    "translation": ""
+    "translation": "SERVICE ADMIN:"
   },
   {
     "id": "SERVICES",
@@ -5437,7 +5437,7 @@
   },
   {
     "id": "SERVICES:",
-    "translation": ""
+    "translation": "SERVICES:"
   },
   {
     "id": "SERVICE_INSTANCES",
@@ -5453,7 +5453,7 @@
   },
   {
     "id": "SPACE ADMIN:",
-    "translation": ""
+    "translation": "SPACE ADMIN:"
   },
   {
     "id": "SPACE AUDITOR",
@@ -5473,7 +5473,7 @@
   },
   {
     "id": "SPACES:",
-    "translation": ""
+    "translation": "SPACES:"
   },
   {
     "id": "SSH to an application container instance",
@@ -5481,11 +5481,11 @@
   },
   {
     "id": "SSL Certificate Error {{.Message}}\nTIP: Use 'cf api --skip-ssl-validation' to continue with an insecure API endpoint",
-    "translation": ""
+    "translation": "SSL Certificate Error {{.Message}}\nTIP: Use 'cf api --skip-ssl-validation' to continue with an insecure API endpoint"
   },
   {
     "id": "SUCCEEDED",
-    "translation": ""
+    "translation": "SUCCEEDED"
   },
   {
     "id": "Scaling app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -5493,23 +5493,23 @@
   },
   {
     "id": "Scaling app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Scaling app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Scaling cancelled",
-    "translation": ""
+    "translation": "Scaling cancelled"
   },
   {
     "id": "Search the plugin repositories for new versions of installed plugins",
-    "translation": ""
+    "translation": "Search the plugin repositories for new versions of installed plugins"
   },
   {
     "id": "Searching {{.RepoNames}} for newer versions of installed plugins...",
-    "translation": ""
+    "translation": "Searching {{.RepoNames}} for newer versions of installed plugins..."
   },
   {
     "id": "Searching {{.RepositoryName}} for plugin {{.PluginName}}...",
-    "translation": ""
+    "translation": "Searching {{.RepositoryName}} for plugin {{.PluginName}}..."
   },
   {
     "id": "Security Groups:",
@@ -5517,7 +5517,7 @@
   },
   {
     "id": "Security group '{{.Name}}' not found.",
-    "translation": ""
+    "translation": "Security group '{{.Name}}' not found."
   },
   {
     "id": "Security group {{.Name}} not bound to this space for lifecycle phase '{{.Lifecycle}}'.",
@@ -5573,7 +5573,7 @@
   },
   {
     "id": "Service instance (GUID: {{.GUID}}) not found",
-    "translation": ""
+    "translation": "Service instance (GUID: {{.GUID}}) not found"
   },
   {
     "id": "Service instance {{.InstanceName}} not found",
@@ -5585,7 +5585,7 @@
   },
   {
     "id": "Service instance {{.ServiceInstance}} not found",
-    "translation": ""
+    "translation": "Service instance {{.ServiceInstance}} not found"
   },
   {
     "id": "Service instance: {{.ServiceName}}",
@@ -5621,7 +5621,7 @@
   },
   {
     "id": "Services integration:",
-    "translation": ""
+    "translation": "Services integration:"
   },
   {
     "id": "Services:",
@@ -5649,15 +5649,15 @@
   },
   {
     "id": "Set the default isolation segment used for apps in spaces in an org",
-    "translation": ""
+    "translation": "Set the default isolation segment used for apps in spaces in an org"
   },
   {
     "id": "Set the droplet used to run an app",
-    "translation": ""
+    "translation": "Set the droplet used to run an app"
   },
   {
     "id": "Set to 'port' or 'none'",
-    "translation": ""
+    "translation": "Set to 'port' or 'none'"
   },
   {
     "id": "Setting api endpoint to {{.Endpoint}}...",
@@ -5665,7 +5665,7 @@
   },
   {
     "id": "Setting app {{.AppName}} to droplet {{.DropletGUID}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Setting app {{.AppName}} to droplet {{.DropletGUID}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Setting env variable '{{.VarName}}' to '{{.VarValue}}' for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -5761,7 +5761,7 @@
   },
   {
     "id": "Show the type of health check performed on an app",
-    "translation": ""
+    "translation": "Show the type of health check performed on an app"
   },
   {
     "id": "Showing current scale of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -5769,7 +5769,7 @@
   },
   {
     "id": "Showing current scale of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Showing current scale of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Showing health and status for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -5777,7 +5777,7 @@
   },
   {
     "id": "Skip SSL certificate validation",
-    "translation": ""
+    "translation": "Skip SSL certificate validation"
   },
   {
     "id": "Skip assigning org role to user",
@@ -5801,7 +5801,7 @@
   },
   {
     "id": "Space '{{.Name}}' not found.",
-    "translation": ""
+    "translation": "Space '{{.Name}}' not found."
   },
   {
     "id": "Space Quota Definition {{.QuotaName}} already exists",
@@ -5813,7 +5813,7 @@
   },
   {
     "id": "Space management:",
-    "translation": ""
+    "translation": "Space management:"
   },
   {
     "id": "Space that contains the target application",
@@ -5837,11 +5837,11 @@
   },
   {
     "id": "Stack with GUID {{.GUID}} not found",
-    "translation": ""
+    "translation": "Stack with GUID {{.GUID}} not found"
   },
   {
     "id": "Stack {{.Name}} not found",
-    "translation": ""
+    "translation": "Stack {{.Name}} not found"
   },
   {
     "id": "Staging Environment Variable Groups:",
@@ -5849,7 +5849,7 @@
   },
   {
     "id": "Staging app and tracing logs...",
-    "translation": ""
+    "translation": "Staging app and tracing logs..."
   },
   {
     "id": "Staging package for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -5857,7 +5857,7 @@
   },
   {
     "id": "Staging package for {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Staging package for {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Start an app",
@@ -5869,11 +5869,11 @@
   },
   {
     "id": "Start app timeout\n\nTIP: Application must be listening on the right port. Instead of hard coding the port, use the $PORT environment variable.\n\nUse '{{.BinaryName}} logs {{.AppName}} --recent' for more information",
-    "translation": ""
+    "translation": "Start app timeout\n\nTIP: Application must be listening on the right port. Instead of hard coding the port, use the $PORT environment variable.\n\nUse '{{.BinaryName}} logs {{.AppName}} --recent' for more information"
   },
   {
     "id": "Start unsuccessful\n\nTIP: use '{{.BinaryName}} logs {{.AppName}} --recent' for more information",
-    "translation": ""
+    "translation": "Start unsuccessful\n\nTIP: use '{{.BinaryName}} logs {{.AppName}} --recent' for more information"
   },
   {
     "id": "Start unsuccessful\n\nTIP: use '{{.Command}}' for more information",
@@ -5889,15 +5889,15 @@
   },
   {
     "id": "Starting app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Starting app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Starting download of plugin binary from URL...",
-    "translation": ""
+    "translation": "Starting download of plugin binary from URL..."
   },
   {
     "id": "Starting download of plugin binary from repository {{.RepositoryName}}...",
-    "translation": ""
+    "translation": "Starting download of plugin binary from repository {{.RepositoryName}}..."
   },
   {
     "id": "Startup command, set to null to reset to default start command",
@@ -5929,11 +5929,11 @@
   },
   {
     "id": "Stopping app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Stopping app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Stopping app...",
-    "translation": ""
+    "translation": "Stopping app..."
   },
   {
     "id": "System-Provided:",
@@ -5941,7 +5941,7 @@
   },
   {
     "id": "TASK_ID",
-    "translation": ""
+    "translation": "TASK_ID"
   },
   {
     "id": "TIP:\n",
@@ -5957,15 +5957,15 @@
   },
   {
     "id": "TIP: An app restart is required for the change to take effect.",
-    "translation": ""
+    "translation": "TIP: An app restart is required for the change to take effect."
   },
   {
     "id": "TIP: Assign roles with '{{.BinaryName}} set-org-role' and '{{.BinaryName}} set-space-role'.",
-    "translation": ""
+    "translation": "TIP: Assign roles with '{{.BinaryName}} set-org-role' and '{{.BinaryName}} set-space-role'."
   },
   {
     "id": "TIP: Changes require an app restart (for running) or restage (for staging) to apply to existing applications.",
-    "translation": ""
+    "translation": "TIP: Changes require an app restart (for running) or restage (for staging) to apply to existing applications."
   },
   {
     "id": "TIP: Changes will not apply to existing running applications until they are restarted.",
@@ -6025,19 +6025,19 @@
   },
   {
     "id": "Task has been submitted successfully for execution.",
-    "translation": ""
+    "translation": "Task has been submitted successfully for execution."
   },
   {
     "id": "Task must have a droplet. Specify droplet or assign current droplet to app.",
-    "translation": ""
+    "translation": "Task must have a droplet. Specify droplet or assign current droplet to app."
   },
   {
     "id": "Task workers are unavailable.",
-    "translation": ""
+    "translation": "Task workers are unavailable."
   },
   {
     "id": "Terminate a running task of an app",
-    "translation": ""
+    "translation": "Terminate a running task of an app"
   },
   {
     "id": "Terminate the running application Instance at the given index and instantiate a new instance of the application with the same index",
@@ -6045,11 +6045,11 @@
   },
   {
     "id": "Terminate, then instantiate an app instance",
-    "translation": ""
+    "translation": "Terminate, then instantiate an app instance"
   },
   {
     "id": "Terminating task {{.TaskSequenceID}} of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": ""
+    "translation": "Terminating task {{.TaskSequenceID}} of app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}..."
   },
   {
     "id": "The API endpoint",
@@ -6073,7 +6073,7 @@
   },
   {
     "id": "The application instance index cannot be negative",
-    "translation": ""
+    "translation": "The application instance index cannot be negative"
   },
   {
     "id": "The application name",
@@ -6089,7 +6089,7 @@
   },
   {
     "id": "The command to execute",
-    "translation": ""
+    "translation": "The command to execute"
   },
   {
     "id": "The domain",
@@ -6121,11 +6121,11 @@
   },
   {
     "id": "The guid of the droplet to use",
-    "translation": ""
+    "translation": "The guid of the droplet to use"
   },
   {
     "id": "The guid of the package to stage",
-    "translation": ""
+    "translation": "The guid of the package to stage"
   },
   {
     "id": "The hostname",
@@ -6137,7 +6137,7 @@
   },
   {
     "id": "The isolation segment name",
-    "translation": ""
+    "translation": "The isolation segment name"
   },
   {
     "id": "The local path to the plugin, if the plugin exists locally; the URL to the plugin, if the plugin exists online; or the plugin name, if a repo is specified",
@@ -6221,7 +6221,7 @@
   },
   {
     "id": "The organization name",
-    "translation": ""
+    "translation": "The organization name"
   },
   {
     "id": "The organization quota",
@@ -6241,7 +6241,7 @@
   },
   {
     "id": "The plugin has been uninstalled but removing the plugin binary failed.\nRemove it manually or subsequent installations of the plugin may fail\n{{.Err}}",
-    "translation": ""
+    "translation": "The plugin has been uninstalled but removing the plugin binary failed.\nRemove it manually or subsequent installations of the plugin may fail\n{{.Err}}"
   },
   {
     "id": "The plugin name",
@@ -6253,7 +6253,7 @@
   },
   {
     "id": "The plugin's uninstall method returned an unexpected error.\nThe plugin uninstall will proceed. Contact the plugin author if you need help.\n{{.Err}}",
-    "translation": ""
+    "translation": "The plugin's uninstall method returned an unexpected error.\nThe plugin uninstall will proceed. Contact the plugin author if you need help.\n{{.Err}}"
   },
   {
     "id": "The position that sets priority",
@@ -6317,7 +6317,7 @@
   },
   {
     "id": "The source app",
-    "translation": ""
+    "translation": "The source app"
   },
   {
     "id": "The space",
@@ -6337,7 +6337,7 @@
   },
   {
     "id": "The specified application instance does not exist",
-    "translation": ""
+    "translation": "The specified application instance does not exist"
   },
   {
     "id": "The stack name",
@@ -6349,7 +6349,7 @@
   },
   {
     "id": "The task's unique sequence ID",
-    "translation": ""
+    "translation": "The task's unique sequence ID"
   },
   {
     "id": "The token",
@@ -6401,23 +6401,23 @@
   },
   {
     "id": "This command does not support the URL scheme in {{.UnsupportedURL}}.",
-    "translation": ""
+    "translation": "This command does not support the URL scheme in {{.UnsupportedURL}}."
   },
   {
     "id": "This command is in EXPERIMENTAL stage and may change without notice",
-    "translation": ""
+    "translation": "This command is in EXPERIMENTAL stage and may change without notice"
   },
   {
     "id": "This command requires CF API version {{.MinimumVersion}} or higher.",
-    "translation": ""
+    "translation": "This command requires CF API version {{.MinimumVersion}} or higher."
   },
   {
     "id": "This command requires CF API version {{.MinimumVersion}} or higher. Your target is {{.CurrentVersion}}.",
-    "translation": ""
+    "translation": "This command requires CF API version {{.MinimumVersion}} or higher. Your target is {{.CurrentVersion}}."
   },
   {
     "id": "This command requires Network Policy API V1. Your targeted endpoint does not expose it.",
-    "translation": ""
+    "translation": "This command requires Network Policy API V1. Your targeted endpoint does not expose it."
   },
   {
     "id": "This command requires the Routing API. Your targeted endpoint reports it is not enabled.",
@@ -6425,7 +6425,7 @@
   },
   {
     "id": "This is for backwards compatibility",
-    "translation": ""
+    "translation": "This is for backwards compatibility"
   },
   {
     "id": "This service doesn't support creation of keys.",
@@ -6509,7 +6509,7 @@
   },
   {
     "id": "USER ADMIN:",
-    "translation": ""
+    "translation": "USER ADMIN:"
   },
   {
     "id": "USERS",
@@ -6617,7 +6617,7 @@
   },
   {
     "id": "Uninstall CLI plugin",
-    "translation": ""
+    "translation": "Uninstall CLI plugin"
   },
   {
     "id": "Uninstall the plugin defined in command argument",
@@ -6701,7 +6701,7 @@
   },
   {
     "id": "Updating app with these attributes...",
-    "translation": ""
+    "translation": "Updating app with these attributes..."
   },
   {
     "id": "Updating app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
@@ -6713,7 +6713,7 @@
   },
   {
     "id": "Updating app {{.AppName}}...",
-    "translation": ""
+    "translation": "Updating app {{.AppName}}..."
   },
   {
     "id": "Updating buildpack {{.BuildpackName}}...",
@@ -6725,7 +6725,7 @@
   },
   {
     "id": "Updating health check type for app {{.AppName}} process {{.ProcessType}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": ""
+    "translation": "Updating health check type for app {{.AppName}} process {{.ProcessType}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}..."
   },
   {
     "id": "Updating isolation segment of space {{.SpaceName}} in org {{.OrgName}} as {{.CurrentUser}}...",
@@ -6777,7 +6777,7 @@
   },
   {
     "id": "Uploading files have failed after a number of retriest due to: {{.Error}}",
-    "translation": ""
+    "translation": "Uploading files have failed after a number of retriest due to: {{.Error}}"
   },
   {
     "id": "Uploading files...",
@@ -6793,11 +6793,11 @@
   },
   {
     "id": "Uploads a V3 Package",
-    "translation": ""
+    "translation": "Uploads a V3 Package"
   },
   {
     "id": "Usage:",
-    "translation": ""
+    "translation": "Usage:"
   },
   {
     "id": "Use 'cf help -a' to see all commands.",
@@ -6805,11 +6805,11 @@
   },
   {
     "id": "Use '{{.BinaryName}} install-plugin' to update a plugin to the latest version.",
-    "translation": ""
+    "translation": "Use '{{.BinaryName}} install-plugin' to update a plugin to the latest version."
   },
   {
     "id": "Use '{{.BinaryName}} repo-plugins' to list plugins in registered repos available to install.",
-    "translation": ""
+    "translation": "Use '{{.BinaryName}} repo-plugins' to list plugins in registered repos available to install."
   },
   {
     "id": "Use '{{.Command}}' for more information",
@@ -6845,11 +6845,11 @@
   },
   {
     "id": "Using docker repository password from environment variable CF_DOCKER_PASSWORD.",
-    "translation": ""
+    "translation": "Using docker repository password from environment variable CF_DOCKER_PASSWORD."
   },
   {
     "id": "Using manifest file {{.Path}}",
-    "translation": ""
+    "translation": "Using manifest file {{.Path}}"
   },
   {
     "id": "Using manifest file {{.Path}}\n",
@@ -6865,11 +6865,11 @@
   },
   {
     "id": "V3 APPS (experimental):",
-    "translation": ""
+    "translation": "V3 APPS (experimental):"
   },
   {
     "id": "VERSION:",
-    "translation": ""
+    "translation": "VERSION:"
   },
   {
     "id": "Valid JSON object containing service-specific configuration parameters, provided either in-line or in a file. For a list of supported configuration parameters, see documentation for the particular service offering.",
@@ -6917,15 +6917,15 @@
   },
   {
     "id": "Waiting for app to start...",
-    "translation": ""
+    "translation": "Waiting for app to start..."
   },
   {
     "id": "Warning: Error read/writing config: unexpected end of JSON input for {{.FilePath}}",
-    "translation": ""
+    "translation": "Warning: Error read/writing config: unexpected end of JSON input for {{.FilePath}}"
   },
   {
     "id": "Warning: Insecure http API endpoint detected: secure https API endpoints are recommended",
-    "translation": ""
+    "translation": "Warning: Insecure http API endpoint detected: secure https API endpoints are recommended"
   },
   {
     "id": "Warning: Insecure http API endpoint detected: secure https API endpoints are recommended\n",
@@ -6957,7 +6957,7 @@
   },
   {
     "id": "Your target CF API version only supports health check type values {{.SupportedTypes}} and {{.LastSupportedType}}.",
-    "translation": ""
+    "translation": "Your target CF API version only supports health check type values {{.SupportedTypes}} and {{.LastSupportedType}}."
   },
   {
     "id": "Zip archive does not contain a buildpack",
@@ -6981,11 +6981,11 @@
   },
   {
     "id": "[global options] command [arguments...] [command options]",
-    "translation": ""
+    "translation": "[global options] command [arguments...] [command options]"
   },
   {
     "id": "[hidden]",
-    "translation": ""
+    "translation": "[hidden]"
   },
   {
     "id": "access",
@@ -6997,11 +6997,11 @@
   },
   {
     "id": "add-network-policy",
-    "translation": ""
+    "translation": "add-network-policy"
   },
   {
     "id": "alias",
-    "translation": ""
+    "translation": "alias"
   },
   {
     "id": "all",
@@ -7017,11 +7017,11 @@
   },
   {
     "id": "api endpoint:",
-    "translation": ""
+    "translation": "api endpoint:"
   },
   {
     "id": "api version:",
-    "translation": ""
+    "translation": "api version:"
   },
   {
     "id": "app",
@@ -7045,7 +7045,7 @@
   },
   {
     "id": "apps:",
-    "translation": ""
+    "translation": "apps:"
   },
   {
     "id": "auth request failed",
@@ -7053,7 +7053,7 @@
   },
   {
     "id": "billingmanager",
-    "translation": ""
+    "translation": "billingmanager"
   },
   {
     "id": "bound apps",
@@ -7069,7 +7069,7 @@
   },
   {
     "id": "buildpacks:",
-    "translation": ""
+    "translation": "buildpacks:"
   },
   {
     "id": "bytes downloaded",
@@ -7085,7 +7085,7 @@
   },
   {
     "id": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
-    "translation": ""
+    "translation": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
   },
   {
     "id": "cf services",
@@ -7097,7 +7097,7 @@
   },
   {
     "id": "cf v2-push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf v2-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf v2-push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
-    "translation": ""
+    "translation": "cf v2-push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf v2-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf v2-push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
   },
   {
     "id": "cf v3-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route]\\n   cf v3-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route]",
@@ -7105,15 +7105,15 @@
   },
   {
     "id": "command help",
-    "translation": ""
+    "translation": "command help"
   },
   {
     "id": "command name",
-    "translation": ""
+    "translation": "command name"
   },
   {
     "id": "command:",
-    "translation": ""
+    "translation": "command:"
   },
   {
     "id": "cpu",
@@ -7129,19 +7129,19 @@
   },
   {
     "id": "create-isolation-segment",
-    "translation": ""
+    "translation": "create-isolation-segment"
   },
   {
     "id": "created",
-    "translation": ""
+    "translation": "created"
   },
   {
     "id": "created:",
-    "translation": ""
+    "translation": "created:"
   },
   {
     "id": "delete-isolation-segment",
-    "translation": ""
+    "translation": "delete-isolation-segment"
   },
   {
     "id": "description",
@@ -7149,7 +7149,7 @@
   },
   {
     "id": "destination",
-    "translation": ""
+    "translation": "destination"
   },
   {
     "id": "details",
@@ -7157,7 +7157,7 @@
   },
   {
     "id": "disable-org-isolation",
-    "translation": ""
+    "translation": "disable-org-isolation"
   },
   {
     "id": "disallowed",
@@ -7169,7 +7169,7 @@
   },
   {
     "id": "disk quota:",
-    "translation": ""
+    "translation": "disk quota:"
   },
   {
     "id": "disk:",
@@ -7177,15 +7177,15 @@
   },
   {
     "id": "docker",
-    "translation": ""
+    "translation": "docker"
   },
   {
     "id": "docker image:",
-    "translation": ""
+    "translation": "docker image:"
   },
   {
     "id": "docker username:",
-    "translation": ""
+    "translation": "docker username:"
   },
   {
     "id": "does exist",
@@ -7221,7 +7221,7 @@
   },
   {
     "id": "droplet guid:",
-    "translation": ""
+    "translation": "droplet guid:"
   },
   {
     "id": "each route in 'routes' must have a 'route' property",
@@ -7229,7 +7229,7 @@
   },
   {
     "id": "enable-org-isolation",
-    "translation": ""
+    "translation": "enable-org-isolation"
   },
   {
     "id": "enabled",
@@ -7237,11 +7237,11 @@
   },
   {
     "id": "endpoint (for http type):",
-    "translation": ""
+    "translation": "endpoint (for http type):"
   },
   {
     "id": "endpoint (for http)",
-    "translation": ""
+    "translation": "endpoint (for http)"
   },
   {
     "id": "env var '{{.PropertyName}}' should not be null",
@@ -7249,7 +7249,7 @@
   },
   {
     "id": "env:",
-    "translation": ""
+    "translation": "env:"
   },
   {
     "id": "event",
@@ -7269,19 +7269,19 @@
   },
   {
     "id": "health check",
-    "translation": ""
+    "translation": "health check"
   },
   {
     "id": "health check http endpoint:",
-    "translation": ""
+    "translation": "health check http endpoint:"
   },
   {
     "id": "health check timeout:",
-    "translation": ""
+    "translation": "health check timeout:"
   },
   {
     "id": "health check type:",
-    "translation": ""
+    "translation": "health check type:"
   },
   {
     "id": "health_check_type is ",
@@ -7301,7 +7301,7 @@
   },
   {
     "id": "image",
-    "translation": ""
+    "translation": "image"
   },
   {
     "id": "instance memory",
@@ -7325,15 +7325,15 @@
   },
   {
     "id": "integer",
-    "translation": ""
+    "translation": "integer"
   },
   {
     "id": "invalid argument for flag '--port' (expected int \u003e 0)",
-    "translation": ""
+    "translation": "invalid argument for flag '--port' (expected int \u003e 0)"
   },
   {
     "id": "invalid argument for flag '-i' (expected int \u003e 0)",
-    "translation": ""
+    "translation": "invalid argument for flag '-i' (expected int \u003e 0)"
   },
   {
     "id": "invalid inherit path in manifest",
@@ -7349,15 +7349,15 @@
   },
   {
     "id": "isolation segment:",
-    "translation": ""
+    "translation": "isolation segment:"
   },
   {
     "id": "isolation segments:",
-    "translation": ""
+    "translation": "isolation segments:"
   },
   {
     "id": "isolation-segments",
-    "translation": ""
+    "translation": "isolation-segments"
   },
   {
     "id": "label",
@@ -7373,11 +7373,11 @@
   },
   {
     "id": "latest version",
-    "translation": ""
+    "translation": "latest version"
   },
   {
     "id": "lifecycle",
-    "translation": ""
+    "translation": "lifecycle"
   },
   {
     "id": "limited",
@@ -7393,7 +7393,7 @@
   },
   {
     "id": "memory usage:",
-    "translation": ""
+    "translation": "memory usage:"
   },
   {
     "id": "memory:",
@@ -7409,7 +7409,7 @@
   },
   {
     "id": "network-policies",
-    "translation": ""
+    "translation": "network-policies"
   },
   {
     "id": "non basic services",
@@ -7429,11 +7429,11 @@
   },
   {
     "id": "org:",
-    "translation": ""
+    "translation": "org:"
   },
   {
     "id": "organization",
-    "translation": ""
+    "translation": "organization"
   },
   {
     "id": "orgs",
@@ -7445,7 +7445,7 @@
   },
   {
     "id": "package guid: {{.PackageGuid}}",
-    "translation": ""
+    "translation": "package guid: {{.PackageGuid}}"
   },
   {
     "id": "paid plans",
@@ -7461,7 +7461,7 @@
   },
   {
     "id": "path:",
-    "translation": ""
+    "translation": "path:"
   },
   {
     "id": "plan",
@@ -7481,7 +7481,7 @@
   },
   {
     "id": "ports",
-    "translation": ""
+    "translation": "ports"
   },
   {
     "id": "position",
@@ -7489,15 +7489,15 @@
   },
   {
     "id": "processes",
-    "translation": ""
+    "translation": "processes"
   },
   {
     "id": "processes:",
-    "translation": ""
+    "translation": "processes:"
   },
   {
     "id": "protocol",
-    "translation": ""
+    "translation": "protocol"
   },
   {
     "id": "provider",
@@ -7509,7 +7509,7 @@
   },
   {
     "id": "remove-network-policy",
-    "translation": ""
+    "translation": "remove-network-policy"
   },
   {
     "id": "repo-plugins",
@@ -7545,11 +7545,11 @@
   },
   {
     "id": "reset-org-default-isolation-segment",
-    "translation": ""
+    "translation": "reset-org-default-isolation-segment"
   },
   {
     "id": "reset-space-isolation-segment",
-    "translation": ""
+    "translation": "reset-space-isolation-segment"
   },
   {
     "id": "route ports",
@@ -7561,11 +7561,11 @@
   },
   {
     "id": "routes:",
-    "translation": ""
+    "translation": "routes:"
   },
   {
     "id": "run-task",
-    "translation": ""
+    "translation": "run-task"
   },
   {
     "id": "running",
@@ -7573,7 +7573,7 @@
   },
   {
     "id": "running security groups:",
-    "translation": ""
+    "translation": "running security groups:"
   },
   {
     "id": "security group",
@@ -7621,15 +7621,15 @@
   },
   {
     "id": "services:",
-    "translation": ""
+    "translation": "services:"
   },
   {
     "id": "set-org-default-isolation-segment",
-    "translation": ""
+    "translation": "set-org-default-isolation-segment"
   },
   {
     "id": "set-space-isolation-segment",
-    "translation": ""
+    "translation": "set-space-isolation-segment"
   },
   {
     "id": "shared",
@@ -7641,7 +7641,7 @@
   },
   {
     "id": "source",
-    "translation": ""
+    "translation": "source"
   },
   {
     "id": "space",
@@ -7649,7 +7649,7 @@
   },
   {
     "id": "space quota:",
-    "translation": ""
+    "translation": "space quota:"
   },
   {
     "id": "space quotas:",
@@ -7657,7 +7657,7 @@
   },
   {
     "id": "space:",
-    "translation": ""
+    "translation": "space:"
   },
   {
     "id": "spaces:",
@@ -7705,7 +7705,7 @@
   },
   {
     "id": "sso-passcode",
-    "translation": ""
+    "translation": "sso-passcode"
   },
   {
     "id": "stack:",
@@ -7713,15 +7713,15 @@
   },
   {
     "id": "staging security groups:",
-    "translation": ""
+    "translation": "staging security groups:"
   },
   {
     "id": "start command:",
-    "translation": ""
+    "translation": "start command:"
   },
   {
     "id": "start time",
-    "translation": ""
+    "translation": "start time"
   },
   {
     "id": "starting",
@@ -7733,7 +7733,7 @@
   },
   {
     "id": "state:",
-    "translation": ""
+    "translation": "state:"
   },
   {
     "id": "status",
@@ -7749,19 +7749,19 @@
   },
   {
     "id": "task id:",
-    "translation": ""
+    "translation": "task id:"
   },
   {
     "id": "task name:",
-    "translation": ""
+    "translation": "task name:"
   },
   {
     "id": "tasks",
-    "translation": ""
+    "translation": "tasks"
   },
   {
     "id": "terminate-task",
-    "translation": ""
+    "translation": "terminate-task"
   },
   {
     "id": "time",
@@ -7785,11 +7785,11 @@
   },
   {
     "id": "uaa",
-    "translation": ""
+    "translation": "uaa"
   },
   {
     "id": "udp",
-    "translation": ""
+    "translation": "udp"
   },
   {
     "id": "unknown authority",
@@ -7821,7 +7821,7 @@
   },
   {
     "id": "user {{.User}} already exists",
-    "translation": ""
+    "translation": "user {{.User}} already exists"
   },
   {
     "id": "user-provided",
@@ -7829,7 +7829,7 @@
   },
   {
     "id": "user:",
-    "translation": ""
+    "translation": "user:"
   },
   {
     "id": "username",
@@ -7837,83 +7837,83 @@
   },
   {
     "id": "v3-app",
-    "translation": ""
+    "translation": "v3-app"
   },
   {
     "id": "v3-apps",
-    "translation": ""
+    "translation": "v3-apps"
   },
   {
     "id": "v3-create-app",
-    "translation": ""
+    "translation": "v3-create-app"
   },
   {
     "id": "v3-create-package",
-    "translation": ""
+    "translation": "v3-create-package"
   },
   {
     "id": "v3-delete",
-    "translation": ""
+    "translation": "v3-delete"
   },
   {
     "id": "v3-droplets",
-    "translation": ""
+    "translation": "v3-droplets"
   },
   {
     "id": "v3-get-health-check",
-    "translation": ""
+    "translation": "v3-get-health-check"
   },
   {
     "id": "v3-packages",
-    "translation": ""
+    "translation": "v3-packages"
   },
   {
     "id": "v3-push",
-    "translation": ""
+    "translation": "v3-push"
   },
   {
     "id": "v3-restart",
-    "translation": ""
+    "translation": "v3-restart"
   },
   {
     "id": "v3-restart-app-instance",
-    "translation": ""
+    "translation": "v3-restart-app-instance"
   },
   {
     "id": "v3-scale",
-    "translation": ""
+    "translation": "v3-scale"
   },
   {
     "id": "v3-set-droplet",
-    "translation": ""
+    "translation": "v3-set-droplet"
   },
   {
     "id": "v3-set-env",
-    "translation": ""
+    "translation": "v3-set-env"
   },
   {
     "id": "v3-set-health-check",
-    "translation": ""
+    "translation": "v3-set-health-check"
   },
   {
     "id": "v3-stage",
-    "translation": ""
+    "translation": "v3-stage"
   },
   {
     "id": "v3-start",
-    "translation": ""
+    "translation": "v3-start"
   },
   {
     "id": "v3-stop",
-    "translation": ""
+    "translation": "v3-stop"
   },
   {
     "id": "v3-unset-env",
-    "translation": ""
+    "translation": "v3-unset-env"
   },
   {
     "id": "verbose and version flag",
-    "translation": ""
+    "translation": "verbose and version flag"
   },
   {
     "id": "version",
@@ -7933,11 +7933,11 @@
   },
   {
     "id": "{{.BinaryName}} version {{.VersionString}}",
-    "translation": ""
+    "translation": "{{.BinaryName}} version {{.VersionString}}"
   },
   {
     "id": "{{.Command}} requires CF API version {{.MinimumVersion}} or higher.",
-    "translation": ""
+    "translation": "{{.Command}} requires CF API version {{.MinimumVersion}} or higher."
   },
   {
     "id": "{{.Command}} requires CF API version {{.MinimumVersion}} or higher. Your target is {{.CurrentVersion}}.",
@@ -8001,7 +8001,7 @@
   },
   {
     "id": "{{.MemorySize}} x {{.NumInstances}} instances",
-    "translation": ""
+    "translation": "{{.MemorySize}} x {{.NumInstances}} instances"
   },
   {
     "id": "{{.Message}}\nThis command requires CF API version 3.0.0 or higher.",
@@ -8041,7 +8041,7 @@
   },
   {
     "id": "{{.RepositoryURL}} already registered as {{.RepositoryName}}",
-    "translation": ""
+    "translation": "{{.RepositoryURL}} already registered as {{.RepositoryName}}"
   },
   {
     "id": "{{.ReservedRoutePorts}} route ports",
