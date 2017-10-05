@@ -1752,8 +1752,8 @@
     "translation": "CF_NAME v3-create-app APP_NAME [--app-type (buildpack | docker)]"
   },
   {
-    "id": "CF_NAME v3-create-package APP_NAME [--docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG]]",
-    "translation": "CF_NAME v3-create-package APP_NAME [--docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG]]"
+    "id": "CF_NAME v3-create-package APP_NAME [-p APP_PATH | --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG]]",
+    "translation": "CF_NAME v3-create-package APP_NAME [-p APP_PATH | --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG]]"
   },
   {
     "id": "CF_NAME v3-delete APP_NAME [-f]",
