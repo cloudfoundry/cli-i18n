@@ -55,10 +55,14 @@ jobs:
          channel: '#cli-firehose'
          text: "build i18n JSON failed :("
     on_success:
-       put: slack-alert
-       params:
-         channel: '#cli-firehose'
-         text: "NEW i18n JSON files ready for translations"
+      put: slack-alert
+      params:
+        channel: '#cli-firehose #cli-i18n'
+        text: |
+          NEW i18n JSON files ready for translation
+          Find a tarball in our Google Drive:
+          <add-link-to-tarball-here>
+          For access please email: cf-cli-eng@pivotal.io
     ensure:
       put: cli-i18n
       params:
