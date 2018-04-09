@@ -29,42 +29,31 @@ resources:
   source:
     url: {{slack-webhook-url}}
 
-- name: monthly
-  type: time
-  source: {interval: 700h}
-
 groups:
 - name: cli
   jobs:
-  - build-i18n
+  - extract-i18n
 
 jobs:
-- name: build-i18n
+- name: extract-i18n
   serial: true
   plan:
   - aggregate:
     - get: cli
     - get: cli-i18n
-    - get: monthly
-      trigger: true
-  - task: build-i18n
+  - task: extract-i18n
     file: cli-i18n/ci/tasks/generate-i18n-json.yml
     on_failure:
        put: slack-alert
        params:
-         channel: '#cli-firehose'
-         text: "build i18n JSON failed :("
+         channel: '#cli-private'
+         text: "extract i18n JSON failed :("
     on_success:
       put: slack-alert
       params:
-        channel: '#cli-firehose #cli-i18n'
+        channel: '#cli-private'
         text: |
           NEW i18n JSON files ready for translation
           Find a tarball in our Google Drive:
           <add-link-to-tarball-here>
           For access please email: cf-cli-eng@pivotal.io
-    ensure:
-      put: cli-i18n
-      params:
-        repository: updated-cli-i18n
-        rebase: true

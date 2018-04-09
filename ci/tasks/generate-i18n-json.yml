@@ -10,7 +10,7 @@ inputs:
  - name: cli-i18n
 
 outputs:
- - name: updated-cli-i18n
+ - name: updated-translation-files
 
 run:
   path: bash
@@ -19,19 +19,22 @@ run:
   - |
     set -ex
 
-    cwd=$PWD
+    export GOPATH=$PWD/gopath
+    export PATH=$GOPATH/bin:$PATH
 
-    git clone cli-i18n updated-cli-i18n
-    cd cli
-    make i18n-extract-strings
-    mv *all.json ../updated-cli-i18n/resources/
+    go version
+    go get -u github.com/XenoPhex/i18n4go/i18n4go
 
-    cd ../updated-cli-i18n
+    mkdir tmpdir
 
-    if [[ -n $(git status --porcelain) ]]; then
-      git config --global user.name "CI Bot"
-      git config --global user.email "cf-cli+i18n@pivotal.io"
+    IGNORE_FILES_REGEX=".*test.go|.*resources.go|fake.*\.go|template.go"
 
-      git add .
-      git commit -m "updated translation files"
-    fi
+    i18n4go -c extract-strings -e cli/strings/excluded.json -s cli/strings/specialStrings.json -o tmpdir -d cli/command -r --ignore-regexp $IGNORE_FILES_REGEX
+    i18n4go -c extract-strings -e cli/strings/excluded.json -s cli/strings/specialStrings.json -o tmpdir -d cli/cf -r --ignore-regexp $IGNORE_FILES_REGEX
+    i18n4go -c merge-strings -d tmpdir
+
+    i18n4go -c create-translations -f tmpdir/en.all.json -languages "de-de,en-us,es-es,fr-fr,it-it,ja-jp,ko-kr,pt-br,zh-hans,zh-hant"
+
+    go run cli-i18n/bin/reformat_translated_json.go ./
+
+    mv *all.json updated-translation-files
