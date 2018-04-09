@@ -18,4 +18,5 @@ run:
   - |
     set -ex
 
-    zip outputs/all.json.zip updated-translation-files/*all.json
+    cd updated-translation-files
+    zip ../outputs/all.json.zip *all.json
