@@ -24,6 +24,15 @@ resources:
     private_key: {{cli-i18n-github-private-key}}
     trigger: true
 
+- name: upload-translation-zip
+  type: s3
+  source:
+    bucket: cf-cli-i18n
+    access_key_id: ((cli-team-aws-s3-access-key-id))
+    secret_access_key: ((cli-team-aws-s3-secret-access-key))
+    versioned_file: all.json.zip
+    region_name: ap-southeast-1
+
 - name: slack-alert
   type: slack-notification
   source:
@@ -41,10 +50,14 @@ jobs:
   - aggregate:
     - get: cli
     - get: cli-i18n
-  - task: extract-i18n
-    file: cli-i18n/ci/tasks/generate-i18n-json.yml
-  - task: package-i18n
-    file: cli-i18n/ci/tasks/package-i18n-json.yml
+  - do:
+    - task: extract-i18n
+      file: cli-i18n/ci/tasks/generate-i18n-json.yml
+    - task: package-i18n
+      file: cli-i18n/ci/tasks/package-i18n-json.yml
+    - put: upload-translation-zip
+      params:
+        file: outputs/all.json.zip
     on_failure:
        put: slack-alert
        params:
@@ -54,6 +67,5 @@ jobs:
       put: slack-alert
       params:
         channel: '#cli-eng'
-        attachments_file: outputs/attachments.json
         text: |
-          NEW i18n JSON files ready for translation
+          NEW i18n JSON files ready for translation: https://s3-ap-southeast-1.amazonaws.com/cf-cli-i18n/all.json.zip

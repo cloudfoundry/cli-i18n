@@ -19,23 +19,3 @@ run:
     set -ex
 
     zip outputs/all.json.zip updated-translation-files/*all.json
-
-    touch outputs/attachments.json
-    cat > outputs/attachments.json <<EOF
-    {
-      "params": {
-        "username": "concourse",
-        "always_notify": "true",
-        "debug": "true",
-        "attachments": [
-          {
-            "color": "good",
-            "text": "Translation Zip file"
-          }
-        ]
-      },
-      "source": {
-        "url": "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-      }
-    }
-    EOF
