@@ -18,4 +18,4 @@ run:
   - |
     set -ex
 
-    zip -cvf outputs/all.json.zip updated-translation-files/*all.json
+    zip outputs/all.json.zip updated-translation-files/*all.json
