@@ -43,6 +43,8 @@ jobs:
     - get: cli-i18n
   - task: extract-i18n
     file: cli-i18n/ci/tasks/generate-i18n-json.yml
+  - task: package-i18n
+    file: cli-i18n/ci/tasks/package-i18n-json.yml
     on_failure:
        put: slack-alert
        params:
@@ -52,8 +54,6 @@ jobs:
       put: slack-alert
       params:
         channel: '#cli-eng'
+        attachment_file: outputs/all.json.zip
         text: |
           NEW i18n JSON files ready for translation
-          Find a tarball in our Google Drive:
-          <add-link-to-tarball-here>
-          For access please email: cf-cli-eng@pivotal.io
