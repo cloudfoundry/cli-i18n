@@ -54,6 +54,6 @@ jobs:
       put: slack-alert
       params:
         channel: '#cli-eng'
-        attachments_file: [outputs/attachments.json]
+        attachments_file: outputs/attachments.json
         text: |
           NEW i18n JSON files ready for translation
