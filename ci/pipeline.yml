@@ -46,12 +46,12 @@ jobs:
     on_failure:
        put: slack-alert
        params:
-         channel: '#cli-private'
+         channel: '#cli-eng'
          text: "extract i18n JSON failed :("
     on_success:
       put: slack-alert
       params:
-        channel: '#cli-private'
+        channel: '#cli-eng'
         text: |
           NEW i18n JSON files ready for translation
           Find a tarball in our Google Drive:
