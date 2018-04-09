@@ -9,7 +9,7 @@ inputs:
  - name: updated-translation-files
 
 outputs:
- - name: output
+ - name: outputs
 
 run:
   path: bash
