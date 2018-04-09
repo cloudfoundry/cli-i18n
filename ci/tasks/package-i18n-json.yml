@@ -21,7 +21,7 @@ run:
     zip outputs/all.json.zip updated-translation-files/*all.json
 
     touch outputs/attachments.json
-    cat outputs/attachments.json <<EOF
+    cat > outputs/attachments.json <<EOF
     {
       "params": {
         "text_file": "outputs/all.json.zip",
