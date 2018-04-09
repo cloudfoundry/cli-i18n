@@ -30,7 +30,7 @@ run:
         "attachments": [
           {
             "color": "good",
-            "title": "Translation Zip file"
+            "text": "Translation Zip file"
           }
         ]
       },
