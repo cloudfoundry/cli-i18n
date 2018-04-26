@@ -18,7 +18,7 @@ run:
   args:
   - -c
   - |
-    set -ex
+    set -exo pipefail
 
     export GOPATH=$PWD/gopath
     export PATH=$GOPATH/bin:$PATH
