@@ -12,6 +12,21 @@ resource_types:
     tag: latest
 
 resources:
+- name: dockerfile
+  type: git
+  source:
+    uri: git@github.com:cloudfoundry/cli-i18n
+    branch: master
+    paths: [ci/image/Dockerfile]
+
+- name: base-image
+  type: docker-image
+  source:
+    repository: cfcli/i18n-base
+    username: ((dockerhub-username))
+    email: ((dockerhub-email))
+    password: ((dockerhub-password))
+
 - name: cli
   type: git
   source:
@@ -29,14 +44,11 @@ resources:
     private_key: ((cli-i18n-github-private-key))
     trigger: true
 
-- name: upload-translation-zip
-  type: s3
+- name: golang
+  type: docker-image
   source:
-    bucket: cf-cli-i18n
-    access_key_id: ((cli-team-aws-s3-access-key-id))
-    secret_access_key: ((cli-team-aws-s3-secret-access-key))
-    versioned_file: all.json.zip
-    region_name: ap-southeast-1
+    repository: golang
+    tag: latest
 
 - name: slack-alert
   type: slack-notification
@@ -50,11 +62,23 @@ resources:
     filename: translations.zip
     token: ((slack-token))
 
+- name: upload-translation-zip
+  type: s3
+  source:
+    bucket: cf-cli-i18n
+    access_key_id: ((cli-team-aws-s3-access-key-id))
+    secret_access_key: ((cli-team-aws-s3-secret-access-key))
+    versioned_file: all.json.zip
+    region_name: ap-southeast-1
+
 groups:
-- name: cli
+- name: translations
   jobs:
   - extract-i18n
   - merge-submitted-translations
+- name: images
+  jobs:
+  - create-base-image
 
 jobs:
 - name: extract-i18n
@@ -103,3 +127,18 @@ jobs:
            ```
            $TEXT_FILE_CONTENT
            ```
+
+- name: create-base-image
+  serial: true
+  plan:
+  - aggregate:
+    - get: golang
+      trigger: true
+      params:
+        save: true
+    - get: dockerfile
+      trigger: true
+  - put: base-image
+    params:
+      load_base: golang
+      build: base-dockerfile/ci/image
