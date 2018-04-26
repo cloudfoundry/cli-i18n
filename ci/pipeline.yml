@@ -47,14 +47,14 @@ resources:
   type: slack-attachment-resource
   source:
     group_id: ((slack-group-id))
-    filename: test.zip
+    filename: translations.zip
     token: ((slack-token))
 
 groups:
 - name: cli
   jobs:
   - extract-i18n
-  - check-for-i18n-files
+  - merge-submitted-translations
 
 jobs:
 - name: extract-i18n
@@ -82,27 +82,13 @@ jobs:
         channel: '#cli-eng'
         text: |
           NEW i18n JSON files ready for translation: https://s3-ap-southeast-1.amazonaws.com/cf-cli-i18n/all.json.zip
-- name: check-for-i18n-files
+
+- name: merge-submitted-translations
+  serial: true
   plan:
   - aggregate:
     - get: cli-i18n
     - get: slack-attachment
+      trigger: true
   - task: slack-attachment
-    config:
-      platform: linux
-      image_resource:
-        type: docker-image
-        source:
-          repository: cfcli/cli-base
-      inputs:
-       - name: slack-attachment
-      outputs:
-       - name: outputs
-      run:
-        path: bash
-        args:
-        - -c
-        - |
-          set -ex
-
-          ls -la slack-attachment/test.zip
+    file: cli-i18n/ci/tasks/extract-and-verify-translations.yml
