@@ -90,5 +90,5 @@ jobs:
     - get: cli-i18n
     - get: slack-attachment
       trigger: true
-  - task: slack-attachment
+  - task: extract-and-verify-translations
     file: cli-i18n/ci/tasks/extract-and-verify-translations.yml

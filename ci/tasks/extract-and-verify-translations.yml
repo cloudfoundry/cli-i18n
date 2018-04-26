@@ -28,7 +28,7 @@ run:
     mkdir tmpdir
 
     pushd tmpdir
-    unzip slack-attachement/translations.zip
+    unzip ../slack-attachement/translations.zip
     i18n4go -c verify-strings --source-language en -f .../cli-i18n/resources/en-us.all.json --languages "de-de,en-us,es-es,fr-fr,it-it,ja-jp,ko-kr,pt-br,zh-hans,zh-han"
     popd
 
