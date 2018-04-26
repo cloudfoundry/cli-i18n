@@ -79,7 +79,7 @@ jobs:
     on_success:
       put: slack-alert
       params:
-        channel: '#cli-eng'
+        channel: ((slack-group-name))
         text: |
           NEW i18n JSON files ready for translation: https://s3-ap-southeast-1.amazonaws.com/cf-cli-i18n/all.json.zip
 
