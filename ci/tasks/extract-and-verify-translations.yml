@@ -10,7 +10,8 @@ inputs:
  - name: slack-attachment
 
 outputs:
- - name: extracted-translations
+ - name: new-translations
+ - name: validation-output
 
 run:
   path: bash
@@ -32,7 +33,7 @@ run:
     ls *.json | xargs -n 1 i18n4go -c verify-strings -v \
                                     --source-language en-us \
                                     -f ../cli-i18n/resources/en-us.all.json \
-                                    --language-files
+                                    --language-files | tee ../validaiton-output/out.txt
     popd
 
-    mv tmpdir/*.json extracted-translations
+    mv tmpdir/*.json new-translations

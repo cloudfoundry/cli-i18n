@@ -74,7 +74,7 @@ jobs:
     on_failure:
        put: slack-alert
        params:
-         channel: '#cli-eng'
+         channel: ((slack-group-name))
          text: "extract i18n JSON failed :("
     on_success:
       put: slack-alert
@@ -92,3 +92,12 @@ jobs:
       trigger: true
   - task: extract-and-verify-translations
     file: cli-i18n/ci/tasks/extract-and-verify-translations.yml
+    on_failure:
+       put: slack-alert
+       params:
+         channel: ((slack-group-name))
+         text_file: validation-output/out.txt
+         text: |
+           The uploaded json in translations.zip contained an error:
+
+           $TEXT_FILE_CONTENT
