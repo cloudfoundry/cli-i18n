@@ -5,6 +5,11 @@ resource_types:
   source:
     repository: cfcommunity/slack-notification-resource
     tag: latest
+- name: slack-attachment-resource
+  type: docker-image
+  source:
+    repository: cfcli/slack-attachment-resource
+    tag: latest
 
 resources:
 - name: cli
@@ -21,7 +26,7 @@ resources:
   source:
     uri: git@github.com:cloudfoundry/cli-i18n
     branch: master
-    private_key: {{cli-i18n-github-private-key}}
+    private_key: ((cli-i18n-github-private-key))
     trigger: true
 
 - name: upload-translation-zip
@@ -36,12 +41,20 @@ resources:
 - name: slack-alert
   type: slack-notification
   source:
-    url: {{slack-webhook-url}}
+    url: ((slack-webhook-url))
+
+- name: slack-attachment
+  type: slack-attachment-resource
+  source:
+    group_id: ((slack-group-id))
+    filename: test.zip
+    token: ((slack-token))
 
 groups:
 - name: cli
   jobs:
   - extract-i18n
+  - check-for-i18n-files
 
 jobs:
 - name: extract-i18n
@@ -69,3 +82,27 @@ jobs:
         channel: '#cli-eng'
         text: |
           NEW i18n JSON files ready for translation: https://s3-ap-southeast-1.amazonaws.com/cf-cli-i18n/all.json.zip
+- name: check-for-i18n-files
+  plan:
+  - aggregate:
+    - get: cli-i18n
+    - get: slack-attachment
+  - task: slack-attachment
+    config:
+      platform: linux
+      image_resource:
+        type: docker-image
+        source:
+          repository: cfcli/cli-base
+      inputs:
+       - name: slack-attachment
+      outputs:
+       - name: outputs
+      run:
+        path: bash
+        args:
+        - -c
+        - |
+          set -ex
+
+          ls -la slack-attachment/test.zip
