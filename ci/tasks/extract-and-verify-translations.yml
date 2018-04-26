@@ -33,7 +33,7 @@ run:
     ls *.json | xargs -n 1 i18n4go -c verify-strings -v \
                                     --source-language en-us \
                                     -f ../cli-i18n/resources/en-us.all.json \
-                                    --language-files | tee ../validaiton-output/out.txt
+                                    --language-files | tee ../validation-output/out.txt
     popd
 
     mv tmpdir/*.json new-translations
