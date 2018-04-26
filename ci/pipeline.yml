@@ -100,4 +100,6 @@ jobs:
          text: |
            The uploaded json in translations.zip contained an error:
 
+           ```
            $TEXT_FILE_CONTENT
+           ```
