@@ -1,0 +1,32 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: cfcli/cli-base
+
+inputs:
+ - name: cli-i18n
+ - name: new-translations
+
+outputs:
+ - name: fork
+
+run:
+  path: bash
+  args:
+  - -c
+  - |
+    set -ex
+
+    git config --global user.email "cf-cli-eng@pivotal.io"
+    git config --global user.name "cf-cli-eng"
+
+    git clone cli-i18n fork
+
+    pushd fork
+    git co -b automated-update
+    mv ../new-translations/*.json resources
+    git add resources/*.json
+    git commit -m "Updating translation files"
+    popd
