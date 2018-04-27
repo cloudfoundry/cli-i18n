@@ -29,7 +29,7 @@ run:
       unzip ../slack-attachment/translations.zip
 
       for file in $(ls *.json); do
-        jq -S . $file > ../new-translations/$file
+        jq -S --ascii-output . $file > ../new-translations/$file
       done
     popd
 
