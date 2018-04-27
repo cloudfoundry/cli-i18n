@@ -56,7 +56,7 @@ resources:
   source:
     uri: git@github.com:cf-cli-eng/cli-i18n.git
     branch: automated-update
-    private_key: ((cli-i18n-github-private-key))
+    private_key: ((fork-private-key))
 
 - name: slack-alert
   type: slack-notification
