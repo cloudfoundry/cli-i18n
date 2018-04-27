@@ -8,6 +8,9 @@ image_resource:
 inputs:
   - name: fork
 
+outputs:
+  - name: hub-output
+
 run:
   path: bash
   args:
@@ -24,5 +27,5 @@ run:
     " >> /tmp/pr-message
 
     git checkout master
-    hub pull-request -F /tmp/pr-message -b cloudfoundry/cli-i18n:master -h cf-cli-eng/cli-i18n:master
+    hub pull-request -F /tmp/pr-message -b cloudfoundry/cli-i18n:master -h cf-cli-eng/cli-i18n:master | tee ../hub-output/link.txt
     popd

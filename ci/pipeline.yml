@@ -135,13 +135,30 @@ jobs:
            ```
            $TEXT_FILE_CONTENT
            ```
-
-  - task: commit-changes
-    file: cli-i18n/ci/tasks/commit-changes.yml
-  - put: fork
-    params:
-      repository: fork
-      force: true
+  - do:
+    - task: commit-changes
+      file: cli-i18n/ci/tasks/commit-changes.yml
+    - put: fork
+      params:
+        repository: fork
+        force: true
+    - task: create-pull-request
+      file: cli-i18n/ci/tasks/create-pull-request.yml
+      params:
+        GITHUB_TOKEN: ((github-user-token))
+    on_failure:
+       put: slack-alert
+       params:
+         channel: ((slack-group-name))
+         text: |
+           An error occured while trying to create the pull requests for the given set of translations: https://wings.pivotal.io/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME
+    on_success:
+       put: slack-alert
+       params:
+         channel: ((slack-group-name))
+         text_file: hub-output/link.txt
+         text: |
+           Submitted a pull request to cli-i18n: $TEXT_FILE_CONTENT
 
 - name: create-base-image
   serial: true
