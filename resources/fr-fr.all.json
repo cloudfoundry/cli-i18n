@@ -188,7 +188,7 @@
     "translation": ""
   },
   {
-    "id": "\u003call\u003e",
+    "id": "<all>",
     "translation": ""
   },
   {
@@ -532,8 +532,8 @@
     "translation": "Authentification..."
   },
   {
-    "id": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a \u003cendpoint\u003e -u \u003cuser\u003e -o \u003corg\u003e -s \u003cspace\u003e` to log back in and re-authenticate.",
-    "translation": "L'authentification est arrivée à expiration.  Reconnectez-vous pour vous réauthentifier.\n\nASTUCE : utilisez `cf login -a \u003cnoeudfinal\u003e -u \u003cutilisateur\u003e -o \u003corg\u003e -s \u003cespace\u003e` pour vous reconnecter et vous réauthentifier."
+    "id": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a <endpoint> -u <user> -o <org> -s <space>` to log back in and re-authenticate.",
+    "translation": "L'authentification est arrivée à expiration.  Reconnectez-vous pour vous réauthentifier.\n\nASTUCE : utilisez `cf login -a <noeudfinal> -u <utilisateur> -o <org> -s <espace>` pour vous reconnecter et vous réauthentifier."
   },
   {
     "id": "Authorization server did not redirect with one time code",
@@ -764,12 +764,12 @@
     "translation": "CF_NAME copy-source APP_SOURCE APP_CIBLE [-s ESPACE_CIBLE [-o ORG_CIBLE]] [--no-restart]"
   },
   {
-    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e-manifest.yml ]",
-    "translation": "CF_NAME create-app-manifest NOM_APP [-p /chemin/\u003cnom-app\u003e-manifeste.yml ]"
+    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>-manifest.yml ]",
+    "translation": "CF_NAME create-app-manifest NOM_APP [-p /chemin/<nom-app>-manifeste.yml ]"
   },
   {
-    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e_manifest.yml]",
-    "translation": "CF_NAME create-app-manifest NOM_APP [-p /chemin/\u003cnom-app\u003e-manifeste.yml ]"
+    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>_manifest.yml]",
+    "translation": "CF_NAME create-app-manifest NOM_APP [-p /chemin/<nom-app>-manifeste.yml ]"
   },
   {
     "id": "CF_NAME create-buildpack BUILDPACK PATH POSITION [--enable|--disable]",
@@ -3060,8 +3060,8 @@
     "translation": "Applications attendues sous forme de liste"
   },
   {
-    "id": "Expected {{.Name}} to be a set of key =\u003e value, but it was a {{.Type}}.",
-    "translation": "{{.Name}} doit être associé à un ensemble de paires clé =\u003e valeur, mais un élément {{.Type}} a été obtenu."
+    "id": "Expected {{.Name}} to be a set of key => value, but it was a {{.Type}}.",
+    "translation": "{{.Name}} doit être associé à un ensemble de paires clé => valeur, mais un élément {{.Type}} a été obtenu."
   },
   {
     "id": "Expected {{.PropertyName}} to be a boolean.",
@@ -5036,8 +5036,8 @@
     "translation": "Voulez-vous vraiment supprimer le {{.ModelType}} {{.ModelName}} ?"
   },
   {
-    "id": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?\u003e",
-    "translation": "Voulez-vous vraiment migrer {{.ServiceInstanceDescription}} depuis le plan {{.OldServicePlanName}} vers {{.NewServicePlanName}} ?\u003e"
+    "id": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?>",
+    "translation": "Voulez-vous vraiment migrer {{.ServiceInstanceDescription}} depuis le plan {{.OldServicePlanName}} vers {{.NewServicePlanName}} ?>"
   },
   {
     "id": "Really purge service instance {{.InstanceName}} from Cloud Foundry?",
@@ -7328,11 +7328,11 @@
     "translation": ""
   },
   {
-    "id": "invalid argument for flag '--port' (expected int \u003e 0)",
+    "id": "invalid argument for flag '--port' (expected int > 0)",
     "translation": ""
   },
   {
-    "id": "invalid argument for flag '-i' (expected int \u003e 0)",
+    "id": "invalid argument for flag '-i' (expected int > 0)",
     "translation": ""
   },
   {
@@ -7429,7 +7429,7 @@
   },
   {
     "id": "org:",
-    "translation": ""
+    "translation": "organisation:"
   },
   {
     "id": "organization",
