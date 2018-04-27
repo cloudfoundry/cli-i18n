@@ -25,7 +25,7 @@ run:
     git clone cli-i18n fork
 
     pushd fork
-    git co -b automated-update
+    git checkout -b automated-update
     mv ../new-translations/*.json resources
     git add resources/*.json
     git commit -m "Updating translation files"
