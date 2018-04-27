@@ -3,7 +3,7 @@ platform: linux
 image_resource:
   type: docker-image
   source:
-    repository: cfcli/cli-base
+    repository: cfcli/i18n-base
 
 inputs:
  - name: cli
@@ -18,9 +18,6 @@ run:
   - -c
   - |
     set -ex
-
-    export GOPATH=$PWD/gopath
-    export PATH=$GOPATH/bin:$PATH
 
     go version
     go get -u github.com/XenoPhex/i18n4go/i18n4go
