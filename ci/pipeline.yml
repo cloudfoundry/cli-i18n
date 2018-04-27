@@ -55,7 +55,7 @@ resources:
   type: git
   source:
     uri: git@github.com:cf-cli-eng/cli-i18n.git
-    branch: automated-update
+    branch: master
     private_key: ((fork-private-key))
 
 - name: slack-alert
@@ -136,8 +136,8 @@ jobs:
            $TEXT_FILE_CONTENT
            ```
 
-  - task: create-branch
-    file: cli-i18n/ci/tasks/create-branch.yml
+  - task: commit-changes
+    file: cli-i18n/ci/tasks/commit-changes.yml
   - put: fork
     params:
       repository: fork
