@@ -26,11 +26,16 @@ run:
     mkdir tmpdir
 
     pushd tmpdir
-    unzip ../slack-attachment/translations.zip
-    ls *.json | xargs -n 1 i18n4go -c verify-strings -v \
-                                    --source-language en-us \
-                                    -f ../cli-i18n/resources/en-us.all.json \
-                                    --language-files | tee ../validation-output/out.txt
+      unzip ../slack-attachment/translations.zip
+
+      for file in $(ls *.json); do
+        jq -S . $file > ../new-translations/$file
+      done
     popd
 
-    mv tmpdir/*.json new-translations
+    pushd new-translations
+      ls *.json | xargs -n 1 i18n4go -c verify-strings -v \
+                                      --source-language en-us \
+                                      -f ../cli-i18n/resources/en-us.all.json \
+                                      --language-files | tee ../validation-output/out.txt
+    popd
