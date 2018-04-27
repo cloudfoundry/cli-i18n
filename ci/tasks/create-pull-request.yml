@@ -16,7 +16,7 @@ run:
   args:
   - -c
   - |
-    set -ex
+    set -exo pipefail
 
     go get -u github.com/github/hub
 
