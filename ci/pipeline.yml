@@ -15,7 +15,7 @@ resources:
 - name: dockerfile
   type: git
   source:
-    uri: git@github.com:cloudfoundry/cli-i18n
+    uri: https://github.com/cloudfoundry/cli-i18n
     branch: master
     paths: [ci/image/Dockerfile]
 
@@ -141,4 +141,4 @@ jobs:
   - put: base-image
     params:
       load_base: golang
-      build: base-dockerfile/ci/image
+      build: dockerfile/ci/image
