@@ -188,7 +188,7 @@
     "translation": ""
   },
   {
-    "id": "\u003call\u003e",
+    "id": "<all>",
     "translation": ""
   },
   {
@@ -532,8 +532,8 @@
     "translation": "正在认证..."
   },
   {
-    "id": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a \u003cendpoint\u003e -u \u003cuser\u003e -o \u003corg\u003e -s \u003cspace\u003e` to log back in and re-authenticate.",
-    "translation": "认证已到期。请重新登录以重新认证。\n\n提示: 使用 'cf login -a \u003cendpoint\u003e -u \u003cuser\u003e -o \u003corg\u003e -s \u003cspace\u003e' 可重新登录并重新认证。"
+    "id": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a <endpoint> -u <user> -o <org> -s <space>` to log back in and re-authenticate.",
+    "translation": "认证已到期。请重新登录以重新认证。\n\n提示: 使用 'cf login -a <endpoint> -u <user> -o <org> -s <space>' 可重新登录并重新认证。"
   },
   {
     "id": "Authorization server did not redirect with one time code",
@@ -764,12 +764,12 @@
     "translation": "CF_NAME copy-source SOURCE_APP TARGET_APP [-s TARGET_SPACE [-o TARGET_ORG]] [--no-restart]"
   },
   {
-    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e-manifest.yml ]",
-    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e-manifest.yml ]"
+    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>-manifest.yml ]",
+    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>-manifest.yml ]"
   },
   {
-    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e_manifest.yml]",
-    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e-manifest.yml ]"
+    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>_manifest.yml]",
+    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>-manifest.yml ]"
   },
   {
     "id": "CF_NAME create-buildpack BUILDPACK PATH POSITION [--enable|--disable]",
@@ -3060,8 +3060,8 @@
     "translation": "应用程序应该为列表"
   },
   {
-    "id": "Expected {{.Name}} to be a set of key =\u003e value, but it was a {{.Type}}.",
-    "translation": "{{.Name}} 应该为一组键=\u003e值，但实际为 {{.Type}}。"
+    "id": "Expected {{.Name}} to be a set of key => value, but it was a {{.Type}}.",
+    "translation": "{{.Name}} 应该为一组键=>值，但实际为 {{.Type}}。"
   },
   {
     "id": "Expected {{.PropertyName}} to be a boolean.",
@@ -5036,7 +5036,7 @@
     "translation": "真的要删除{{.ModelType}} {{.ModelName}} 吗？"
   },
   {
-    "id": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?\u003e",
+    "id": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?>",
     "translation": "真的要将 {{.ServiceInstanceDescription}} 从套餐 {{.OldServicePlanName}} 迁移到 {{.NewServicePlanName}} 吗？"
   },
   {
@@ -7328,11 +7328,11 @@
     "translation": ""
   },
   {
-    "id": "invalid argument for flag '--port' (expected int \u003e 0)",
+    "id": "invalid argument for flag '--port' (expected int > 0)",
     "translation": ""
   },
   {
-    "id": "invalid argument for flag '-i' (expected int \u003e 0)",
+    "id": "invalid argument for flag '-i' (expected int > 0)",
     "translation": ""
   },
   {
