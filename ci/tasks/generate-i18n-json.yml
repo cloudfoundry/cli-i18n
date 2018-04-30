@@ -35,3 +35,12 @@ run:
     go run cli-i18n/bin/reformat_translated_json.go ./
 
     mv *all.json updated-translation-files
+
+    mv en-us.all.json cli-i18n/resources/en-us.all.json
+    pushd cli-i18n
+      git config --global user.email "cf-cli-eng@pivotal.io"
+      git config --global user.name "cf-cli-eng"
+
+      git add ./resources/en-us.all.json
+      git commit -m "Updating en-us translation file"
+    popd

@@ -103,6 +103,9 @@ jobs:
     - put: upload-translation-zip
       params:
         file: outputs/all.json.zip
+    - put: cli-i18n
+      params:
+        repository: cli-i18n
     on_failure:
        put: slack-alert
        params:
