@@ -45,7 +45,7 @@ run:
       git config --global user.email "cf-cli-eng@pivotal.io"
       git config --global user.name "cf-cli-eng"
 
-      cp -f ../updated-translation-files/en-us.all.json cli-i18n/resources/en-us.all.json
+      cp -f ../updated-translation-files/en-us.all.json ./resources/en-us.all.json
 
       git add ./resources/en-us.all.json
       git commit -m "Updating en-us translation file"
