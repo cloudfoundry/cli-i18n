@@ -105,7 +105,7 @@ jobs:
         file: outputs/all.json.zip
     - put: cli-i18n
       params:
-        repository: cli-i18n
+        repository: cli-i18n-updated
     on_failure:
        put: slack-alert
        params:
