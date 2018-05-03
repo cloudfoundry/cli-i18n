@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -e
+
+API_DEV_KEY=$1
+CONTENT=$2
+
+if [[ -z $API_DEV_KEY  || -z $CONTENT ]]; then
+    echo "USAGE: post-to-pastebin <PASTEBIN API KEY> <FILE_PATH>"
+    exit 1
+fi
+
+UPLOAD=$(mktemp)
+function cleanup {
+    rm -f $UPLOAD
+}
+trap cleanup EXIT
+
+printf "api_option=paste&api_dev_key=${API_DEV_KEY}&api_paste_expire_date=6M&api_paste_code=" >$UPLOAD
+cat $CONTENT >> $UPLOAD
+
+curl -X POST --data-binary @$UPLOAD http://pastebin.com/api/api_post.php

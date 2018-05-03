@@ -128,16 +128,16 @@ jobs:
   - task: extract-and-verify-translations
     file: cli-i18n/ci/tasks/extract-and-verify-translations.yml
     on_failure:
-       put: slack-alert
-       params:
+      do:
+      - task: upload-error
+        file: cli-i18n/ci/tasks/post-error-to-pastebin.yml
+        params:
+          API_KEY: ((pastebin-api-key))
+      - put: slack-alert
+        params:
          channel: ((slack-group-name))
-         text_file: validation-output/out.txt
-         text: |
-           The uploaded json in translations.zip contained an error:
-
-           ```
-           $TEXT_FILE_CONTENT
-           ```
+         text_file: pastebin/url.txt
+         text: "The uploaded json in translations.zip contained an error. Follow the following link to see the error output: $TEXT_FILE_CONTENT"
   - do:
     - task: commit-changes
       file: cli-i18n/ci/tasks/commit-changes.yml
@@ -150,11 +150,11 @@ jobs:
       params:
         GITHUB_TOKEN: ((github-user-token))
     on_failure:
-       put: slack-alert
-       params:
-         channel: ((slack-group-name))
-         text: |
-           An error occured while trying to create the pull requests for the given set of translations: https://wings.pivotal.io/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME
+      put: slack-alert
+      params:
+       channel: ((slack-group-name))
+       text: |
+         An error occured while trying to create the pull requests for the given set of translations: https://wings.pivotal.io/teams/$BUILD_TEAM_NAME/pipelines/$BUILD_PIPELINE_NAME/jobs/$BUILD_JOB_NAME/builds/$BUILD_NAME
     on_success:
        put: slack-alert
        params:

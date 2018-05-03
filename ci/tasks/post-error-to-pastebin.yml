@@ -1,0 +1,25 @@
+platform: linux
+
+image_resource:
+  type: docker-image
+  source:
+    repository: cfcli/cli-base
+
+inputs:
+ - name: cli-i18n
+ - name: validation-output
+
+outputs:
+ - name: pastebin
+
+params:
+  API_KEY:
+
+run:
+  path: bash
+  args:
+  - -c
+  - |
+    set -ex
+
+    cli-i18n/bin/post-to-pastebin $API_KEY validation-output/out.txt | tee pastebin/url.txt

@@ -11,6 +11,9 @@ inputs:
 outputs:
   - name: hub-output
 
+params:
+  GITHUB_TOKEN:
+
 run:
   path: bash
   args:
