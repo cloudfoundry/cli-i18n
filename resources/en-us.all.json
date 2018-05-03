@@ -188,8 +188,8 @@
     "translation": "2006-01-02 15:04:05 PM"
   },
   {
-    "id": "\u003call\u003e",
-    "translation": "\u003call\u003e"
+    "id": "<all>",
+    "translation": "<all>"
   },
   {
     "id": "A command line tool to interact with Cloud Foundry",
@@ -572,8 +572,8 @@
     "translation": "Authenticating..."
   },
   {
-    "id": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a \u003cendpoint\u003e -u \u003cuser\u003e -o \u003corg\u003e -s \u003cspace\u003e` to log back in and re-authenticate.",
-    "translation": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a \u003cendpoint\u003e -u \u003cuser\u003e -o \u003corg\u003e -s \u003cspace\u003e` to log back in and re-authenticate."
+    "id": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a <endpoint> -u <user> -o <org> -s <space>` to log back in and re-authenticate.",
+    "translation": "Authentication has expired.  Please log back in to re-authenticate.\n\nTIP: Use `cf login -a <endpoint> -u <user> -o <org> -s <space>` to log back in and re-authenticate."
   },
   {
     "id": "Authorization server did not redirect with one time code",
@@ -808,12 +808,12 @@
     "translation": "CF_NAME copy-source SOURCE_APP TARGET_APP [-s TARGET_SPACE [-o TARGET_ORG]] [--no-restart]"
   },
   {
-    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e-manifest.yml ]",
-    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e-manifest.yml ]"
+    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>-manifest.yml ]",
+    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>-manifest.yml ]"
   },
   {
-    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e_manifest.yml]",
-    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/\u003capp-name\u003e_manifest.yml]"
+    "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>_manifest.yml]",
+    "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>_manifest.yml]"
   },
   {
     "id": "CF_NAME create-buildpack BUILDPACK PATH POSITION [--enable|--disable]",
@@ -3132,8 +3132,8 @@
     "translation": "Expected applications to be a list"
   },
   {
-    "id": "Expected {{.Name}} to be a set of key =\u003e value, but it was a {{.Type}}.",
-    "translation": "Expected {{.Name}} to be a set of key =\u003e value, but it was a {{.Type}}."
+    "id": "Expected {{.Name}} to be a set of key => value, but it was a {{.Type}}.",
+    "translation": "Expected {{.Name}} to be a set of key => value, but it was a {{.Type}}."
   },
   {
     "id": "Expected {{.PropertyName}} to be a boolean.",
@@ -5172,8 +5172,8 @@
     "translation": "Really delete the {{.ModelType}} {{.ModelName}}?"
   },
   {
-    "id": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?\u003e",
-    "translation": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?\u003e"
+    "id": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?>",
+    "translation": "Really migrate {{.ServiceInstanceDescription}} from plan {{.OldServicePlanName}} to {{.NewServicePlanName}}?>"
   },
   {
     "id": "Really purge service instance {{.InstanceName}} from Cloud Foundry?",
@@ -7728,12 +7728,12 @@
     "translation": "integer"
   },
   {
-    "id": "invalid argument for flag '--port' (expected int \u003e 0)",
-    "translation": "invalid argument for flag '--port' (expected int \u003e 0)"
+    "id": "invalid argument for flag '--port' (expected int > 0)",
+    "translation": "invalid argument for flag '--port' (expected int > 0)"
   },
   {
-    "id": "invalid argument for flag '-i' (expected int \u003e 0)",
-    "translation": "invalid argument for flag '-i' (expected int \u003e 0)"
+    "id": "invalid argument for flag '-i' (expected int > 0)",
+    "translation": "invalid argument for flag '-i' (expected int > 0)"
   },
   {
     "id": "invalid inherit path in manifest",
