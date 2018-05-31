@@ -176,6 +176,10 @@
     "translation": "'{{.VersionShort}}' and '{{.VersionLong}}' are also accepted."
   },
   {
+    "id": "([\u0026?]password)=[A-Za-z0-9\\-._~!$'()*+,;=:@/?]*",
+    "translation": "([\u0026?]password)=[A-Za-z0-9\\-._~!$'()*+,;=:@/?]*"
+  },
+  {
     "id": ") already exists.",
     "translation": ") already exists."
   },
@@ -288,6 +292,10 @@
     "translation": "Access for service name of a particular service offering"
   },
   {
+    "id": "Acme Co",
+    "translation": "Acme Co"
+  },
+  {
     "id": "Acquiring running security groups as '{{.username}}'",
     "translation": "Acquiring running security groups as '{{.username}}'"
   },
@@ -372,12 +380,12 @@
     "translation": "App name is a required field"
   },
   {
-    "id": "App process instance index (Default: 0)",
-    "translation": "App process instance index (Default: 0)"
+    "id": "App process instance index",
+    "translation": "App process instance index"
   },
   {
-    "id": "App process name (Default: web)",
-    "translation": "App process name (Default: web)"
+    "id": "App process name",
+    "translation": "App process name"
   },
   {
     "id": "App process to scale",
@@ -660,6 +668,10 @@
     "translation": "Binding {{.URL}} to {{.AppName}}..."
   },
   {
+    "id": "Body did not match.",
+    "translation": "Body did not match."
+  },
+  {
     "id": "Bound apps: {{.BoundApplications}}",
     "translation": "Bound apps: {{.BoundApplications}}"
   },
@@ -672,12 +684,20 @@
     "translation": "Buildpack {{.BuildpackName}} does not exist."
   },
   {
+    "id": "Buildpacks property cannot be an empty string.",
+    "translation": "Buildpacks property cannot be an empty string."
+  },
+  {
     "id": "Byte quantity must be an integer with a unit of measurement like M, MB, G, or GB",
     "translation": "Byte quantity must be an integer with a unit of measurement like M, MB, G, or GB"
   },
   {
     "id": "CANCELING",
     "translation": "CANCELING"
+  },
+  {
+    "id": "CERTIFICATE",
+    "translation": "CERTIFICATE"
   },
   {
     "id": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [(--protocol (tcp | udp) --port RANGE)]\\n\\nEXAMPLES:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090",
@@ -716,8 +736,8 @@
     "translation": "CF_NAME auth USERNAME PASSWORD\n\n"
   },
   {
-    "id": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nWARNING:\\n   Providing your password as a command line option is highly discouraged\\n   Your password may be visible to others and may be recorded in your shell history\\n\\nEXAMPLES:\\n   CF_NAME auth name@example.com \\\"my password\\\" (use quotes for passwords with a space)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (escape quotes if used in password)",
-    "translation": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nWARNING:\\n   Providing your password as a command line option is highly discouraged\\n   Your password may be visible to others and may be recorded in your shell history\\n\\nEXAMPLES:\\n   CF_NAME auth name@example.com \\\"my password\\\" (use quotes for passwords with a space)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (escape quotes if used in password)"
+    "id": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nENVIRONMENT VARIABLES:\\n   CF_USERNAME=user\t\tAuthenticating user. Overridden if USERNAME argument is provided.\\n   CF_PASSWORD=password\t\tPassword associated with user. Overriden if PASSWORD argument is provided.\\n\\nWARNING:\\n   Providing your password as a command line option is highly discouraged\\n   Your password may be visible to others and may be recorded in your shell history\\n   Consider using the CF_PASSWORD environment variable instead\\n\\nEXAMPLES:\\n   CF_NAME auth name@example.com \\\"my password\\\" (use quotes for passwords with a space)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (escape quotes if used in password)",
+    "translation": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nENVIRONMENT VARIABLES:\\n   CF_USERNAME=user\t\tAuthenticating user. Overridden if USERNAME argument is provided.\\n   CF_PASSWORD=password\t\tPassword associated with user. Overriden if PASSWORD argument is provided.\\n\\nWARNING:\\n   Providing your password as a command line option is highly discouraged\\n   Your password may be visible to others and may be recorded in your shell history\\n   Consider using the CF_PASSWORD environment variable instead\\n\\nEXAMPLES:\\n   CF_NAME auth name@example.com \\\"my password\\\" (use quotes for passwords with a space)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (escape quotes if used in password)"
   },
   {
     "id": "CF_NAME auth name@example.com \"\\\"password\\\"\" (escape quotes if used in password)",
@@ -1964,6 +1984,10 @@
     "translation": "Checking for route..."
   },
   {
+    "id": "CliRpcCmd",
+    "translation": "CliRpcCmd"
+  },
+  {
     "id": "Cloud Foundry API version {{.APIVersion}} requires CLI version {{.MinCLIVersion}}. You are currently on version {{.BinaryVersion}}. To upgrade your CLI, please visit: https://github.com/cloudfoundry/cli#downloads",
     "translation": "Cloud Foundry API version {{.APIVersion}} requires CLI version {{.MinCLIVersion}}. You are currently on version {{.BinaryVersion}}. To upgrade your CLI, please visit: https://github.com/cloudfoundry/cli#downloads"
   },
@@ -2030,6 +2054,10 @@
   {
     "id": "Connected, tailing logs for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...\n",
     "translation": "Connected, tailing logs for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...\n"
+  },
+  {
+    "id": "Content Type did not match.",
+    "translation": "Content Type did not match."
   },
   {
     "id": "Copies the source code of an application to another existing application (and restarts that application)",
@@ -2720,6 +2748,10 @@
     "translation": "ENVIRONMENT:"
   },
   {
+    "id": "ERROR:",
+    "translation": "ERROR:"
+  },
+  {
     "id": "EXAMPLES",
     "translation": "EXAMPLES"
   },
@@ -3124,12 +3156,48 @@
     "translation": "Executes a request to the targeted API endpoint"
   },
   {
+    "id": "Expected a test handler, got %T",
+    "translation": "Expected a test handler, got %T"
+  },
+  {
+    "id": "Expected actual to be a slice of strings, but it's actually a %T",
+    "translation": "Expected actual to be a slice of strings, but it's actually a %T"
+  },
+  {
+    "id": "Expected actual value to be a bool or enum, but it was a %T",
+    "translation": "Expected actual value to be a bool or enum, but it was a %T"
+  },
+  {
+    "id": "Expected actual value to be an enum, but it was a %T",
+    "translation": "Expected actual value to be an enum, but it was a %T"
+  },
+  {
+    "id": "Expected all requests to not be called, but they were all called",
+    "translation": "Expected all requests to not be called, but they were all called"
+  },
+  {
     "id": "Expected application to be a list of key/value pairs\nError occurred in manifest near:\n'{{.YmlSnippet}}'",
     "translation": "Expected application to be a list of key/value pairs\nError occurred in manifest near:\n'{{.YmlSnippet}}'"
   },
   {
     "id": "Expected applications to be a list",
     "translation": "Expected applications to be a list"
+  },
+  {
+    "id": "Expected command to have not passed requirements but it did",
+    "translation": "Expected command to have not passed requirements but it did"
+  },
+  {
+    "id": "Expected command to have not succeeded but it did",
+    "translation": "Expected command to have not succeeded but it did"
+  },
+  {
+    "id": "Expected command to have succeeded but it did not",
+    "translation": "Expected command to have succeeded but it did not"
+  },
+  {
+    "id": "Expected command to pass requirements but it did not",
+    "translation": "Expected command to pass requirements but it did not"
   },
   {
     "id": "Expected {{.Name}} to be a set of key =\u003e value, but it was a {{.Type}}.",
@@ -3206,6 +3274,10 @@
   {
     "id": "Failed fetching spaces.\n{{.ErrorDescription}}",
     "translation": "Failed fetching spaces.\n{{.ErrorDescription}}"
+  },
+  {
+    "id": "Failed to call requests:\n",
+    "translation": "Failed to call requests:\n"
   },
   {
     "id": "Failed to create a local temporary zip file for the buildpack",
@@ -3864,6 +3936,10 @@
     "translation": "Incorrect usage: invalid healthcheck type"
   },
   {
+    "id": "Index out of range! Test server called too many times. Final Request:",
+    "translation": "Index out of range! Test server called too many times. Final Request:"
+  },
+  {
     "id": "Install CLI plugin",
     "translation": "Install CLI plugin"
   },
@@ -4312,6 +4388,14 @@
     "translation": "Migrate service instances from one service plan to another"
   },
   {
+    "id": "Multiple buildpacks flags cannot have null/default option.",
+    "translation": "Multiple buildpacks flags cannot have null/default option."
+  },
+  {
+    "id": "Multiple option '-b'",
+    "translation": "Multiple option '-b'"
+  },
+  {
     "id": "NAME",
     "translation": "NAME"
   },
@@ -4418,6 +4502,10 @@
   {
     "id": "No flags specified. No changes were made.",
     "translation": "No flags specified. No changes were made."
+  },
+  {
+    "id": "No input provided to Fake UI for prompt: ",
+    "translation": "No input provided to Fake UI for prompt: "
   },
   {
     "id": "No org and space targeted, use '{{.Command}}' to target an org and space",
@@ -4762,6 +4850,10 @@
   {
     "id": "Password",
     "translation": "Password"
+  },
+  {
+    "id": "Password not provided.",
+    "translation": "Password not provided."
   },
   {
     "id": "Password used for private docker repository",
@@ -5130,6 +5222,10 @@
   {
     "id": "ROUTES:",
     "translation": "ROUTES:"
+  },
+  {
+    "id": "RSA PRIVATE KEY",
+    "translation": "RSA PRIVATE KEY"
   },
   {
     "id": "RUNNING",
@@ -6160,10 +6256,6 @@
     "translation": "TIP:\n   Use 'CF_NAME create-user-provided-service' to make user-provided services available to CF apps"
   },
   {
-    "id": "TIP: An app restart is required for the change to take affect.",
-    "translation": "TIP: An app restart is required for the change to take affect."
-  },
-  {
     "id": "TIP: An app restart is required for the change to take effect.",
     "translation": "TIP: An app restart is required for the change to take effect."
   },
@@ -7140,6 +7232,14 @@
     "translation": "Username"
   },
   {
+    "id": "Username and password not provided.",
+    "translation": "Username and password not provided."
+  },
+  {
+    "id": "Username not provided.",
+    "translation": "Username not provided."
+  },
+  {
     "id": "Using docker repository password from environment variable CF_DOCKER_PASSWORD.",
     "translation": "Using docker repository password from environment variable CF_DOCKER_PASSWORD."
   },
@@ -7264,6 +7364,10 @@
     "translation": "You are not authorized to perform the requested action."
   },
   {
+    "id": "Your API version is no longer supported. Upgrade to a newer version of the API.",
+    "translation": "Your API version is no longer supported. Upgrade to a newer version of the API."
+  },
+  {
     "id": "Your target CF API version only supports health check type values {{.SupportedTypes}} and {{.LastSupportedType}}.",
     "translation": "Your target CF API version only supports health check type values {{.SupportedTypes}} and {{.LastSupportedType}}."
   },
@@ -7384,6 +7488,10 @@
     "translation": "broker: {{.Name}}"
   },
   {
+    "id": "build",
+    "translation": "build"
+  },
+  {
     "id": "buildpack:",
     "translation": "buildpack:"
   },
@@ -7404,8 +7512,8 @@
     "translation": "cf -v"
   },
   {
-    "id": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--vars KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--vars KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--vars KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
-    "translation": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--vars KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--vars KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--vars KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
+    "id": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
+    "translation": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE] [--vars-file VARS_FILE_PATH]...\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
   },
   {
     "id": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
@@ -7620,6 +7728,10 @@
     "translation": "event"
   },
   {
+    "id": "example.com",
+    "translation": "example.com"
+  },
+  {
     "id": "executablePath",
     "translation": "executablePath"
   },
@@ -7638,6 +7750,10 @@
   {
     "id": "filename",
     "translation": "filename"
+  },
+  {
+    "id": "filename=",
+    "translation": "filename="
   },
   {
     "id": "free or paid",
@@ -7736,6 +7852,10 @@
     "translation": "invalid argument for flag '-i' (expected int \u003e 0)"
   },
   {
+    "id": "invalid glob pattern: ",
+    "translation": "invalid glob pattern: "
+  },
+  {
     "id": "invalid inherit path in manifest",
     "translation": "invalid inherit path in manifest"
   },
@@ -7814,6 +7934,34 @@
   {
     "id": "message:",
     "translation": "message:"
+  },
+  {
+    "id": "my-org",
+    "translation": "my-org"
+  },
+  {
+    "id": "my-org-guid",
+    "translation": "my-org-guid"
+  },
+  {
+    "id": "my-space",
+    "translation": "my-space"
+  },
+  {
+    "id": "my-space-guid",
+    "translation": "my-space-guid"
+  },
+  {
+    "id": "my-user",
+    "translation": "my-user"
+  },
+  {
+    "id": "my-user-email",
+    "translation": "my-user-email"
+  },
+  {
+    "id": "my-user-guid",
+    "translation": "my-user-guid"
   },
   {
     "id": "name",
