@@ -28,7 +28,7 @@ run:
     pushd tmpdir
       unzip ../slack-attachment/translations.zip
 
-      for file in $(ls *.json); do
+      for file in $(ls cfcli/*.json); do
         jq -S --raw-output . $file > ../new-translations/$file
       done
     popd
