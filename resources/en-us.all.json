@@ -6488,8 +6488,8 @@
     "translation": "The following arguments cannot be used with an app manifest that declares routes using the '{{.ManifestAttribute}}' attribute: {{.CommandLineOptions}}"
   },
   {
-    "id": "The following flags cannot used with deprecated usage: {{.flags}}",
-    "translation": "The following flags cannot used with deprecated usage: {{.flags}}"
+    "id": "The following flags cannot be used with deprecated usage: {{.flags}}",
+    "translation": "The following flags cannot be used with deprecated usage: {{.flags}}"
   },
   {
     "id": "The guid of the droplet to use",
