@@ -29,7 +29,8 @@ run:
       unzip ../slack-attachment/translations.zip
 
       for file in $(ls cfcli/*.json); do
-        jq -S --raw-output . $file > ../new-translations/${file##*/}
+        file_base=$(basename "$file")
+        jq -S --raw-output . $file > ../new-translations/$file_base
       done
     popd
 
