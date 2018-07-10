@@ -40,3 +40,10 @@ run:
                                       -f ../cli-i18n/resources/en-us.all.json \
                                       --language-files | tee ../validation-output/out.txt
     popd
+
+    # format the filenames from en_US.all.json to en-us.all.json
+    pushd new-translations
+      for file in $(ls *.all.json); do
+        mv $file $(echo $file | awk -F '_' '{print tolower($1) "-" tolower($2)}')
+      done
+    popd
