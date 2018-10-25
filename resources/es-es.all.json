@@ -104,6 +104,14 @@
     "translation": " añadido como '"
   },
   {
+    "id": " buildpacks",
+    "translation": " paquetes de compilación"
+  },
+  {
+    "id": " delete-buildpack",
+    "translation": " delete-buildpack"
+  },
+  {
     "id": " does not exist as a repo",
     "translation": " no existe como repositorio"
   },
@@ -146,6 +154,10 @@
   {
     "id": " removed from list of repositories",
     "translation": " eliminado de la lista de repositorios"
+  },
+  {
+    "id": " update-buildpack",
+    "translation": " update-buildpack"
   },
   {
     "id": "\"Plugins\" object not found in the responded data.",
@@ -552,6 +564,10 @@
     "translation": "Asignación de rol {{.Role}} al usuario {{.TargetUser}} en la organización {{.TargetOrg}} como {{.CurrentUser}}..."
   },
   {
+    "id": "Assigning role {{.Role}} to user {{.Username}} in org {{.OrgName}}...",
+    "translation": "Asignación de rol {{.Role}} al usuario {{.Username}} en la organización {{.OrgName}}..."
+  },
+  {
     "id": "Assigning security group {{.security_group}} to space {{.space}} in org {{.organization}} as {{.username}}...",
     "translation": "Asignación de grupo de seguridad {{.security_group}} al espacio {{.space}} en la organización {{.organization}} como {{.username}}..."
   },
@@ -608,6 +624,10 @@
     "translation": "PAQUETES DE COMPILACIÓN:"
   },
   {
+    "id": "Bad credentials",
+    "translation": "Credenciales incorrectas"
+  },
+  {
     "id": "Basic ",
     "translation": "Básico "
   },
@@ -638,6 +658,10 @@
   {
     "id": "Binding between {{.InstanceName}} and {{.AppName}} did not exist",
     "translation": "El enlace entre {{.InstanceName}} y {{.AppName}} no existía"
+  },
+  {
+    "id": "Binding in progress. Use '{{.CFCommand}} {{.ServiceName}}' to check operation status.",
+    "translation": "Enlace en curso. Utilice '{{.CFCommand}} {{.ServiceName}}' para comprobar el estado de la operación."
   },
   {
     "id": "Binding route {{.URL}} to service instance {{.ServiceInstanceName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -696,6 +720,14 @@
     "translation": "El paquete de compilación {{.BuildpackName}} no existe."
   },
   {
+    "id": "Buildpack {{.BuildpackName}} not found",
+    "translation": "No se ha encontrado el paquete de compilación {{.BuildpackName}}"
+  },
+  {
+    "id": "Buildpack {{.BuildpackName}} with stack {{.StackName}} not found",
+    "translation": "No se ha encontrado el paquete de compilación {{.BuildpackName}} con la pila {{.StackName}}"
+  },
+  {
     "id": "Buildpacks property cannot be an empty string.",
     "translation": "La propiedad de paquetes de compilación no puede ser una serie vacía."
   },
@@ -740,6 +772,10 @@
     "translation": "CF_NAME app APP_NAME"
   },
   {
+    "id": "CF_NAME app APP_NAME [--guid]",
+    "translation": "CF_NAME app APP_NAME [--guid]"
+  },
+  {
     "id": "CF_NAME apps",
     "translation": "Apps CF_NAME"
   },
@@ -748,8 +784,8 @@
     "translation": "CF_NAME auth USERNAME PASSWORD\n\n"
   },
   {
-    "id": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nENVIRONMENT VARIABLES:\\n   CF_USERNAME=user\t\tAuthenticating user. Overridden if USERNAME argument is provided.\\n   CF_PASSWORD=password\t\tPassword associated with user. Overriden if PASSWORD argument is provided.\\n\\nWARNING:\\n   Providing your password as a command line option is highly discouraged\\n   Your password may be visible to others and may be recorded in your shell history\\n   Consider using the CF_PASSWORD environment variable instead\\n\\nEXAMPLES:\\n   CF_NAME auth name@example.com \\\"my password\\\" (use quotes for passwords with a space)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (escape quotes if used in password)",
-    "translation": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nVARIABLES DE ENTORNO:\n   CF_USERNAME=user\t\tAutenticando usuario. Se modifica si se especifica el argumento USERNAME.\n   CF_PASSWORD=password\t\tContraseña asociada al usuario. Se modifica si se especifica el argumento PASSWORD.\n\\nAVISO:\\n   No se recomienda especificar la contraseña como opción de línea de mandatos\\n   La contraseña puede resultar visible para otros y puede quedar registrada en el historial del shell\\n   Tenga en cuenta la posibilidad de utilizar en su lugar la variable de entorno CF_PASSWORD\\n\\nEJEMPLOS:\\n   CF_NAME auth name@example.com \\\"my password\\\" (utilice comillas para contraseñas con un espacio)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (caracteres de escape entre las comillas si se utilizan en la contraseña)"
+    "id": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth USERNAME PASSWORD --origin ORIGIN\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nENVIRONMENT VARIABLES:\\n   CF_USERNAME=user          Authenticating user. Overridden if USERNAME argument is provided.\\n   CF_PASSWORD=password      Password associated with user. Overriden if PASSWORD argument is provided.\\n\\nWARNING:\\n   Providing your password as a command line option is highly discouraged\\n   Your password may be visible to others and may be recorded in your shell history\\n   Consider using the CF_PASSWORD environment variable instead\\n\\nEXAMPLES:\\n   CF_NAME auth name@example.com \\\"my password\\\" (use quotes for passwords with a space)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (escape quotes if used in password)",
+    "translation": "CF_NAME auth USERNAME PASSWORD\\n   CF_NAME auth USERNAME PASSWORD --origin ORIGIN\\n   CF_NAME auth CLIENT_ID CLIENT_SECRET --client-credentials\\n\\nVARIABLES DE ENTORNO:\\n   CF_USERNAME=user          Usuario que se autentica. Se modifica si se especifica el argumento USERNAME.\\n   CF_PASSWORD=password   Contraseña asociada al usuario. Se modifica si se especifica el argumento PASSWORD.\n\\nAVISO:\\n   No se recomienda especificar la contraseña como opción de línea de mandatos\\n   La contraseña puede resultar visible para otros y puede quedar registrada en el historial del shell\\n   Tenga en cuenta la posibilidad de utilizar en su lugar la variable de entorno CF_PASSWORD\\n\\nEJEMPLOS:\\n   CF_NAME auth name@example.com \\\"my password\\\" (utilice comillas para contraseñas con un espacio)\\n   CF_NAME auth name@example.com \\\"\\\\\\\"password\\\\\\\"\\\" (caracteres de escape entre las comillas si se utilizan en la contraseña)"
   },
   {
     "id": "CF_NAME auth name@example.com \"\\\"password\\\"\" (escape quotes if used in password)",
@@ -1332,6 +1368,10 @@
     "translation": "CF_NAME purge-service-offering SERVICE [-p PROVIDER] [-f]\\n\\nAVISO: Esta operación da por supuesto que el intermediario de servicio responsable de esta oferta de servicio ya no está disponible, y todas las instancias de servicio se han suprimido, dejando registros huérfanos en la base de datos de Cloud Foundry. Se eliminará de Cloud Foundry todo el conocimiento del servicio, incluidos los enlaces y las instancias de servicio. No se realizará ningún intento por contactar con el intermediario de servicio; la ejecución de este mandato sin destruir el intermediario de servicio hará que las instancias de servicio se queden huérfanas. Después de ejecutar este mandato, puede que desee ejecutar delete-service-auth-token o delete-service-broker para completar la limpieza."
   },
   {
+    "id": "CF_NAME push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
+    "translation": "CF_NAME push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
+  },
+  {
     "id": "CF_NAME quota QUOTA",
     "translation": "CF_NAME quota QUOTA"
   },
@@ -1560,6 +1600,10 @@
     "translation": "CF_NAME share-private-domain ORG DOMAIN"
   },
   {
+    "id": "CF_NAME share-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG]",
+    "translation": "CF_NAME share-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG]"
+  },
+  {
     "id": "CF_NAME space SPACE",
     "translation": "CF_NAME space SPACE"
   },
@@ -1732,6 +1776,10 @@
     "translation": "CF_NAME unshare-private-domain ORG DOMAIN"
   },
   {
+    "id": "CF_NAME unshare-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG] [-f]",
+    "translation": "CF_NAME unshare-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG] [-f]"
+  },
+  {
     "id": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]",
     "translation": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]"
   },
@@ -1824,10 +1872,6 @@
     "translation": "CF_NAME update-user-provided-service my-route-service -r https://example.com"
   },
   {
-    "id": "CF_NAME v3-app APP_NAME [--guid]",
-    "translation": "CF_NAME v3-app APP_NAME [--guid]"
-  },
-  {
     "id": "CF_NAME v3-apply-manifest -f APP_MANIFEST_PATH",
     "translation": "CF_NAME v3-apply-manifest -f APP_MANIFEST_PATH"
   },
@@ -1864,6 +1908,10 @@
     "translation": "CF_NAME v3-packages APP_NAME"
   },
   {
+    "id": "CF_NAME v3-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   CF_NAME v3-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]",
+    "translation": "CF_NAME v3-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   CF_NAME v3-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]"
+  },
+  {
     "id": "CF_NAME v3-restart APP_NAME",
     "translation": "CF_NAME v3-restart APP_NAME"
   },
@@ -1886,6 +1934,10 @@
   {
     "id": "CF_NAME v3-set-health-check APP_NAME (process | port | http [--endpoint PATH]) [--process PROCESS] [--invocation-timeout INVOCATION_TIMEOUT]\\n\\nEXAMPLES:\\n   cf v3-set-health-check worker-app process --process worker\\n   cf v3-set-health-check my-web-app http --endpoint /foo\\n   cf v3-set-health-check my-web-app http --invocation-timeout 10",
     "translation": "CF_NAME v3-set-health-check APP_NAME (process | port | http [--endpoint PATH]) [--process PROCESS] [--invocation-timeout INVOCATION_TIMEOUT]\\n\\nEJEMPLOS:\\n   cf v3-set-health-check worker-app process --process worker\\n   cf v3-set-health-check my-web-app http --endpoint /foo\\n   cf v3-set-health-check my-web-app http --invocation-timeout 10"
+  },
+  {
+    "id": "CF_NAME v3-ssh APP_NAME [--process PROCESS] [-i INDEX] [-c COMMAND]\\n   [-L [BIND_ADDRESS:]LOCAL_PORT:REMOTE_HOST:REMOTE_PORT]... [--skip-remote-execution]\\n   [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty] [--skip-host-validation]",
+    "translation": "CF_NAME v3-ssh APP_NAME [--process PROCESS] [-i INDEX] [-c COMMAND]\\n   [-L [BIND_ADDRESS:]LOCAL_PORT:REMOTE_HOST:REMOTE_PORT]... [--skip-remote-execution]\\n   [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty] [--skip-host-validation]"
   },
   {
     "id": "CF_NAME v3-stage APP_NAME --package-guid PACKAGE_GUID",
@@ -1957,11 +2009,11 @@
   },
   {
     "id": "Cannot specify both lock and unlock options.",
-    "translation": "No se pueden especificar a la vez las opciones bloquear y desbloquear."
+    "translation": "No puede especificar a la vez las opciones bloquear y desbloquear."
   },
   {
     "id": "Cannot specify both {{.Enabled}} and {{.Disabled}}.",
-    "translation": "No se pueden especificar a la vez {{.Enabled}} y {{.Disabled}}."
+    "translation": "No puede especificar a la vez {{.Enabled}} y {{.Disabled}}."
   },
   {
     "id": "Cannot specify buildpack bits and lock/unlock.",
@@ -2018,10 +2070,6 @@
   {
     "id": "Cloud Foundry command line tool",
     "translation": "Herramienta de línea de mandatos de Cloud Foundry"
-  },
-  {
-    "id": "Comma delimited list of ports the application may listen on",
-    "translation": "Lista de puertos delimitados por coma en los que la aplicación puede escuchar"
   },
   {
     "id": "Command Help",
@@ -2290,6 +2338,10 @@
   {
     "id": "Creating buildpack {{.BuildpackName}}...",
     "translation": "Creando el paquete de compilación {{.BuildpackName}}..."
+  },
+  {
+    "id": "Creating buildpack {{.Buildpack}} as {{.Username}}...",
+    "translation": "Creando paquete de compilación {{.Buildpack}} como {{.Username}}..."
   },
   {
     "id": "Creating docker package for app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
@@ -2736,12 +2788,20 @@
     "translation": "Dominios:"
   },
   {
+    "id": "Done uploading",
+    "translation": "Carga hecha"
+  },
+  {
     "id": "Download attempt failed: {{.Error}}\n\nUnable to install, plugin is not available from the given url.",
     "translation": "Ha fallado un intento de descarga: {{.Error}}\n\nNo se ha podido instalar, el plugin no está disponible desde el URL proporcionado."
   },
   {
     "id": "Download attempt failed; server returned {{.ErrorMessage}}\nUnable to install; plugin is not available from the given URL.",
     "translation": "Ha fallado un intento de descarga; el servidor ha devuelto {{.ErrorMessage}}\nNo se ha podido instalar; el plugin no está disponible desde el URL proporcionado."
+  },
+  {
+    "id": "Download attempt failed; server returned {{.Status}}\nUnable to install; buildpack is not available from the given URL.",
+    "translation": "Ha fallado un intento de descarga; el servidor ha devuelto {{.Status}}\nNo se ha podido instalar; el paquete de compilación no está disponible desde el URL proporcionado."
   },
   {
     "id": "Downloaded plugin binary's checksum does not match repo metadata",
@@ -3232,10 +3292,6 @@
     "translation": "Se esperaba que {{.PropertyName}} fuera un valor booleano."
   },
   {
-    "id": "Expected {{.PropertyName}} to be a list of integers.",
-    "translation": "Se esperaba que {{.PropertyName}} fuera una lista de enteros."
-  },
-  {
     "id": "Expected {{.PropertyName}} to be a list of strings.",
     "translation": "Se esperaba que {{.PropertyName}} fuera una lista de series."
   },
@@ -3534,6 +3590,10 @@
   {
     "id": "Getting security groups as {{.username}}",
     "translation": "Obtención de grupos de seguridad como {{.username}}"
+  },
+  {
+    "id": "Getting service access as {{.CurrentUser}}...",
+    "translation": "Obteniendo acceso de servicio como {{.CurrentUser}}..."
   },
   {
     "id": "Getting service access as {{.Username}}...",
@@ -3964,6 +4024,10 @@
     "translation": "El índice está fuera de rango. Se ha llamado al servidor de pruebas demasiadas veces. Última solicitud:"
   },
   {
+    "id": "Indicates the identity provider to be used for authentication",
+    "translation": "Indica el proveedor de identidades que se va a utilizar para la autenticación"
+  },
+  {
     "id": "Install CLI plugin",
     "translation": "Instalar el plugin CLI"
   },
@@ -4018,10 +4082,6 @@
   {
     "id": "Invalid SSL Cert for {{.URL}}\n{{.TipMessage}}",
     "translation": "Certificado SSL no válido para {{.URL}}\n{{.TipMessage}}"
-  },
-  {
-    "id": "Invalid app port: {{.AppPort}}\nApp port must be a number",
-    "translation": "Puerto de app no válido: {{.AppPort}}\nEl puerto de la app debe ser un número"
   },
   {
     "id": "Invalid application configuration",
@@ -4420,6 +4480,10 @@
     "translation": "Varios distintivos de paquetes de compilación no pueden tener la opción null/default."
   },
   {
+    "id": "Multiple buildpacks named {{.BuildpackName}} found. Specify a stack name by using a '-s' flag.",
+    "translation": "Se han encontrado varios paquetes de compilación llamados {{.BuildpackName}}. Especifique un nombre de pila utilizando un distintivo '-s'."
+  },
+  {
     "id": "Multiple errors occurred:\n{{.Errors}}",
     "translation": "Se han producido varios errores:\n{{.Errors}}"
   },
@@ -4724,14 +4788,6 @@
     "translation": "Código de acceso de uso único"
   },
   {
-    "id": "Option '--app-ports'",
-    "translation": "Opción '--app-ports'"
-  },
-  {
-    "id": "Option '--droplet'",
-    "translation": "Opción '--droplet'"
-  },
-  {
     "id": "Option '--name'",
     "translation": "Opción '--name'"
   },
@@ -4740,44 +4796,24 @@
     "translation": "La opción '--no-hostname' no se puede utilizar con un manifiesto de app que contenga el atributo 'routes'"
   },
   {
-    "id": "Option '--path'",
-    "translation": "Opción '--path'"
-  },
-  {
-    "id": "Option '--port'",
-    "translation": "Opción '--port'"
-  },
-  {
-    "id": "Option '--random-port'",
-    "translation": "Opción '--random-port'"
-  },
-  {
-    "id": "Option '--reserved-route-ports'",
-    "translation": "Opción '--reserved-route-ports'"
-  },
-  {
-    "id": "Option '--route-path'",
-    "translation": "Opción '--route-path'"
-  },
-  {
-    "id": "Option '--router-group'",
-    "translation": "Opción '--router-group'"
-  },
-  {
-    "id": "Option '-a'",
-    "translation": "Opción '-a'"
+    "id": "Option '--origin'",
+    "translation": "Opción '--origin'"
   },
   {
     "id": "Option '-p'",
     "translation": "Opción '-p'"
   },
   {
-    "id": "Option '-r'",
-    "translation": "Opción '-r'"
+    "id": "Option '-s'",
+    "translation": "Opción '-s'"
   },
   {
     "id": "Option '-t'",
     "translation": "Opción '-t'"
+  },
+  {
+    "id": "Option `-s`",
+    "translation": "Opción `-s`"
   },
   {
     "id": "Org",
@@ -4798,6 +4834,10 @@
   {
     "id": "Org {{.OrgName}} already exists",
     "translation": "Ya existe la organización {{.OrgName}}"
+  },
+  {
+    "id": "Org {{.OrgName}} already exists.",
+    "translation": "La organización {{.OrgName}} ya existe."
   },
   {
     "id": "Org {{.OrgName}} does not exist or is not accessible",
@@ -4854,10 +4894,6 @@
   {
     "id": "PORT syntax must match integer[-integer]",
     "translation": "La sintaxis de PUERTO debe ser entero[-entero]"
-  },
-  {
-    "id": "POSITION",
-    "translation": "POSICIÓN"
   },
   {
     "id": "PROTOCOL must be \"tcp\" or \"udp\"",
@@ -5228,6 +5264,10 @@
     "translation": "La cuota {{.QuotaName}} no existe"
   },
   {
+    "id": "Quota {{.QuotaName}} not found",
+    "translation": "No se ha encontrado la cuota {{.QuotaName}}"
+  },
+  {
     "id": "REQUEST:",
     "translation": "SOLICITUD:"
   },
@@ -5434,6 +5474,14 @@
   {
     "id": "Renaming buildpack {{.OldBuildpackName}} to {{.NewBuildpackName}}...",
     "translation": "Renombrando el paquete de compilación {{.OldBuildpackName}} a {{.NewBuildpackName}}..."
+  },
+  {
+    "id": "Renaming buildpack {{.OldName}} to {{.NewName}} as {{.CurrentUser}}...",
+    "translation": "Renombrando el paquete de compilación {{.OldName}} a {{.NewName}} como {{.CurrentUser}}..."
+  },
+  {
+    "id": "Renaming buildpack {{.OldName}} to {{.NewName}} with stack {{.Stack}} as {{.CurrentUser}}...",
+    "translation": "Renombrando el paquete de compilación {{.OldName}} a {{.NewName}} con la pila {{.Stack}} como {{.CurrentUser}}..."
   },
   {
     "id": "Renaming org {{.OrgName}} to {{.NewName}} as {{.Username}}...",
@@ -6168,6 +6216,10 @@
     "translation": "La instancia especificada no se ha encontrado o no es una instancia de servicio gestionada. No se admite la compartición para los servicios proporcionados por el usuario."
   },
   {
+    "id": "Specify a custom domain (e.g. private-domain.example.com, apps.internal.com) to use instead of the default domain",
+    "translation": "Especifique un nombre de dominio personalizado (por ejemplo, private-domain.example.com, apps.internal.com) para utilizarlo en lugar del dominio predeterminado"
+  },
+  {
     "id": "Specify a path for file creation. If path not specified, manifest file is created in current working directory.",
     "translation": "Especificar una vía de acceso para la creación de archivos. Si la vía de acceso no se especifica, se creará un archivo de manifiesto en el directorio de trabajo actual."
   },
@@ -6178,6 +6230,14 @@
   {
     "id": "Specify stack to disambiguate buildpacks with the same name",
     "translation": "Especifique la pila para desambiguar los paquetes de compilación con el mismo nombre"
+  },
+  {
+    "id": "Specify stack to disambiguate buildpacks with the same name. Required when buildpack name is ambiguous",
+    "translation": "Especifique la pila para eliminar la ambigüedad de los paquetes de compilación con el mismo nombre. Es obligatorio cuando el nombre del paquete de compilación es ambiguo"
+  },
+  {
+    "id": "Specify which buildpack to rename by stack",
+    "translation": "Especifique el paquete de compilación que desea renombrar por la pila"
   },
   {
     "id": "Stack to use (a stack is a pre-built file system, including an operating system, that can run apps)",
@@ -6324,6 +6384,14 @@
     "translation": "CONSEJO: No se ha establecido ningún espacio como destino, utilice '{{.CfTargetCommand}}' para establecer un espacio como destino."
   },
   {
+    "id": "TIP: Once this operation succeeds, use '{{.CFCommand}} {{.AppName}}' to ensure your env variable changes take effect.",
+    "translation": "CONSEJO: Cuando esta operación se haya ejecutado correctamente, utilice '{{.CFCommand}} {{.AppName}}' para asegurarse de que los cambios en la variable de entorno entran en vigor."
+  },
+  {
+    "id": "TIP: Use 'cf target -o \"{{.OrgName}}\"' to target new org",
+    "translation": "CONSEJO: Utilice 'cf target -o \"{{.OrgName}}\"' para especificar como destino la nueva organización"
+  },
+  {
     "id": "TIP: Use 'cf v3-stage {{.AppName}}' to ensure your env variable changes take effect.",
     "translation": "CONSEJO: Utilice ''cf v3-stage {{.AppName}}' para asegurarse de que surten efecto los cambios de la variable de entorno."
   },
@@ -6342,6 +6410,10 @@
   {
     "id": "TIP: Use '{{.Command}}' to ensure your env variable changes take effect",
     "translation": "CONSEJO: Utilice '{{.Command}}' para asegurarse de que surten efecto los cambios de la variable de entorno"
+  },
+  {
+    "id": "TIP: use '{{.CfBuildpacksCommand}}' and '{{.CfDeleteBuildpackCommand}}' to delete buildpack {{.BuildpackName}} without a stack",
+    "translation": "CONSEJO: Utilice '{{.CfBuildpacksCommand}}' y '{{.CfDeleteBuildpackCommand}}' para suprimir el paquete de compilación {{.BuildpackName}} sin una pila"
   },
   {
     "id": "TIP: use '{{.CfDeleteBuildpackCommand}}' to delete buildpack {{.BuildpackName}} without a stack",
@@ -6428,10 +6500,6 @@
     "translation": "La app no se puede correlacionar con la ruta {{.URL}} porque la ruta existe en otro espacio."
   },
   {
-    "id": "The app is running on the DEA backend, which does not support this command.",
-    "translation": "La app se está ejecutando en el programa de fondo DEA, que no da soporte a este mandato."
-  },
-  {
     "id": "The app is running on the Diego backend, which does not support this command.",
     "translation": "La app se está ejecutando en el programa de fondo Diego, que no da soporte a este mandato."
   },
@@ -6490,6 +6558,10 @@
   {
     "id": "The following flags cannot be used with deprecated usage: {{.flags}}",
     "translation": "No se pueden utilizar los distintivos siguientes que están en desuso: {{.flags}}"
+  },
+  {
+    "id": "The following manifest fields cannot be used with legacy push: {{.fields}}",
+    "translation": "Los siguientes campos de manifiesto no se puede utilizar con el push antiguo: {{.fields}}"
   },
   {
     "id": "The guid of the droplet to use",
@@ -6602,6 +6674,14 @@
   {
     "id": "The organization role",
     "translation": "El rol de la organización"
+  },
+  {
+    "id": "The origin provided in the login hint is invalid.",
+    "translation": "El origen especificado en la sugerencia de inicio de sesión no es válido."
+  },
+  {
+    "id": "The origin provided is invalid.",
+    "translation": "El origen especificado no es válido."
   },
   {
     "id": "The password",
@@ -6732,12 +6812,16 @@
     "translation": "La instancia de aplicación especificada no existe"
   },
   {
+    "id": "The specified path '{{.Path}}' cannot be an empty directory.",
+    "translation": "La vía de acceso especificada '{{.Path}}' no puede ser un directorio vacío."
+  },
+  {
     "id": "The stack name",
     "translation": "El nombre de la pila"
   },
   {
     "id": "The targeted API endpoint could not be reached.",
-    "translation": "El punto final de la API de destino no se ha podido alcanzar."
+    "translation": "El punto final de API de destino no se ha podido alcanzar."
   },
   {
     "id": "The task's unique sequence ID",
@@ -6780,6 +6864,10 @@
     "translation": "No hay instancias en ejecución de esta app."
   },
   {
+    "id": "There are no running instances of this process.",
+    "translation": "No hay instancias en ejecución de este proceso."
+  },
+  {
     "id": "There are too many options to display, please type in the name.",
     "translation": "Hay demasiadas opciones para mostrar; escriba el nombre."
   },
@@ -6794,10 +6882,6 @@
   {
     "id": "This action impacts all orgs using this domain.\nDeleting it will remove associated routes and could make any app with this domain, in any org, unreachable.\nAre you sure you want to delete the domain {{.DomainName}}? ",
     "translation": "Esta acción afecta a todas las organizaciones que utilizan este dominio.\nLa supresión eliminará las rutas asociadas, y podría convertir en inalcanzable cualquier app con este dominio.\n¿Está seguro de que desea suprimir el dominio {{.DomainName}}? "
-  },
-  {
-    "id": "This command",
-    "translation": "Este mandato"
   },
   {
     "id": "This command does not support the URL scheme in {{.UnsupportedURL}}.",
@@ -6820,8 +6904,8 @@
     "translation": "Este mandato necesita la API de política de red V1. El punto final de destino no la expone."
   },
   {
-    "id": "This command requires the Routing API. Your targeted endpoint reports it is not enabled.",
-    "translation": "Este mandato requiere la API de direccionamiento. Los informes de puntos finales de destino no están habilitados."
+    "id": "This command requires UAA API version {{.MinimumVersion}} or higher. Update your Cloud Foundry instance.",
+    "translation": "Este mandato necesita la versión de la API de UAA {{.MinimumVersion}} o superior. Actualice la instancia de Cloud Foundry."
   },
   {
     "id": "This is for backwards compatibility",
@@ -7000,6 +7084,10 @@
     "translation": "Desenlazando la app {{.AppName}} del servicio {{.ServiceName}} en la organización {{.OrgName}} / espacio {{.SpaceName}} como {{.CurrentUser}}..."
   },
   {
+    "id": "Unbinding in progress. Use '{{.CFCommand}} {{.ServiceName}}' to check operation status.",
+    "translation": "Desvinculación en curso. Utilice '{{.CFCommand}} {{.ServiceName}}' para comprobar el estado de la operación."
+  },
+  {
     "id": "Unbinding may leave apps mapped to route {{.URL}} vulnerable; e.g. if service instance {{.ServiceInstanceName}} provides authentication. Do you want to proceed?",
     "translation": "El desenlace puede dejar vulnerables apps correlacionadas con la ruta {{.URL}}; p. ej. si la instancia de servicio {{.ServiceInstanceName}} proporciona autenticación. ¿Desea continuar?"
   },
@@ -7132,10 +7220,6 @@
     "translation": "Actualizado: {{.Updated}}"
   },
   {
-    "id": "Updating a plan",
-    "translation": "Actualizando un plan"
-  },
-  {
     "id": "Updating app with these attributes...",
     "translation": "Actualizando app con estos atributos..."
   },
@@ -7154,6 +7238,14 @@
   {
     "id": "Updating buildpack {{.BuildpackName}} with stack {{.BuildpackStack}}...",
     "translation": "Actualizando el paquete de compilación {{.BuildpackName}} con la pila {{.BuildpackStack}}..."
+  },
+  {
+    "id": "Updating buildpack {{.Buildpack}} as {{.CurrentUser}}...",
+    "translation": "Actualizando el paquete de compilación {{.Buildpack}} como {{.CurrentUser}}..."
+  },
+  {
+    "id": "Updating buildpack {{.Buildpack}} with stack {{.Stack}} as {{.CurrentUser}}...",
+    "translation": "Actualizando el paquete de compilación {{.Buildpack}} con la pila {{.Stack}} como {{.CurrentUser}}..."
   },
   {
     "id": "Updating health check type for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -7210,6 +7302,10 @@
   {
     "id": "Uploading buildpack {{.BuildpackName}}...",
     "translation": "Subiendo el paquete de compilación {{.BuildpackName}}..."
+  },
+  {
+    "id": "Uploading buildpack {{.Buildpack}} as {{.Username}}...",
+    "translation": "Se está cargando el paquete de compilación {{.Buildpack}} como {{.Username}}..."
   },
   {
     "id": "Uploading droplet...",
@@ -7560,12 +7656,20 @@
     "translation": "apps enlazadas:"
   },
   {
+    "id": "broker: {{.BrokerName}}",
+    "translation": "intermediario: {{.BrokerName}}"
+  },
+  {
     "id": "broker: {{.Name}}",
     "translation": "intermediario: {{.Name}}"
   },
   {
     "id": "build",
     "translation": "compilación"
+  },
+  {
+    "id": "buildpack-dir-",
+    "translation": "buildpack-dir-"
   },
   {
     "id": "buildpack:",
@@ -7580,16 +7684,16 @@
     "translation": "bytes descargados"
   },
   {
+    "id": "cell_id",
+    "translation": "cell_id"
+  },
+  {
     "id": "cf --version",
     "translation": "cf --version"
   },
   {
     "id": "cf -v",
     "translation": "cf -v"
-  },
-  {
-    "id": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
-    "translation": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   cf push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
   },
   {
     "id": "cf push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH]\\n\\n   cf push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
@@ -7600,24 +7704,8 @@
     "translation": "cf services"
   },
   {
-    "id": "cf share-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG]",
-    "translation": "cf share-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG]"
-  },
-  {
     "id": "cf target -s",
     "translation": "cf target -s"
-  },
-  {
-    "id": "cf unshare-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG] [-f]",
-    "translation": "cf unshare-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG] [-f]"
-  },
-  {
-    "id": "cf v3-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   cf v3-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]",
-    "translation": "cf v3-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   cf v3-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]"
-  },
-  {
-    "id": "cf v3-ssh APP_NAME [--process PROCESS] [-i INDEX] [-c COMMAND]\\n   [-L [BIND_ADDRESS:]LOCAL_PORT:REMOTE_HOST:REMOTE_PORT]... [--skip-remote-execution]\\n   [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty] [--skip-host-validation]",
-    "translation": "cf v3-ssh APP_NAME [--process PROCESS] [-i INDEX] [-c COMMAND]\\n   [-L [BIND_ADDRESS:]LOCAL_PORT:REMOTE_HOST:REMOTE_PORT]... [--skip-remote-execution]\\n   [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty] [--skip-host-validation]"
   },
   {
     "id": "client_credentials",
@@ -7904,6 +7992,10 @@
     "translation": "instalando del repositorio especificado"
   },
   {
+    "id": "instance",
+    "translation": "instancia"
+  },
+  {
     "id": "instance memory",
     "translation": "memoria de instancia"
   },
@@ -8020,8 +8112,20 @@
     "translation": "memoria:"
   },
   {
+    "id": "message",
+    "translation": "mensaje"
+  },
+  {
     "id": "message:",
     "translation": "mensaje:"
+  },
+  {
+    "id": "minimum api version",
+    "translation": "versión mínima de api"
+  },
+  {
+    "id": "minimum not met",
+    "translation": "no se cumple el mínimo"
   },
   {
     "id": "my-org",
@@ -8158,10 +8262,6 @@
   {
     "id": "processes",
     "translation": "procesos"
-  },
-  {
-    "id": "processes:",
-    "translation": "procesos:"
   },
   {
     "id": "protocol",
@@ -8496,6 +8596,10 @@
     "translation": "tipo"
   },
   {
+    "id": "type:",
+    "translation": "tipo:"
+  },
+  {
     "id": "uaa",
     "translation": "uaa"
   },
@@ -8560,8 +8664,12 @@
     "translation": "nombre de usuario"
   },
   {
-    "id": "v3-app",
-    "translation": "v3-app"
+    "id": "using v2 for app display",
+    "translation": "se utiliza v2 para la visualización de la app"
+  },
+  {
+    "id": "using v3 for app display",
+    "translation": "se utiliza v3 para la visualización de la app"
   },
   {
     "id": "v3-apply-manifest",
@@ -8648,6 +8756,10 @@
     "translation": "v3-unset-env"
   },
   {
+    "id": "v3_api_version",
+    "translation": "v3_api_version"
+  },
+  {
     "id": "validated plugin",
     "translation": "plugin validado"
   },
@@ -8690,6 +8802,10 @@
   {
     "id": "{{.Command}} requires CF API version {{.MinimumVersion}} or higher. Your target is {{.CurrentVersion}}.",
     "translation": "{{.Command}} necesita la versión de la API de CF {{.MinimumVersion}} o superior. El destino es {{.CurrentVersion}}."
+  },
+  {
+    "id": "{{.Command}} requires UAA API version {{.MinimumVersion}} or higher. Update your Cloud Foundry instance.",
+    "translation": "{{.Command}} necesita la versión de la API de UAA {{.MinimumVersion}} o superior. Actualice la instancia de Cloud Foundry."
   },
   {
     "id": "{{.CountOfServices}} migrated.",
