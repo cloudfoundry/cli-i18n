@@ -28,7 +28,8 @@ run:
     pushd tmpdir
       unzip ../slack-attachment/translations.zip
 
-      for file in $(find . -name *.json -type f -printf %f\\n); do
+      for file in $(find . -name *.json -type f); do
+        file_base=$(basename "$file")
         jq -S --raw-output . $file > ../new-translations/$file_base
       done
     popd
