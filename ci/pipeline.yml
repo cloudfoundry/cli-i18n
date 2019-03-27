@@ -83,7 +83,7 @@ groups:
 - name: translations
   jobs:
   - extract-i18n
-  - merge-submitted-translations
+  - open-translations-pr
 - name: images
   jobs:
   - create-base-image
@@ -118,7 +118,7 @@ jobs:
         text: |
           NEW i18n JSON files ready for translation: https://s3-ap-southeast-1.amazonaws.com/cf-cli-i18n/all.json.zip
 
-- name: merge-submitted-translations
+- name: open-translations-pr
   serial: true
   plan:
   - aggregate:
