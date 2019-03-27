@@ -1,5 +1,9 @@
 [
   {
+    "id": "",
+    "translation": ""
+  },
+  {
     "id": "\n\nTIP:\n",
     "translation": "\n\n提示:\n"
   },
@@ -58,6 +62,10 @@
   {
     "id": "\nTip: use `add-plugin-repo` command to add repos.",
     "translation": "\n提示: 請使用 `add-plugin-repo` 指令來新增儲存庫。"
+  },
+  {
+    "id": "\nUpdating buildpack {{.Buildpack}} with stack {{.Stack}} as {{.CurrentUser}}...",
+    "translation": "\n正在以 {{.CurrentUser}} 身分，使用堆疊 {{.Stack}} 更新建置套件 {{.Buildpack}}..."
   },
   {
     "id": "   CF_NAME copy-source SOURCE-APP TARGET-APP [-s TARGET-SPACE [-o TARGET-ORG]] [--no-restart]\n",
@@ -153,7 +161,7 @@
   },
   {
     "id": " removed from list of repositories",
-    "translation": " 已從儲存庫清單中移除"
+    "translation": " 已從儲存庫清單移除"
   },
   {
     "id": " update-buildpack",
@@ -170,10 +178,6 @@
   {
     "id": "'--docker-username' requires '--docker-image' to be specified",
     "translation": "'--docker-username' 需要指定 '--docker-image'"
-  },
-  {
-    "id": "'buildpacks' in manifest",
-    "translation": "資訊清單中的 'buildpacks'"
   },
   {
     "id": "'docker.image' must be a string",
@@ -214,6 +218,10 @@
   {
     "id": "<all>",
     "translation": "<all>"
+  },
+  {
+    "id": "A buildpack with name '{{.BuildpackName}}' and nil stack has been created. Use '{{.CfDeleteBuildpackCommand}}' to delete it or '{{.CfUpdateBuildpackCommand}}' to try again.",
+    "translation": "已建立具有名稱 '{{.BuildpackName}}' 及空值堆疊的建置套件。請使用 '{{.CfDeleteBuildpackCommand}}' 刪除它，或使用 '{{.CfUpdateBuildpackCommand}}' 重試。"
   },
   {
     "id": "A command line tool to interact with Cloud Foundry",
@@ -270,6 +278,10 @@
   {
     "id": "API endpoint: {{.APIEndpoint}}",
     "translation": "API 端點: {{.APIEndpoint}}"
+  },
+  {
+    "id": "API endpoint: {{.APIEndpoint}} (API Version: {{.APIVersion}})",
+    "translation": "API 端點: {{.APIEndpoint}}（API 版本: {{.APIVersion}}）"
   },
   {
     "id": "API endpoint: {{.APIEndpoint}} (API version: {{.APIVersion}})",
@@ -332,12 +344,16 @@
     "translation": "新增應用程式的 URL 路徑"
   },
   {
-    "id": "Adding network policy to app {{.SrcAppName}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
-    "translation": "正在以 {{.User}} 身分在組織 {{.Org}}/空間 {{.Space}} 中，新增網路原則至應用程式 {{.SrcAppName}}..."
+    "id": "Adding network policy from app {{.SrcAppName}} in org {{.Org}} / space {{.Space}} to app {{.DstAppName}} in org {{.DstOrg}} / space {{.DstSpace}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從組織 {{.Org}}/空間 {{.Space}} 中的應用程式 {{.SrcAppName}}，新增網路原則至組織 {{.DstOrg}}/空間 {{.DstSpace}} 中應用程式 {{.DstAppName}}..."
+  },
+  {
+    "id": "Adding network policy from app {{.SrcAppName}} to app {{.DstAppName}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，在組織 {{.Org}}/空間 {{.Space}} 中，從應用程式 {{.SrcAppName}} 新增網路原則至應用程式 {{.DstAppName}}..."
   },
   {
     "id": "Adding route {{.URL}} to app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": "正在以 {{.Username}} 身分新增組織 {{.OrgName}}/空間 {{.SpaceName}} 中應用程式 {{.AppName}} 的路徑 {{.URL}}..."
+    "translation": "正在以 {{.Username}} 身分，新增組織 {{.OrgName}}/空間 {{.SpaceName}} 中應用程式 {{.AppName}} 的路徑 {{.URL}}..."
   },
   {
     "id": "Alias `{{.Command}}` in the plugin being installed is a native CF command/alias.  Rename the `{{.Command}}` command in the plugin being installed in order to enable its installation and use.",
@@ -366,6 +382,10 @@
   {
     "id": "Also delete any mapped routes",
     "translation": "也會一併刪除任何對映的路徑"
+  },
+  {
+    "id": "Also delete any mapped routes [Not currently functional]",
+    "translation": "也會一併刪除任何對映的路徑 [目前無法運作]"
   },
   {
     "id": "An org must be targeted before targeting a space",
@@ -460,8 +480,16 @@
     "translation": "應用程式 '{{.AppName}}' 不是處於 STARTED（已啟動）狀態"
   },
   {
+    "id": "Application Stopped",
+    "translation": "應用程式已停止"
+  },
+  {
     "id": "Application health check type (Default: 'port', 'none' accepted for 'process', 'http' implies endpoint '/')",
     "translation": "應用程式性能檢查類型（預設值: 針對 'process' 接受 'port'、'none'，'http' 暗示端點 '/'）"
+  },
+  {
+    "id": "Application health check type: 'port' (default), 'process', 'http' (implies endpoint '/')",
+    "translation": "應用程式性能檢查類型: 'port'（預設值）、'process'、'http'（默示端點 '/'）"
   },
   {
     "id": "Application instance index",
@@ -516,6 +544,10 @@
     "translation": "此空間中的應用程式會放在平台預設隔離區段中。"
   },
   {
+    "id": "Applications that use internal routes communicate directly on the container network",
+    "translation": "使用內部路徑的應用程式會直接在容器網路上通訊"
+  },
+  {
     "id": "Applies manifest properties to an application",
     "translation": "將資訊清單內容套用至應用程式"
   },
@@ -540,6 +572,10 @@
     "translation": "將空間角色指派給使用者"
   },
   {
+    "id": "Assign a stack to a buildpack that does not have a stack association",
+    "translation": "將堆疊指派給沒有堆疊關聯的建置套件"
+  },
+  {
     "id": "Assign an org role to a user",
     "translation": "將組織角色指派給使用者"
   },
@@ -550,6 +586,14 @@
   {
     "id": "Assigned Value",
     "translation": "指派的值"
+  },
+  {
+    "id": "Assigning role SpaceDeveloper to user {{.User}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，將角色 SpaceDeveloper 指派給組織 {{.Org}}/空間 {{.Space}} 中的使用者 {{.User}}..."
+  },
+  {
+    "id": "Assigning role SpaceManager to user {{.User}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，將角色 SpaceManager 指派給組織 {{.Org}}/空間 {{.Space}} 中的使用者 {{.User}}..."
   },
   {
     "id": "Assigning role {{.Role}} to user {{.CurrentUser}} in org {{.TargetOrg}} ...",
@@ -574,6 +618,10 @@
   {
     "id": "Assigning space quota {{.QuotaName}} to space {{.SpaceName}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分，將空間配額 {{.QuotaName}} 指派給空間 {{.SpaceName}}..."
+  },
+  {
+    "id": "Assigning stack {{.Stack}} to {{.Buildpack}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分，將堆疊 {{.Stack}} 指派給 {{.Buildpack}}..."
   },
   {
     "id": "Attempting to download binary file from internet address...",
@@ -712,6 +760,10 @@
     "translation": "建置套件 {{.BuildpackName}} 已存在"
   },
   {
+    "id": "Buildpack {{.BuildpackName}} already exists with a stack association\n\nTIP: Use '{{.BuildpackCommand}}' to view buildpack and stack associations",
+    "translation": "建置套件 {{.BuildpackName}} 已經存在，且具有堆疊關聯\n\n提示: 請使用 '{{.BuildpackCommand}}' 檢視建置套件及堆疊關聯"
+  },
+  {
     "id": "Buildpack {{.BuildpackName}} already exists without a stack",
     "translation": "建置套件 {{.BuildpackName}} 已存在而無堆疊"
   },
@@ -726,6 +778,10 @@
   {
     "id": "Buildpack {{.BuildpackName}} with stack {{.StackName}} not found",
     "translation": "找不到堆疊為 {{.StackName}} 的建置套件 {{.BuildpackName}}"
+  },
+  {
+    "id": "Buildpack {{.BuildpackName}} with stack {{.Stack}} not found.",
+    "translation": "找不到堆疊為 {{.Stack}} 的建置套件 {{.BuildpackName}}。"
   },
   {
     "id": "Buildpacks property cannot be an empty string.",
@@ -744,8 +800,8 @@
     "translation": "憑證"
   },
   {
-    "id": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [(--protocol (tcp | udp) --port RANGE)]\\n\\nEXAMPLES:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090",
-    "translation": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [(--protocol (tcp | udp) --port RANGE)]\\n\\n範例:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090"
+    "id": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [-s DESTINATION_SPACE_NAME [-o DESTINATION_ORG_NAME]] [--protocol (tcp | udp) --port RANGE]\\n\\nEXAMPLES:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend -s backend-space -o backend-org --protocol tcp --port 8080-8090",
+    "translation": "CF_NAME add-network-policy SOURCE_APP --destination-app DESTINATION_APP [-s DESTINATION_SPACE_NAME [-o DESTINATION_ORG_NAME]] [--protocol (tcp | udp) --port RANGE]\\n\\n範例:\\n   CF_NAME add-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME add-network-policy frontend --destination-app backend -s backend-space -o backend-org --protocol tcp --port 8080-8090"
   },
   {
     "id": "CF_NAME add-plugin-repo PrivateRepo https://myprivaterepo.com/repo/",
@@ -800,8 +856,8 @@
     "translation": "CF_NAME bind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-c PARAMETERS_AS_JSON]"
   },
   {
-    "id": "CF_NAME bind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-c PARAMETERS_AS_JSON]\\n\\nEXAMPLES:\\n   CF_NAME bind-route-service example.com myratelimiter --hostname myapp --path foo\\n   CF_NAME bind-route-service example.com myratelimiter -c file.json\\n   CF_NAME bind-route-service example.com myratelimiter -c '{\\\"valid\\\":\\\"json\\\"}'\\n\\n   In Windows PowerShell use double-quoted, escaped JSON: \\\"{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}\\\"\\n   In Windows Command Line use single-quoted, escaped JSON: '{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}'",
-    "translation": "CF_NAME bind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-c PARAMETERS_AS_JSON]\\n\\n範例:\\n   CF_NAME bind-route-service example.com myratelimiter --hostname myapp --path foo\\n   CF_NAME bind-route-service example.com myratelimiter -c file.json\\n   CF_NAME bind-route-service example.com myratelimiter -c '{\\\"valid\\\":\\\"json\\\"}'\\n\\n   在 Windows PowerShell 中請使用雙引號、跳出的 JSON:\\\"{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}\\\"\\n   在 Windows 指令行中請使用單引號、跳出的 JSON:'{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}'"
+    "id": "CF_NAME bind-route-service DOMAIN [--hostname HOSTNAME] [--path PATH] SERVICE_INSTANCE [-c PARAMETERS_AS_JSON]\\n\\nEXAMPLES:\\n   CF_NAME bind-route-service example.com --hostname myapp --path foo myratelimiter\\n   CF_NAME bind-route-service example.com myratelimiter -c file.json\\n   CF_NAME bind-route-service example.com myratelimiter -c '{\\\"valid\\\":\\\"json\\\"}'\\n\\n   In Windows PowerShell use double-quoted, escaped JSON: \\\"{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}\\\"\\n   In Windows Command Line use single-quoted, escaped JSON: '{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}'",
+    "translation": "CF_NAME bind-route-service DOMAIN [--hostname HOSTNAME] [--path PATH] SERVICE_INSTANCE [-c PARAMETERS_AS_JSON]\\n\\n範例:\\n   CF_NAME bind-route-service example.com --hostname myapp --path foo myratelimiter\\n   CF_NAME bind-route-service example.com myratelimiter -c file.json\\n   CF_NAME bind-route-service example.com myratelimiter -c '{\\\"valid\\\":\\\"json\\\"}'\\n\\n   在 Windows PowerShell 中，請使用雙引號、跳出的 JSON: \\\"{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}\\\"\\n   在 Windows 指令行中，請使用單引號、跳出的 JSON: '{\\\\\\\"valid\\\\\\\":\\\\\\\"json\\\\\\\"}'"
   },
   {
     "id": "CF_NAME bind-route-service example.com myratelimiter --hostname myapp --path foo",
@@ -882,6 +938,10 @@
   {
     "id": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>_manifest.yml]",
     "translation": "CF_NAME create-app-manifest APP_NAME [-p /path/to/<app-name>_manifest.yml]"
+  },
+  {
+    "id": "CF_NAME create-buildpack BUILDPACK PATH POSITION [--disable]\\n\\nTIP:\\n   Path should be a zip file, a url to a zip file, or a local directory. Position is a positive integer, sets priority, and is sorted from lowest to highest.",
+    "translation": "CF_NAME create-buildpack BUILDPACK PATH POSITION [--disable]\\n\\n提示:\\n   Path 應該是 zip 檔案、zip 檔案的 URL，或本端目錄。Position 是正整數、設定優先順序，並且從最低到最高進行排序。"
   },
   {
     "id": "CF_NAME create-buildpack BUILDPACK PATH POSITION [--enable|--disable]",
@@ -976,6 +1036,10 @@
     "translation": "CF_NAME create-service-key mydb mykey -c ~/workspace/tmp/instance_config.json"
   },
   {
+    "id": "CF_NAME create-shared-domain DOMAIN [--router-group ROUTER_GROUP | --internal]",
+    "translation": "CF_NAME create-shared-domain DOMAIN [--router-group ROUTER_GROUP | --internal]"
+  },
+  {
     "id": "CF_NAME create-shared-domain DOMAIN [--router-group ROUTER_GROUP]",
     "translation": "CF_NAME create-shared-domain DOMAIN [--router-group ROUTER_GROUP]"
   },
@@ -1040,12 +1104,12 @@
     "translation": "CF_NAME curl \"/v2/apps\" -d @/path/to/file"
   },
   {
-    "id": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER] [-d DATA] [--output FILE]\n\n   By default 'CF_NAME curl' will perform a GET to the specified PATH. If data\n   is provided via -d, a POST will be performed instead, and the Content-Type\n   will be set to application/json. You may override headers with -H and the\n   request method with -X.\n\n   For API documentation, please visit http://apidocs.cloudfoundry.org.",
-    "translation": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER] [-d DATA] [--output FILE]\n\n   依預設，'CF_NAME curl' 將會對指定的 PATH 執行 GET。如果透過 -d 提供資料，\n   將會改為執行 POST，而且 Content-Type\n   將會設為 application/json。您可能會將標頭置換為 -H，並將\n   要求方法置換為 -X。\n\n   如需 API 文件，請造訪 http://apidocs.cloudfoundry.org。"
+    "id": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER]... [-d DATA] [--output FILE]\n\n   By default 'CF_NAME curl' will perform a GET to the specified PATH. If data\n   is provided via -d, a POST will be performed instead, and the Content-Type\n   will be set to application/json. You may override headers with -H and the\n   request method with -X.\n\n   For API documentation, please visit http://apidocs.cloudfoundry.org.",
+    "translation": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER]... [-d DATA] [--output FILE]\n\n   依預設，'CF_NAME curl' 將會對指定的 PATH 執行 GET。如果透過 -d 提供資料，\n   將會改為執行 POST，而且 Content-Type\n   將會設為 application/json。您可能會將標頭置換為 -H，並將\n   要求方法置換為 -X。\n\n   如需 API 文件，請造訪 http://apidocs.cloudfoundry.org。"
   },
   {
-    "id": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER] [-d DATA] [--output FILE]\\n\\n   By default 'CF_NAME curl' will perform a GET to the specified PATH. If data\\n   is provided via -d, a POST will be performed instead, and the Content-Type\\n   will be set to application/json. You may override headers with -H and the\\n   request method with -X.\\n\\n   For API documentation, please visit http://apidocs.cloudfoundry.org.\\n\\nEXAMPLES:\\n   CF_NAME curl \\\"/v2/apps\\\" -X GET -H \\\"Content-Type: application/x-www-form-urlencoded\\\" -d 'q=name:myapp'\\n   CF_NAME curl \\\"/v2/apps\\\" -d @/path/to/file",
-    "translation": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER] [-d DATA] [--output FILE]\\n\\n   依預設，'CF_NAME curl' 將會對指定的 PATH 執行 GET。如果透過 -d 提供資料，\\n   將會改為執行 POST，而且 Content-Type\\n   將會設為 application/json。您可以使用 -H 置換標頭，以及使用\\n   -X 置換要求方法。\\n\\n   如需 API 文件，請造訪 http://apidocs.cloudfoundry.org。\\n\\n範例:\\n   CF_NAME curl \\\"/v2/apps\\\" -X GET -H \\\"Content-Type: application/x-www-form-urlencoded\\\" -d 'q=name:myapp'\\n   CF_NAME curl \\\"/v2/apps\\\" -d @/path/to/file"
+    "id": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER]... [-d DATA] [--output FILE]\\n\\n   By default 'CF_NAME curl' will perform a GET to the specified PATH. If data\\n   is provided via -d, a POST will be performed instead, and the Content-Type\\n   will be set to application/json. You may override headers with -H and the\\n   request method with -X.\\n\\n   For API documentation, please visit http://apidocs.cloudfoundry.org.\\n\\nEXAMPLES:\\n   CF_NAME curl \\\"/v2/apps\\\" -X GET -H \\\"Content-Type: application/x-www-form-urlencoded\\\" -d 'q=name:myapp'\\n   CF_NAME curl \\\"/v2/apps\\\" -d @/path/to/file",
+    "translation": "CF_NAME curl PATH [-iv] [-X METHOD] [-H HEADER]... [-d DATA] [--output FILE]\\n\\n   依預設，'CF_NAME curl' 將會對指定的 PATH 執行 GET。如果透過 -d 提供資料，\\n   將會改為執行 POST，而且 Content-Type\\n   將會設為 application/json。您可以使用 -H 置換標頭，以及使用\\n   -X 置換要求方法。\\n\\n   如需 API 文件，請造訪 http://apidocs.cloudfoundry.org。\\n\\n範例:\\n   CF_NAME curl \\\"/v2/apps\\\" -X GET -H \\\"Content-Type: application/x-www-form-urlencoded\\\" -d 'q=name:myapp'\\n   CF_NAME curl \\\"/v2/apps\\\" -d @/path/to/file"
   },
   {
     "id": "CF_NAME delete APP_NAME [-f -r]",
@@ -1313,7 +1377,7 @@
   },
   {
     "id": "CF_NAME migrate-service-instances v1_SERVICE v1_PROVIDER v1_PLAN v2_SERVICE v2_PLAN\\n\\nWARNING: This operation is internal to Cloud Foundry; service brokers will not be contacted and resources for service instances will not be altered. The primary use case for this operation is to replace a service broker which implements the v1 Service Broker API with a broker which implements the v2 API by remapping service instances from v1 plans to v2 plans.  We recommend making the v1 plan private or shutting down the v1 broker to prevent additional instances from being created. Once service instances have been migrated, the v1 services and plans can be removed from Cloud Foundry.",
-    "translation": "CF_NAME migrate-service-instances v1_SERVICE v1_PROVIDER v1_PLAN v2_SERVICE v2_PLAN\\n\\n警告: 這是 Cloud Foundry 的內部作業；不會聯絡服務分配管理系統，而且不會變更服務實例的資源。此作業的主要用途是透過將服務實例從第 1 版方案重新對映至第 2 版方案，以將實作第 1 版「服務分配管理系統 API」的服務分配管理系統，取代為實作第 2 版 API 的分配管理系統。建議您將第 1 版方案設為專用，或關閉第 1 版分配管理系統，以防止建立其他實例。移轉服務實例之後，即可從 Cloud Foundry 中移除第 1 版服務和方案。"
+    "translation": "CF_NAME migrate-service-instances v1_SERVICE v1_PROVIDER v1_PLAN v2_SERVICE v2_PLAN\\n\\n警告: 這是 Cloud Foundry 的內部作業；不會聯絡服務分配管理系統，而且不會變更服務實例的資源。此作業的主要用途是透過將服務實例從第 1 版方案重新對映至第 2 版方案，以將實作第 1 版「服務分配管理系統 API」的服務分配管理系統，取代為實作第 2 版 API 的分配管理系統。建議您將第 1 版方案設為專用，或關閉第 1 版分配管理系統，以防止建立其他實例。移轉服務實例之後，即可從 Cloud Foundry 移除第 1 版服務和方案。"
   },
   {
     "id": "CF_NAME network-policies [--source SOURCE_APP]",
@@ -1368,6 +1432,10 @@
     "translation": "CF_NAME purge-service-offering SERVICE [-p PROVIDER] [-f]\\n\\n警告: 此作業假設負責此服務供應項目的服務分配管理系統無法再使用，並且已刪除所有服務實例，而將遺留的記錄留在 Cloud Foundry 資料庫中。將會移除 Cloud Foundry 中對服務的所有知識（包括服務實例和服務連結）。不會嘗試聯絡服務分配管理系統；執行此指令而不破壞服務分配管理系統，將會導致遺留的服務實例。執行此指令之後，您可能要執行 delete-service-auth-token 或 delete-service-broker 來完成清除。"
   },
   {
+    "id": "CF_NAME push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   CF_NAME push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]",
+    "translation": "CF_NAME push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   CF_NAME push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]"
+  },
+  {
     "id": "CF_NAME push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]",
     "translation": "CF_NAME push APP_NAME [-b BUILDPACK_NAME] [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-p PATH] [-s STACK] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME]\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push APP_NAME --droplet DROPLET_PATH\\n   [-c COMMAND] [-f MANIFEST_PATH | --no-manifest] [--no-start]\\n   [-i NUM_INSTANCES] [-k DISK] [-m MEMORY] [-t HEALTH_TIMEOUT] [-u (process | port | http)]\\n   [--no-route | --random-route | --hostname HOST | --no-hostname] [-d DOMAIN] [--route-path ROUTE_PATH] [--var KEY=VALUE]... [--vars-file VARS_FILE_PATH]...\\n\\n   CF_NAME push -f MANIFEST_WITH_MULTIPLE_APPS_PATH [APP_NAME] [--no-start]"
   },
@@ -1380,8 +1448,8 @@
     "translation": "CF_NAME quotas"
   },
   {
-    "id": "CF_NAME remove-network-policy SOURCE_APP --destination-app DESTINATION_APP --protocol (tcp | udp) --port RANGE\\n\\nEXAMPLES:\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090",
-    "translation": "CF_NAME remove-network-policy SOURCE_APP --destination-app DESTINATION_APP --protocol (tcp | udp) --port RANGE\\n\\n範例:\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8080-8090"
+    "id": "CF_NAME remove-network-policy SOURCE_APP --destination-app DESTINATION_APP [-s DESTINATION_SPACE_NAME [-o DESTINATION_ORG_NAME]] --protocol (tcp | udp) --port RANGE\\n\\nEXAMPLES:\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME remove-network-policy frontend --destination-app backend -s backend-space -o backend-org --protocol tcp --port 8080-8090",
+    "translation": "CF_NAME remove-network-policy SOURCE_APP --destination-app DESTINATION_APP [-s DESTINATION_SPACE_NAME [-o DESTINATION_ORG_NAME]] --protocol (tcp | udp) --port RANGE\\n\\n範例:\\n   CF_NAME remove-network-policy frontend --destination-app backend --protocol tcp --port 8081\\n   CF_NAME remove-network-policy frontend --destination-app backend -s backend-space -o backend-org --protocol tcp --port 8080-8090"
   },
   {
     "id": "CF_NAME remove-plugin-repo PrivateRepo",
@@ -1402,6 +1470,10 @@
   {
     "id": "CF_NAME rename-buildpack BUILDPACK_NAME NEW_BUILDPACK_NAME",
     "translation": "CF_NAME rename-buildpack BUILDPACK_NAME NEW_BUILDPACK_NAME"
+  },
+  {
+    "id": "CF_NAME rename-buildpack BUILDPACK_NAME NEW_BUILDPACK_NAME [-s STACK]",
+    "translation": "CF_NAME rename-buildpack BUILDPACK_NAME NEW_BUILDPACK_NAME [-s STACK]"
   },
   {
     "id": "CF_NAME rename-org ORG NEW_ORG",
@@ -1472,6 +1544,10 @@
     "translation": "CF_NAME running-security-groups"
   },
   {
+    "id": "CF_NAME scale APP_NAME [--process PROCESS] [-i INSTANCES] [-k DISK] [-m MEMORY] [-f]",
+    "translation": "CF_NAME scale APP_NAME [--process PROCESS] [-i INSTANCES] [-k DISK] [-m MEMORY] [-f]"
+  },
+  {
     "id": "CF_NAME scale APP_NAME [-i INSTANCES] [-k DISK] [-m MEMORY] [-f]",
     "translation": "CF_NAME scale APP_NAME [-i INSTANCES] [-k DISK] [-m MEMORY] [-f]"
   },
@@ -1534,6 +1610,10 @@
   {
     "id": "CF_NAME set-health-check APP_NAME 'port'|'none'",
     "translation": "CF_NAME set-health-check APP_NAME 'port'|'none'"
+  },
+  {
+    "id": "CF_NAME set-health-check APP_NAME (process | port | http [--endpoint PATH]) [--process PROCESS] [--invocation-timeout INVOCATION_TIMEOUT]\\n\\nEXAMPLES:\\n   cf set-health-check worker-app process --process worker\\n   cf set-health-check my-web-app http --endpoint /foo\\n   cf set-health-check my-web-app http --invocation-timeout 10",
+    "translation": "CF_NAME set-health-check APP_NAME (process | port | http [--endpoint PATH]) [--process PROCESS] [--invocation-timeout INVOCATION_TIMEOUT]\\n\\n範例:\\n   cf set-health-check worker-app process --process worker\\n   cf set-health-check my-web-app http --endpoint /foo\\n   cf set-health-check my-web-app http --invocation-timeout 10"
   },
   {
     "id": "CF_NAME set-health-check APP_NAME (process | port | http [--endpoint PATH])\\n\\nTIP: 'none' has been deprecated but is accepted for 'process'.\\n\\nEXAMPLES:\\n   cf set-health-check worker-app process\\n   cf set-health-check my-web-app http --endpoint /foo",
@@ -1632,6 +1712,10 @@
     "translation": "CF_NAME spaces"
   },
   {
+    "id": "CF_NAME ssh APP_NAME [--process PROCESS] [-i INDEX] [-c COMMAND]...\\n   [-L [BIND_ADDRESS:]LOCAL_PORT:REMOTE_HOST:REMOTE_PORT]... [--skip-remote-execution]\\n   [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty] [--skip-host-validation]",
+    "translation": "CF_NAME ssh APP_NAME [--process PROCESS] [-i INDEX] [-c COMMAND]...\\n   [-L [BIND_ADDRESS:]LOCAL_PORT:REMOTE_HOST:REMOTE_PORT]... [--skip-remote-execution]\\n   [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty] [--skip-host-validation]"
+  },
+  {
     "id": "CF_NAME ssh APP_NAME [-i INDEX] [-c COMMAND]... [-L [BIND_ADDRESS:]PORT:HOST:HOST_PORT] [--skip-host-validation] [--skip-remote-execution] [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty]",
     "translation": "CF_NAME ssh APP_NAME [-i INDEX] [-c COMMAND]... [-L [BIND_ADDRESS:]PORT:HOST:HOST_PORT] [--skip-host-validation] [--skip-remote-execution] [--disable-pseudo-tty | --force-pseudo-tty | --request-pseudo-tty]"
   },
@@ -1688,8 +1772,8 @@
     "translation": "CF_NAME unbind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-f]"
   },
   {
-    "id": "CF_NAME unbind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-f]\\n\\nEXAMPLES:\\n   CF_NAME unbind-route-service example.com myratelimiter --hostname myapp --path foo",
-    "translation": "CF_NAME unbind-route-service DOMAIN SERVICE_INSTANCE [--hostname HOSTNAME] [--path PATH] [-f]\\n\\n範例:\\n   CF_NAME unbind-route-service example.com myratelimiter --hostname myapp --path foo"
+    "id": "CF_NAME unbind-route-service DOMAIN [--hostname HOSTNAME] [--path PATH] SERVICE_INSTANCE [-f]\\n\\nEXAMPLES:\\n   CF_NAME unbind-route-service example.com --hostname myapp --path foo myratelimiter",
+    "translation": "CF_NAME unbind-route-service DOMAIN [--hostname HOSTNAME] [--path PATH] SERVICE_INSTANCE [-f]\\n\\n範例:\\n   CF_NAME unbind-route-service example.com --hostname myapp --path foo myratelimiter"
   },
   {
     "id": "CF_NAME unbind-route-service example.com myratelimiter --hostname myapp --path foo",
@@ -1780,12 +1864,16 @@
     "translation": "CF_NAME unshare-service SERVICE_INSTANCE -s OTHER_SPACE [-o OTHER_ORG] [-f]"
   },
   {
-    "id": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]",
-    "translation": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]"
+    "id": "CF_NAME update-buildpack BUILDPACK [-p PATH | -s STACK | --assign-stack NEW_STACK] [-i POSITION] [--enable|--disable] [--lock|--unlock] [--rename]\\n\\nTIP:\\nPath should be a zip file, a url to a zip file, or a local directory. Position is a positive integer, sets priority, and is sorted from lowest to highest.\\n\\nUse '--assign-stack' with caution. Associating a buildpack with a stack that it does not support may result in undefined behavior. Additionally, changing this association once made may require a local copy of the buildpack.\\n\\n",
+    "translation": "CF_NAME update-buildpack BUILDPACK [-p PATH | -s STACK | --assign-stack NEW_STACK] [-i POSITION] [--enable|--disable] [--lock|--unlock] [--rename]\\n\\n提示:\\n   應該是 zip 檔案、zip 檔案的 URL，或本端目錄。Position 是正整數、設定優先順序，並且從最低到最高進行排序。\\n\\n使用 '--assign-stack' 時請小心。將建置套件與它不支援的堆疊相關聯，可能會導致未定義的行為。此外，建立關聯之後，若要變更它可能需要建置套件的本端副本。\\n\\n"
   },
   {
-    "id": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]\\n\\nTIP:\\n   Path should be a zip file, a url to a zip file, or a local directory. Position is a positive integer, sets priority, and is sorted from lowest to highest.",
-    "translation": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]\\n\\n提示:\\n   應該是 zip 檔案、zip 檔案的 URL，或本端目錄。Position 是正整數、設定優先順序，並且從最低到最高進行排序。"
+    "id": "CF_NAME update-buildpack BUILDPACK [-p PATH | -s STACK | --assign-stack NEW_STACK] [-i POSITION] [--enable|--disable] [--lock|--unlock]\\n\\nTIP:\\nPath should be a zip file, a url to a zip file, or a local directory. Position is a positive integer, sets priority, and is sorted from lowest to highest.\\n\\nUse '--assign-stack' with caution. Associating a buildpack with a stack that it does not support may result in undefined behavior. Additionally, changing this association once made may require a local copy of the buildpack.\\n\\n",
+    "translation": "CF_NAME update-buildpack BUILDPACK [-p PATH | -s STACK | --assign-stack NEW_STACK] [-i POSITION] [--enable|--disable] [--lock|--unlock]\\n\\n提示:\\n   應該是 zip 檔案、zip 檔案的 URL，或本端目錄。Position 是正整數、設定優先順序，並且從最低到最高進行排序。\\n\\n使用 '--assign-stack' 時請小心。將建置套件與它不支援的堆疊相關聯，可能會導致未定義的行為。此外，建立關聯之後，若要變更它可能需要建置套件的本端副本。\\n\\n"
+  },
+  {
+    "id": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]",
+    "translation": "CF_NAME update-buildpack BUILDPACK [-p PATH] [-i POSITION] [-s STACK] [--enable|--disable] [--lock|--unlock]"
   },
   {
     "id": "CF_NAME update-quota ",
@@ -1880,6 +1968,10 @@
     "translation": "CF_NAME v3-apps"
   },
   {
+    "id": "CF_NAME v3-cancel-zdt-push APP_NAME",
+    "translation": "CF_NAME v3-cancel-zdt-push APP_NAME"
+  },
+  {
     "id": "CF_NAME v3-create-app APP_NAME [--app-type (buildpack | docker)]",
     "translation": "CF_NAME v3-create-app APP_NAME [--app-type (buildpack | docker)]"
   },
@@ -1956,6 +2048,14 @@
     "translation": "CF_NAME v3-unset-env APP_NAME ENV_VAR_NAME"
   },
   {
+    "id": "CF_NAME v3-zdt-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   CF_NAME v3-zdt-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]",
+    "translation": "CF_NAME v3-zdt-push APP_NAME [-b BUILDPACK]... [-p APP_PATH] [--no-route] [--no-start]\\n   CF_NAME v3-zdt-push APP_NAME --docker-image [REGISTRY_HOST:PORT/]IMAGE[:TAG] [--docker-username USERNAME] [--no-route] [--no-start]"
+  },
+  {
+    "id": "CF_NAME v3-zdt-restart APP_NAME",
+    "translation": "CF_NAME v3-zdt-restart APP_NAME"
+  },
+  {
     "id": "CF_NAME version",
     "translation": "CF_NAME version"
   },
@@ -1988,12 +2088,16 @@
     "translation": "可以佈建付費服務方案的實例（預設值: 禁止）"
   },
   {
+    "id": "Cancel the most recent deployment for an app",
+    "translation": "取消最近的應用程式部署"
+  },
+  {
     "id": "Cannot delete service instance. Service keys, bindings, and shares must first be deleted.",
     "translation": "無法刪除服務實例。必須先刪除服務金鑰、連結及共用。"
   },
   {
     "id": "Cannot list marketplace services without a targeted space",
-    "translation": "若無目標空間，無法列出市場服務"
+    "translation": "若無目標空間，無法列出 Marketplace 服務"
   },
   {
     "id": "Cannot list plan information for {{.ServiceName}} without a targeted space",
@@ -2300,6 +2404,10 @@
     "translation": "建立與管理計費帳戶和付款資訊\n"
   },
   {
+    "id": "Create in progress. Use 'cf services' or 'cf service {{.ServiceInstance}}' to check operation status.",
+    "translation": "建立進行中。請使用 'cf services' 或 'cf service {{.ServiceInstance}}' 以檢查作業狀態。"
+  },
+  {
     "id": "Create key for a service instance",
     "translation": "建立服務實例的金鑰"
   },
@@ -2334,6 +2442,10 @@
   {
     "id": "Creating app {{.AppName}}...",
     "translation": "正在建立應用程式 {{.AppName}}..."
+  },
+  {
+    "id": "Creating buildpack {{.BuildpackName}} as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分建立建置套件 {{.BuildpackName}}..."
   },
   {
     "id": "Creating buildpack {{.BuildpackName}}...",
@@ -2396,8 +2508,24 @@
     "translation": "正在以 {{.Username}} 身分，於組織 {{.Org}}/空間 {{.Space}} 中建立服務分配管理系統 {{.Name}}..."
   },
   {
+    "id": "Creating service broker {{.ServiceBrokerName}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分建立服務分配管理系統 {{.ServiceBrokerName}}..."
+  },
+  {
+    "id": "Creating service broker {{.ServiceBrokerName}} in org {{.ServiceBrokerOrg}} / space {{.ServiceBrokerSpace}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，於組織 {{.ServiceBrokerOrg}}/空間 {{.ServiceBrokerSpace}} 中建立服務分配管理系統 {{.ServiceBrokerName}}..."
+  },
+  {
+    "id": "Creating service instance {{.ServiceInstance}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，於組織 {{.Org}}/空間 {{.Space}} 中建立服務實例 {{.ServiceInstance}}..."
+  },
+  {
     "id": "Creating service instance {{.ServiceName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
     "translation": "正在以 {{.CurrentUser}} 身分，於組織 {{.OrgName}}/空間 {{.SpaceName}} 中建立服務實例 {{.ServiceName}}..."
+  },
+  {
+    "id": "Creating service key {{.KeyName}} for service instance {{.ServiceInstanceName}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分建立服務實例 {{.ServiceInstanceName}} 的服務金鑰 {{.KeyName}}..."
   },
   {
     "id": "Creating service key {{.ServiceKeyName}} for service instance {{.ServiceInstanceName}} as {{.CurrentUser}}...",
@@ -2408,12 +2536,20 @@
     "translation": "正在以 {{.Username}} 身分建立共用網域 {{.DomainName}}..."
   },
   {
+    "id": "Creating shared domain {{.Domain}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分建立共用網域 {{.Domain}}..."
+  },
+  {
     "id": "Creating space quota {{.QuotaName}} for org {{.OrgName}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分建立組織 {{.OrgName}} 的空間配額 {{.QuotaName}}..."
   },
   {
     "id": "Creating space {{.SpaceName}} in org {{.OrgName}} as {{.CurrentUser}}...",
     "translation": "正在以 {{.CurrentUser}} 身分，於組織 {{.OrgName}} 中建立空間 {{.SpaceName}}..."
+  },
+  {
+    "id": "Creating space {{.Space}} in org {{.Org}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，於組織 {{.Org}} 中建立空間 {{.Space}}..."
   },
   {
     "id": "Creating task for app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -2604,16 +2740,16 @@
     "translation": "正在以 {{.Username}} 身分刪除配額 {{.QuotaName}}..."
   },
   {
-    "id": "Deleting route {{.Route}} ...",
-    "translation": "正在刪除路徑 {{.Route}}..."
-  },
-  {
     "id": "Deleting route {{.Route}}...",
     "translation": "正在刪除路徑 {{.Route}}..."
   },
   {
     "id": "Deleting route {{.URL}}...",
     "translation": "正在刪除路徑 {{.URL}}..."
+  },
+  {
+    "id": "Deleting routes as {{.CurrentUser}} ...",
+    "translation": "正在以 {{.CurrentUser}} 身分刪除路徑..."
   },
   {
     "id": "Deleting security group {{.security_group}} as {{.username}}",
@@ -2629,7 +2765,7 @@
   },
   {
     "id": "Deleting service {{.ServiceName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": "正在以 {{.CurrentUser}} 身分於組織 {{.OrgName}}/空間 {{.SpaceName}} 中刪除服務 {{.ServiceName}}..."
+    "translation": "正在以 {{.CurrentUser}} 身分於組織 {{.OrgName}}/空間 {{.SpaceName}} 刪除服務 {{.ServiceName}}..."
   },
   {
     "id": "Deleting space quota {{.QuotaName}} as {{.Username}}...",
@@ -2642,6 +2778,10 @@
   {
     "id": "Deleting user {{.TargetUser}} as {{.CurrentUser}}...",
     "translation": "正在以 {{.CurrentUser}} 身分刪除使用者 {{.TargetUser}}..."
+  },
+  {
+    "id": "Deployment cancelled, rolling back",
+    "translation": "已取消部署，正在回復"
   },
   {
     "id": "Deprecation warning: App manifest inheritance is deprecated.\nPlease see http://docs.cloudfoundry.org/devguide/deploy-apps/manifest.html#deprecated and other app manifest deprecations. This feature will be removed in the future.\n",
@@ -2688,6 +2828,10 @@
     "translation": "正在以 {{.Username}} 身分停用服務 {{.ServiceName}} 的方案 {{.PlanName}} 的存取權..."
   },
   {
+    "id": "Disabling access of plan {{.ServicePlan}} for service {{.Service}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分停用服務 {{.Service}} 的方案 {{.ServicePlan}} 的存取權..."
+  },
+  {
     "id": "Disabling access to all plans of service {{.ServiceName}} for all orgs as {{.UserName}}...",
     "translation": "正在以 {{.UserName}} 身分停用所有組織中服務 {{.ServiceName}} 之所有方案的存取權..."
   },
@@ -2696,8 +2840,36 @@
     "translation": "正在以 {{.Username}} 身分停用組織 {{.OrgName}} 中服務 {{.ServiceName}} 之所有方案的存取權..."
   },
   {
+    "id": "Disabling access to all plans of service {{.Service}} for all orgs as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分停用所有組織中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
+    "id": "Disabling access to all plans of service {{.Service}} for the org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分停用組織 {{.Organization}} 中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
+    "id": "Disabling access to all plans of service {{.Service}} from broker {{.ServiceBroker}} for all orgs as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 停用所有組織中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
+    "id": "Disabling access to all plans of service {{.Service}} from broker {{.ServiceBroker}} for the org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 停用組織 {{.Organization}} 中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
     "id": "Disabling access to plan {{.PlanName}} of service {{.ServiceName}} for org {{.OrgName}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分停用組織 {{.OrgName}} 中服務 {{.ServiceName}} 之方案 {{.PlanName}} 的存取權..."
+  },
+  {
+    "id": "Disabling access to plan {{.ServicePlan}} of service {{.Service}} for org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分停用組織 {{.Organization}} 中服務 {{.Service}} 之方案 {{.ServicePlan}} 的存取權..."
+  },
+  {
+    "id": "Disabling access to plan {{.ServicePlan}} of service {{.Service}} from broker {{.ServiceBroker}} for all orgs as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 停用所有組織中服務 {{.Service}} 之方案 {{.ServicePlan}} 的存取權..."
+  },
+  {
+    "id": "Disabling access to plan {{.ServicePlan}} of service {{.Service}} from broker {{.ServiceBroker}} for org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 停用組織 {{.Organization}} 中服務 {{.Service}} 之方案 {{.ServicePlan}} 的存取權..."
   },
   {
     "id": "Disabling ssh support for '{{.AppName}}'...",
@@ -2733,7 +2905,7 @@
   },
   {
     "id": "Do not map a route to this app and remove routes from previous pushes of this app",
-    "translation": "不要將路徑對映至此應用程式，並從此應用程式的先前推送中移除路徑"
+    "translation": "不要將路徑對映至此應用程式，並從此應用程式的先前推送移除路徑"
   },
   {
     "id": "Do not stage and start the app after pushing",
@@ -2880,6 +3052,10 @@
     "translation": "正在以 {{.Username}} 身分啟用服務 {{.ServiceName}} 的方案 {{.PlanName}} 的存取權..."
   },
   {
+    "id": "Enabling access of plan {{.ServicePlan}} for service {{.Service}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分啟用服務 {{.Service}} 的方案 {{.ServicePlan}} 的存取權..."
+  },
+  {
     "id": "Enabling access to all plans of service {{.ServiceName}} for all orgs as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分啟用所有組織中服務 {{.ServiceName}} 之所有方案的存取權..."
   },
@@ -2888,8 +3064,36 @@
     "translation": "正在以 {{.Username}} 身分啟用組織 {{.OrgName}} 中服務 {{.ServiceName}} 之所有方案的存取權..."
   },
   {
+    "id": "Enabling access to all plans of service {{.Service}} for all orgs as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分啟用所有組織中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
+    "id": "Enabling access to all plans of service {{.Service}} for the org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分啟用組織 {{.Organization}} 中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
+    "id": "Enabling access to all plans of service {{.Service}} from broker {{.ServiceBroker}} for all orgs as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 啟用所有組織中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
+    "id": "Enabling access to all plans of service {{.Service}} from broker {{.ServiceBroker}} for the org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 啟用組織 {{.Organization}} 中服務 {{.Service}} 之所有方案的存取權..."
+  },
+  {
     "id": "Enabling access to plan {{.PlanName}} of service {{.ServiceName}} for org {{.OrgName}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分啟用組織 {{.OrgName}} 中服務 {{.ServiceName}} 之方案 {{.PlanName}} 的存取權..."
+  },
+  {
+    "id": "Enabling access to plan {{.ServicePlan}} for service {{.Service}} from broker {{.ServiceBroker}} for all orgs as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 啟用所有組織中服務 {{.Service}} 之方案 {{.ServicePlan}} 的存取權..."
+  },
+  {
+    "id": "Enabling access to plan {{.ServicePlan}} of service {{.Service}} for org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分啟用組織 {{.Organization}} 中服務 {{.Service}} 之方案 {{.ServicePlan}} 的存取權..."
+  },
+  {
+    "id": "Enabling access to plan {{.ServicePlan}} of service {{.Service}} from broker {{.ServiceBroker}} for org {{.Organization}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從分配管理系統 {{.ServiceBroker}} 啟用組織 {{.Organization}} 中服務 {{.Service}} 之方案 {{.ServicePlan}} 的存取權..."
   },
   {
     "id": "Enabling isolation segment {{.SegmentName}} for org {{.OrgName}} as {{.CurrentUser}}...",
@@ -3416,6 +3620,10 @@
     "translation": "在本端找不到檔案，請確定檔案存在於給定的路徑 {{.filepath}}"
   },
   {
+    "id": "Flag '{{.Flag}}' is no longer supported.",
+    "translation": "旗標 '{{.Flag}}' 已不再受支援。"
+  },
+  {
     "id": "Force delete (do not prompt for confirmation)",
     "translation": "強制刪除（不提示進行確認）"
   },
@@ -3469,7 +3677,7 @@
   },
   {
     "id": "Getting all services from marketplace...",
-    "translation": "正在從市場取得所有服務..."
+    "translation": "正在從 Marketplace 取得所有服務..."
   },
   {
     "id": "Getting app info...",
@@ -3480,8 +3688,16 @@
     "translation": "正在以 {{.Username}} 身分取得組織 {{.OrgName}}/空間 {{.SpaceName}} 中的應用程式..."
   },
   {
+    "id": "Getting buildpacks as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分取得建置套件..."
+  },
+  {
     "id": "Getting buildpacks...\n",
     "translation": "正在取得建置套件...\n"
+  },
+  {
+    "id": "Getting domains in org {{.CurrentOrg}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得組織 {{.CurrentOrg}} 中的網域..."
   },
   {
     "id": "Getting domains in org {{.OrgName}} as {{.Username}}...",
@@ -3518,6 +3734,10 @@
   {
     "id": "Getting info for space {{.TargetSpace}} in org {{.OrgName}} as {{.CurrentUser}}...",
     "translation": "正在以 {{.CurrentUser}} 身分取得組織 {{.OrgName}} 中空間 {{.TargetSpace}} 的資訊..."
+  },
+  {
+    "id": "Getting info for stack {{.StackName}} as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分取得堆疊 {{.StackName}} 的資訊..."
   },
   {
     "id": "Getting isolation segments as {{.CurrentUser}}...",
@@ -3564,10 +3784,6 @@
     "translation": "正在以 {{.Username}} 身分取得路由器群組...\n"
   },
   {
-    "id": "Getting routes as {{.CurrentUser}} ...",
-    "translation": "正在以 {{.CurrentUser}} 身分取得路徑..."
-  },
-  {
     "id": "Getting routes as {{.Username}} ...\n",
     "translation": "正在以 {{.Username}} 身分取得路徑...\n"
   },
@@ -3604,12 +3820,28 @@
     "translation": "正在以 {{.Username}} 身分取得分配管理系統 {{.Broker}} 和組織 {{.Organization}} 的服務存取權..."
   },
   {
+    "id": "Getting service access for broker {{.Broker}} and organization {{.Org}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得分配管理系統 {{.Broker}} 和組織 {{.Org}} 的服務存取權..."
+  },
+  {
     "id": "Getting service access for broker {{.Broker}} and service {{.Service}} and organization {{.Organization}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分取得分配管理系統 {{.Broker}}、服務 {{.Service}} 和組織 {{.Organization}} 的服務存取權..."
   },
   {
+    "id": "Getting service access for broker {{.Broker}} and service {{.Service}} and organization {{.Org}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得分配管理系統 {{.Broker}}、服務 {{.Service}} 和組織 {{.Org}} 的服務存取權..."
+  },
+  {
+    "id": "Getting service access for broker {{.Broker}} and service {{.Service}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得分配管理系統 {{.Broker}} 和服務 {{.Service}} 的服務存取權..."
+  },
+  {
     "id": "Getting service access for broker {{.Broker}} and service {{.Service}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分取得分配管理系統 {{.Broker}} 和服務 {{.Service}} 的服務存取權..."
+  },
+  {
+    "id": "Getting service access for broker {{.Broker}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得分配管理系統 {{.Broker}} 的服務存取權..."
   },
   {
     "id": "Getting service access for broker {{.Broker}} as {{.Username}}...",
@@ -3620,8 +3852,20 @@
     "translation": "正在以 {{.Username}} 身分取得組織 {{.Organization}} 的服務存取權..."
   },
   {
+    "id": "Getting service access for organization {{.Org}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得組織 {{.Org}} 的服務存取權..."
+  },
+  {
     "id": "Getting service access for service {{.Service}} and organization {{.Organization}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分取得服務 {{.Service}} 和組織 {{.Organization}} 的服務存取權..."
+  },
+  {
+    "id": "Getting service access for service {{.Service}} and organization {{.Org}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得服務 {{.Service}} 和組織 {{.Org}} 的服務存取權..."
+  },
+  {
+    "id": "Getting service access for service {{.Service}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分取得服務 {{.Service}} 的服務存取權..."
   },
   {
     "id": "Getting service access for service {{.Service}} as {{.Username}}...",
@@ -3640,12 +3884,20 @@
     "translation": "正在以 {{.CurrentUser}} 身分取得服務 {{.ServiceName}} 的服務方案資訊..."
   },
   {
+    "id": "Getting service plan information for service {{.ServiceName}} as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分取得服務 {{.ServiceName}} 的服務方案資訊..."
+  },
+  {
     "id": "Getting service plan information for service {{.ServiceName}}...",
     "translation": "正在取得服務 {{.ServiceName}} 的服務方案資訊..."
   },
   {
     "id": "Getting services from marketplace in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": "正在以 {{.CurrentUser}} 身分，從市場取得組織 {{.OrgName}}/空間 {{.SpaceName}} 中的服務..."
+    "translation": "正在以 {{.CurrentUser}} 身分，從 Marketplace 取得組織 {{.OrgName}}/空間 {{.SpaceName}} 中的服務..."
+  },
+  {
+    "id": "Getting services from marketplace in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分，從 Marketplace 取得組織 {{.OrgName}}/空間 {{.SpaceName}} 中的服務..."
   },
   {
     "id": "Getting services in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
@@ -3670,6 +3922,10 @@
   {
     "id": "Getting stack '{{.Stack}}' in org {{.OrganizationName}} / space {{.SpaceName}} as {{.Username}}...",
     "translation": "正在以 {{.Username}} 身分，取得組織 {{.OrganizationName}}/空間 {{.SpaceName}} 中的堆疊 '{{.Stack}}'..."
+  },
+  {
+    "id": "Getting stacks as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分取得堆疊..."
   },
   {
     "id": "Getting stacks in org {{.OrganizationName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -3973,7 +4229,7 @@
   },
   {
     "id": "Incorrect Usage:",
-    "translation": "不正確的用法: "
+    "translation": "用法不正確: "
   },
   {
     "id": "Incorrect Usage: '{{.Arg1}}' and '{{.Arg2}}' must be used together.",
@@ -3982,6 +4238,10 @@
   {
     "id": "Incorrect Usage: --protocol and --port flags must be specified together",
     "translation": "用法不正確: --protocol 和 --port 旗標必須一起指定"
+  },
+  {
+    "id": "Incorrect Usage: A space must be provided when an org is provided, but the '-s' flag was not specified.",
+    "translation": "用法不正確: 提供組織時必須提供空間，但未指定 '-s' 旗標。"
   },
   {
     "id": "Incorrect Usage: Command line flags (except -f and --no-start) cannot be applied when pushing multiple apps from a manifest file.",
@@ -3998,6 +4258,10 @@
   {
     "id": "Incorrect Usage: the required arguments `{{.ArgumentName1}}`, `{{.ArgumentName2}}`, and `{{.ArgumentName3}}` were not provided",
     "translation": "用法不正確: 未提供必要的引數 `{{.ArgumentName1}}`、`{{.ArgumentName2}}` 和 `{{.ArgumentName3}}`"
+  },
+  {
+    "id": "Incorrect Usage: unexpected argument \"{{.ExtraArgument}}\"",
+    "translation": "用法不正確: 非預期的引數 \"{{.ExtraArgument}}\""
   },
   {
     "id": "Incorrect json format: file: {{.JSONFile}}\n\t\t\nValid json file example:\n[\n  {\n    \"protocol\": \"tcp\",\n    \"destination\": \"10.244.1.18\",\n    \"ports\": \"3306\"\n  }\n]",
@@ -4265,7 +4529,7 @@
   },
   {
     "id": "List available offerings in the marketplace",
-    "translation": "列出市場中的可用供應項目"
+    "translation": "列出 Marketplace 中的可用供應項目"
   },
   {
     "id": "List available space resource quotas",
@@ -4488,10 +4752,6 @@
     "translation": "發生多個錯誤:\n{{.Errors}}"
   },
   {
-    "id": "Multiple option '-b'",
-    "translation": "多個選項 '-b'"
-  },
-  {
     "id": "NAME",
     "translation": "名稱"
   },
@@ -4562,6 +4822,10 @@
   {
     "id": "No app files found in '{{.Path}}'",
     "translation": "在 '{{.Path}}' 中找不到任何應用程式檔案"
+  },
+  {
+    "id": "No app name given",
+    "translation": "未提供任何應用程式名稱"
   },
   {
     "id": "No apps found",
@@ -4788,8 +5052,12 @@
     "translation": "一次性密碼"
   },
   {
-    "id": "Option '--name'",
-    "translation": "選項 '--name'"
+    "id": "Option '--assign-stack'",
+    "translation": "選項 '--assign-stack'"
+  },
+  {
+    "id": "Option '--internal'",
+    "translation": "選項 '--internal'"
   },
   {
     "id": "Option '--no-hostname' cannot be used with an app manifest containing the 'routes' attribute",
@@ -4810,10 +5078,6 @@
   {
     "id": "Option '-t'",
     "translation": "選項 '-t'"
-  },
-  {
-    "id": "Option `-s`",
-    "translation": "選項 `-s`"
   },
   {
     "id": "Org",
@@ -5208,6 +5472,10 @@
     "translation": "找不到處理程序 {{.ProcessType}}"
   },
   {
+    "id": "Processing uploaded buildpack {{.BuildpackName}}...",
+    "translation": "正在處理上傳的建置套件 {{.BuildpackName}}..."
+  },
+  {
     "id": "Prompt for a one-time passcode to login",
     "translation": "提示輸入一次性密碼以便登入"
   },
@@ -5224,12 +5492,20 @@
     "translation": "提供者"
   },
   {
+    "id": "Purge service offering cancelled",
+    "translation": "已取消清除服務供應項目"
+  },
+  {
     "id": "Purging service {{.InstanceName}}...",
     "translation": "正在清除服務 {{.InstanceName}}..."
   },
   {
     "id": "Purging service {{.ServiceName}}...",
     "translation": "正在清除服務 {{.ServiceName}}..."
+  },
+  {
+    "id": "Purging service {{.ServiceOffering}}...",
+    "translation": "正在清除服務 {{.ServiceOffering}}..."
   },
   {
     "id": "Push a new app or sync changes to an existing app",
@@ -5258,6 +5534,10 @@
   {
     "id": "Quota to assign to the newly created space",
     "translation": "要指派給新建立空間的配額"
+  },
+  {
+    "id": "Quota {{.Name}} not found",
+    "translation": "找不到配額 {{.Name}}"
   },
   {
     "id": "Quota {{.QuotaName}} does not exist",
@@ -5356,6 +5636,10 @@
     "translation": "真的要從 Cloud Foundry 中清除服務供應項目 {{.ServiceName}} 嗎？"
   },
   {
+    "id": "Really purge service offering {{.ServiceOffering}} from Cloud Foundry?",
+    "translation": "真的要從 Cloud Foundry 中清除服務供應項目 {{.ServiceOffering}} 嗎？"
+  },
+  {
     "id": "Really unshare the service instance?",
     "translation": "真的要取消共用服務實例嗎？"
   },
@@ -5364,16 +5648,16 @@
     "translation": "收到來自下者的無效 SSL 憑證: "
   },
   {
-    "id": "Recreate the app's executable artifact using the latest pushed app files and the latest environment (variables, service bindings, buildpack, stack, etc.)",
-    "translation": "使用最新推送的應用程式檔案和最新的環境（變數、服務連結、建置套件、堆疊等等）來重建應用程式的執行檔構件"
+    "id": "Recreate the app's executable artifact using the latest pushed app files and the latest environment (variables, service bindings, buildpack, stack, etc.). This action will cause app downtime.",
+    "translation": "使用最新推送的應用程式檔案和最新的環境（變數、服務連結、建置套件、堆疊等等）來重建應用程式的執行檔構件. 此動作將導致應用程式關閉。"
   },
   {
     "id": "Recursively remove a service and child objects from Cloud Foundry database without making requests to a service broker",
-    "translation": "遞迴地從 Cloud Foundry 資料庫中移除服務和子物件，而不對服務分配管理系統提出要求"
+    "translation": "遞迴地從 Cloud Foundry 資料庫移除服務和子物件，而不對服務分配管理系統提出要求"
   },
   {
     "id": "Recursively remove a service instance and child objects from Cloud Foundry database without making requests to a service broker",
-    "translation": "遞迴地從 Cloud Foundry 資料庫中移除服務實例和子物件，而不對服務分配管理系統提出要求"
+    "translation": "遞迴地從 Cloud Foundry 資料庫移除服務實例和子物件，而不對服務分配管理系統提出要求"
   },
   {
     "id": "RegisteredRepository",
@@ -5385,19 +5669,15 @@
   },
   {
     "id": "Remove a space role from a user",
-    "translation": "從使用者中移除空間角色"
+    "translation": "從使用者移除空間角色"
   },
   {
     "id": "Remove a url route from an app",
-    "translation": "從應用程式中移除 URL 路徑"
+    "translation": "從應用程式移除 URL 路徑"
   },
   {
     "id": "Remove all api endpoint targeting",
     "translation": "移除所有 API 端點目標"
-  },
-  {
-    "id": "Remove an env variable",
-    "translation": "移除環境變數"
   },
   {
     "id": "Remove an env variable from an app",
@@ -5405,7 +5685,7 @@
   },
   {
     "id": "Remove an org role from a user",
-    "translation": "從使用者中移除組織角色"
+    "translation": "從使用者移除組織角色"
   },
   {
     "id": "Remove network traffic policy of an app",
@@ -5413,7 +5693,7 @@
   },
   {
     "id": "Removing entitlement to isolation segment {{.SegmentName}} from org {{.OrgName}} as {{.CurrentUser}}...",
-    "translation": "正在以 {{.CurrentUser}} 身分從組織 {{.OrgName}} 移除隔離區段 {{.SegmentName}} 的授權..."
+    "translation": "正在以 {{.CurrentUser}} 身分，從組織 {{.OrgName}} 移除隔離區段 {{.SegmentName}} 的授權..."
   },
   {
     "id": "Removing env variable {{.EnvVarName}} from app {{.AppName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
@@ -5424,8 +5704,12 @@
     "translation": "正在以 {{.CurrentUser}} 身分，從組織 {{.OrgName}} / 空間 {{.SpaceName}} 中的應用程式 {{.AppName}} 移除環境變數 {{.VarName}}..."
   },
   {
-    "id": "Removing network policy for app {{.SrcAppName}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
-    "translation": "正在以 {{.User}} 身分，移除組織 {{.Org}}/空間 {{.Space}} 中應用程式 {{.SrcAppName}} 的網路原則..."
+    "id": "Removing network policy from app {{.SrcAppName}} in org {{.Org}} / space {{.Space}} to app {{.DstAppName}} in org {{.DstOrg}} / space {{.DstSpace}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，從組織 {{.Org}}/空間 {{.Space}} 中的應用程式 {{.SrcAppName}}，移除網路原則至組織 {{.DstOrg}}/空間 {{.DstSpace}} 中應用程式 {{.DstAppName}}..."
+  },
+  {
+    "id": "Removing network policy from app {{.SrcAppName}} to app {{.DstAppName}} in org {{.Org}} / space {{.Space}} as {{.User}}...",
+    "translation": "正在以 {{.User}} 身分，在組織 {{.Org}}/空間 {{.Space}} 中，從應用程式 {{.SrcAppName}} 移除網路原則至應用程式 {{.DstAppName}}..."
   },
   {
     "id": "Removing role {{.Role}} from user {{.TargetUser}} in org {{.TargetOrg}} / space {{.TargetSpace}} as {{.CurrentUser}}...",
@@ -5464,12 +5748,20 @@
     "translation": "重新命名應用程式"
   },
   {
+    "id": "Rename an existing buildpack",
+    "translation": "重新命名現有的建置套件"
+  },
+  {
     "id": "Rename an org",
     "translation": "重新命名組織"
   },
   {
     "id": "Renaming app {{.AppName}} to {{.NewName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.Username}}...",
-    "translation": "正在以 {{.Username}} 身分將組織 {{.OrgName}}/空間 {{.SpaceName}} 中的應用程式 {{.AppName}} 重新命名為 {{.NewName}}..."
+    "translation": "正在以 {{.Username}} 身分，將組織 {{.OrgName}}/空間 {{.SpaceName}} 中的應用程式 {{.AppName}} 重新命名為 {{.NewName}}..."
+  },
+  {
+    "id": "Renaming buildpack {{.Buildpack}} to {{.DesiredBuildpackName}} as {{.CurrentUser}}...\n",
+    "translation": "正在以 {{.CurrentUser}} 身分，將建置套件 {{.Buildpack}} 重新命名為 {{.DesiredBuildpackName}}...\n"
   },
   {
     "id": "Renaming buildpack {{.OldBuildpackName}} to {{.NewBuildpackName}}...",
@@ -5477,7 +5769,7 @@
   },
   {
     "id": "Renaming buildpack {{.OldName}} to {{.NewName}} as {{.CurrentUser}}...",
-    "translation": "正在以 {{.CurrentUser}} 身分將建置套件 {{.OldName}} 重新命名為 {{.NewName}}..."
+    "translation": "正在以 {{.CurrentUser}} 身分，將建置套件 {{.OldName}} 重新命名為 {{.NewName}}..."
   },
   {
     "id": "Renaming buildpack {{.OldName}} to {{.NewName}} with stack {{.Stack}} as {{.CurrentUser}}...",
@@ -5485,19 +5777,19 @@
   },
   {
     "id": "Renaming org {{.OrgName}} to {{.NewName}} as {{.Username}}...",
-    "translation": "正在以 {{.Username}} 身分將組織 {{.OrgName}} 重新命名為 {{.NewName}}..."
+    "translation": "正在以 {{.Username}} 身分，將組織 {{.OrgName}} 重新命名為 {{.NewName}}..."
   },
   {
     "id": "Renaming service broker {{.OldName}} to {{.NewName}} as {{.Username}}",
-    "translation": "正在以 {{.Username}} 身分將服務分配管理系統 {{.OldName}} 重新命名為 {{.NewName}}"
+    "translation": "正在以 {{.Username}} 身分，將服務分配管理系統 {{.OldName}} 重新命名為 {{.NewName}}"
   },
   {
     "id": "Renaming service {{.ServiceName}} to {{.NewServiceName}} in org {{.OrgName}} / space {{.SpaceName}} as {{.CurrentUser}}...",
-    "translation": "正在以 {{.CurrentUser}} 身分將組織 {{.OrgName}}/空間 {{.SpaceName}} 中的服務 {{.ServiceName}} 重新命名為 {{.NewServiceName}}..."
+    "translation": "正在以 {{.CurrentUser}} 身分，將組織 {{.OrgName}}/空間 {{.SpaceName}} 中的服務 {{.ServiceName}} 重新命名為 {{.NewServiceName}}..."
   },
   {
     "id": "Renaming space {{.OldSpaceName}} to {{.NewSpaceName}} in org {{.OrgName}} as {{.CurrentUser}}...",
-    "translation": "正在以 {{.CurrentUser}} 身分將組織 {{.OrgName}} 中的空間 {{.OldSpaceName}} 重新命名為 {{.NewSpaceName}}..."
+    "translation": "正在以 {{.CurrentUser}} 身分，將組織 {{.OrgName}} 中的空間 {{.OldSpaceName}} 重新命名為 {{.NewSpaceName}}..."
   },
   {
     "id": "Repo Name",
@@ -5712,6 +6004,10 @@
     "translation": "路徑 {{.URL}} 已連結至服務實例 {{.ServiceInstanceName}}。"
   },
   {
+    "id": "Router group {{.RouterGroupName}} not found",
+    "translation": "找不到路由器群組 {{.RouterGroupName}}"
+  },
+  {
     "id": "Router group {{.RouterGroup}} not found",
     "translation": "找不到路由器群組 {{.RouterGroup}}"
   },
@@ -5770,10 +6066,6 @@
   {
     "id": "SERVICES",
     "translation": "服務"
-  },
-  {
-    "id": "SERVICES (experimental):",
-    "translation": "服務（實驗性）:"
   },
   {
     "id": "SERVICES:",
@@ -5880,6 +6172,10 @@
     "translation": "選取組織（或按 Enter 鍵以跳過）: "
   },
   {
+    "id": "Sequentially restart each instance of an app.",
+    "translation": "循序重新啟動應用程式的每個實例。"
+  },
+  {
     "id": "Server error, error code: 1002, message: cannot set space role because user is not part of the org",
     "translation": "伺服器錯誤，錯誤碼: 1002，訊息: 無法設定空間角色，因為使用者不屬於組織"
   },
@@ -5894,6 +6190,10 @@
   {
     "id": "Server error, status code: {{.ErrStatusCode}}, error code: {{.ErrAPIErrorCode}}, message: {{.ErrDescription}}",
     "translation": "伺服器錯誤，狀態碼: {{.ErrStatusCode}}，錯誤碼: {{.ErrAPIErrorCode}}，訊息: {{.ErrDescription}}"
+  },
+  {
+    "id": "Server errors return exit code 22",
+    "translation": "伺服器錯誤傳回結束碼 22"
   },
   {
     "id": "Service Auth Token {{.Label}} {{.Provider}} does not exist.",
@@ -5948,6 +6248,10 @@
     "translation": "服務實例: {{.ServiceName}}"
   },
   {
+    "id": "Service key {{.KeyName}} already exists",
+    "translation": "服務金鑰 {{.KeyName}} 已存在"
+  },
+  {
     "id": "Service key {{.ServiceKeyName}} does not exist for service instance {{.ServiceInstanceName}}.",
     "translation": "服務實例 {{.ServiceInstanceName}} 沒有服務金鑰 {{.ServiceKeyName}}。"
   },
@@ -5956,12 +6260,20 @@
     "translation": "服務供應項目"
   },
   {
+    "id": "Service offering '{{.ServiceOffering}}' not found",
+    "translation": "找不到服務供應項目 '{{.ServiceOffering}}'"
+  },
+  {
     "id": "Service offering does not exist\nTIP: If you are trying to purge a v1 service offering, you must set the -p flag.",
     "translation": "服務供應項目不存在\n提示: 如果您嘗試清除第 1 版服務供應項目，則必須設定 -p 旗標。"
   },
   {
     "id": "Service offering not found",
     "translation": "找不到服務供應項目"
+  },
+  {
+    "id": "Service {{.ServiceInstance}} already exists",
+    "translation": "服務 {{.ServiceInstance}} 已存在"
   },
   {
     "id": "Service {{.ServiceName}} does not exist.",
@@ -6010,6 +6322,10 @@
   {
     "id": "Set the droplet used to run an app",
     "translation": "設定用來執行應用程式的 Droplet"
+  },
+  {
+    "id": "Set to 'port'",
+    "translation": "設為 'port'"
   },
   {
     "id": "Set to 'port' or 'none'",
@@ -6240,16 +6556,16 @@
     "translation": "指定要由堆疊重新命名的建置套件"
   },
   {
+    "id": "Stack '{{.Name}}' not found",
+    "translation": "找不到堆疊 '{{.Name}}'"
+  },
+  {
     "id": "Stack to use (a stack is a pre-built file system, including an operating system, that can run apps)",
     "translation": "要使用的堆疊（堆疊是可執行應用程式的預先建置檔案系統（包括作業系統））"
   },
   {
-    "id": "Stack with GUID {{.GUID}} not found",
-    "translation": "找不到 GUID 為 {{.GUID}} 的堆疊"
-  },
-  {
-    "id": "Stack {{.Name}} not found",
-    "translation": "找不到堆疊 {{.Name}}"
+    "id": "Stack with GUID '{{.GUID}}' not found",
+    "translation": "找不到 GUID 為 '{{.GUID}}' 的堆疊"
   },
   {
     "id": "Staging Environment Variable Groups:",
@@ -6300,6 +6616,10 @@
     "translation": "正在以 {{.Username}} 身分啟動組織 {{.OrgName}}/空間 {{.SpaceName}} 中的應用程式 {{.AppName}}..."
   },
   {
+    "id": "Starting deployment for app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
+    "translation": "正在以 {{.CurrentUser}} 身分，於組織 {{.CurrentOrg}}/空間 {{.CurrentSpace}} 中啟動應用程式 {{.AppName}} 的部署..."
+  },
+  {
     "id": "Starting download of plugin binary from URL...",
     "translation": "正在開始從 URL 下載外掛程式二進位檔..."
   },
@@ -6326,6 +6646,10 @@
   {
     "id": "Stop an app",
     "translation": "停止應用程式"
+  },
+  {
+    "id": "Stopping Application...",
+    "translation": "正在停止應用程式..."
   },
   {
     "id": "Stopping app {{.AppName}} in org {{.CurrentOrg}} / space {{.CurrentSpace}} as {{.CurrentUser}}...",
@@ -6388,8 +6712,16 @@
     "translation": "提示: 在此作業成功之後，使用 '{{.CFCommand}} {{.AppName}}'，確保您的環境變數變更生效。"
   },
   {
+    "id": "TIP: Use 'cf marketplace -s SERVICE' to view descriptions of individual plans of a given service.",
+    "translation": "提示: 使用 'cf marketplace -s SERVICE'，以檢視給定服務的個別方案說明。"
+  },
+  {
     "id": "TIP: Use 'cf target -o \"{{.OrgName}}\"' to target new org",
     "translation": "提示: 使用 'cf target -o \"{{.OrgName}}\"' 將新的組織設為目標"
+  },
+  {
+    "id": "TIP: Use 'cf target -o \"{{.Org}}\" -s \"{{.Space}}\"' to target new space",
+    "translation": "提示: 請使用 'cf target -o \"{{.Org}}\" -s \"{{.Space}}\"' 將新的空間設為目標"
   },
   {
     "id": "TIP: Use 'cf v3-stage {{.AppName}}' to ensure your env variable changes take effect.",
@@ -6652,8 +6984,16 @@
     "translation": "舊的空間名稱"
   },
   {
+    "id": "The option --vars-file expects a valid YAML file. {{.ErrorMessage}}",
+    "translation": "選項 --vars-file 預期會有有效的 YAML 檔案。{{.ErrorMessage}}"
+  },
+  {
     "id": "The order in which the buildpacks are checked during buildpack auto-detection",
     "translation": "建置套件自動偵測期間的建置套件檢查順序"
+  },
+  {
+    "id": "The org of the destination app (Default: targeted org)",
+    "translation": "目的地應用程式的組織（預設值: 已設定目標的組織）"
   },
   {
     "id": "The organization",
@@ -6680,6 +7020,10 @@
     "translation": "登入提示所提供的原點無效。"
   },
   {
+    "id": "The origin provided in the login_hint does not match an active Identity Provider, that supports password grant.",
+    "translation": "login_hint 中提供的原點不符合作用中的身分提供者（支援密碼授權）。"
+  },
+  {
     "id": "The origin provided is invalid.",
     "translation": "所提供的原點無效。"
   },
@@ -6690,6 +7034,10 @@
   {
     "id": "The path to the buildpack file",
     "translation": "建置套件檔案的路徑"
+  },
+  {
+    "id": "The plan {{.PlanName}} could not be found for service {{.ServiceName}}",
+    "translation": "找不到服務 {{.ServiceName}} 的方案 {{.PlanName}}"
   },
   {
     "id": "The plugin has been uninstalled but removing the plugin binary failed.\nRemove it manually or subsequent installations of the plugin may fail\n{{.Err}}",
@@ -6714,6 +7062,10 @@
   {
     "id": "The quota",
     "translation": "配額"
+  },
+  {
+    "id": "The requested URL returned error: {{.StatusCode}}",
+    "translation": "所要求的 URL 傳回錯誤: {{.StatusCode}}"
   },
   {
     "id": "The route '{{.Route}}' is not a properly formed URL",
@@ -6800,6 +7152,10 @@
     "translation": "空間名稱"
   },
   {
+    "id": "The space of the destination app (Default: targeted space)",
+    "translation": "目的地應用程式的空間（預設值: 已設定目標的空間）"
+  },
+  {
     "id": "The space quota",
     "translation": "空間配額"
   },
@@ -6882,6 +7238,10 @@
   {
     "id": "This action impacts all orgs using this domain.\nDeleting it will remove associated routes and could make any app with this domain, in any org, unreachable.\nAre you sure you want to delete the domain {{.DomainName}}? ",
     "translation": "此動作會影響使用此網域的所有組織。\n刪除它會移除相關聯的路徑，並且可能使得無法連接具有此網域的任何應用程式。\n您確定要刪除網域 {{.DomainName}} 嗎？"
+  },
+  {
+    "id": "This action will cause app downtime.",
+    "translation": "此動作將導致應用程式關閉。"
   },
   {
     "id": "This command does not support the URL scheme in {{.UnsupportedURL}}.",
@@ -7204,6 +7564,10 @@
     "translation": "更新服務實例"
   },
   {
+    "id": "Update an app with zero down time",
+    "translation": "更新應用程式而不造成中斷"
+  },
+  {
     "id": "Update an existing resource quota",
     "translation": "更新現有的資源配額"
   },
@@ -7298,6 +7662,10 @@
   {
     "id": "Uploading app files from: {{.Path}}",
     "translation": "正在從 {{.Path}} 上傳應用程式檔案"
+  },
+  {
+    "id": "Uploading buildpack {{.BuildpackName}} as {{.Username}}...",
+    "translation": "正在以 {{.Username}} 身分上傳建置套件 {{.BuildpackName}}..."
   },
   {
     "id": "Uploading buildpack {{.BuildpackName}}...",
@@ -7417,11 +7785,11 @@
   },
   {
     "id": "Valid JSON object containing service-specific configuration parameters, provided either in-line or in a file. For a list of supported configuration parameters, see documentation for the particular service offering.",
-    "translation": "包含服務特定配置參數的有效 JSON 物件（透過行內或檔案所提供）。如需所支援配置參數的清單，請參閱文件以取得特定服務供應項目。"
+    "translation": "包含服務特定配置參數的有效 JSON 物件（透過行內或檔案所提供）。如需所支援配置參數的清單，請參閱特定服務供應項目的文件。"
   },
   {
     "id": "Valid JSON object containing service-specific configuration parameters, provided inline or in a file. For a list of supported configuration parameters, see documentation for the particular service offering.",
-    "translation": "包含服務特定配置參數的有效 JSON 物件（透過行內或檔案所提供）。如需所支援配置參數的清單，請參閱文件以取得特定服務供應項目。"
+    "translation": "包含服務特定配置參數的有效 JSON 物件（透過行內或檔案所提供）。如需所支援配置參數的清單，請參閱特定服務供應項目的文件。"
   },
   {
     "id": "Value must be greater than or equal to 1.",
@@ -7460,12 +7828,20 @@
     "translation": "警告: 此作業假設負責此服務供應項目的服務分配管理系統無法再使用，並且已刪除所有服務實例，而將遺留的記錄留在 Cloud Foundry 資料庫中。將會移除 Cloud Foundry 中對服務的所有知識（包括服務實例和服務連結）。不會嘗試聯絡服務分配管理系統；執行此指令而不破壞服務分配管理系統，將會導致遺留的服務實例。執行此指令之後，您可能要執行 delete-service-auth-token 或 delete-service-broker 來完成清除。"
   },
   {
+    "id": "WARNING: This operation assumes that the service broker responsible for this service offering is no longer available, and all service instances have been deleted, leaving orphan records in Cloud Foundry's database. All knowledge of the service will be removed from Cloud Foundry, including service instances and service bindings. No attempt will be made to contact the service broker; running this command without destroying the service broker will cause orphan service instances. After running this command you may want to run either delete-service-auth-token or delete-service-broker to complete the cleanup.\n",
+    "translation": "警告: 此作業假設負責此服務供應項目的服務分配管理系統無法再使用，並且已刪除所有服務實例，而將遺留的記錄留在 Cloud Foundry 資料庫中。將會移除 Cloud Foundry 中對服務的所有知識（包括服務實例和服務連結）。不會嘗試聯絡服務分配管理系統；執行此指令而不破壞服務分配管理系統，將會導致遺留的服務實例。執行此指令之後，您可能要執行 delete-service-auth-token 或 delete-service-broker 來完成清除。\n"
+  },
+  {
     "id": "WARNING: This operation is internal to Cloud Foundry; service brokers will not be contacted and resources for service instances will not be altered. The primary use case for this operation is to replace a service broker which implements the v1 Service Broker API with a broker which implements the v2 API by remapping service instances from v1 plans to v2 plans.  We recommend making the v1 plan private or shutting down the v1 broker to prevent additional instances from being created. Once service instances have been migrated, the v1 services and plans can be removed from Cloud Foundry.",
-    "translation": "警告: 這是 Cloud Foundry 的內部作業；不會聯絡服務分配管理系統，而且不會變更服務實例的資源。此作業的主要用途是透過將服務實例從第 1 版方案重新對映至第 2 版方案，以將實作第 1 版「服務分配管理系統 API」的服務分配管理系統，取代為實作第 2 版 API 的分配管理系統。建議您將第 1 版方案設為專用，或關閉第 1 版分配管理系統，以防止建立其他實例。移轉服務實例之後，即可從 Cloud Foundry 中移除第 1 版服務和方案。"
+    "translation": "警告: 這是 Cloud Foundry 的內部作業；不會聯絡服務分配管理系統，而且不會變更服務實例的資源。此作業的主要用途是透過將服務實例從第 1 版方案重新對映至第 2 版方案，以將實作第 1 版「服務分配管理系統 API」的服務分配管理系統，取代為實作第 2 版 API 的分配管理系統。建議您將第 1 版方案設為專用，或關閉第 1 版分配管理系統，以防止建立其他實例。移轉服務實例之後，即可從 Cloud Foundry 移除第 1 版服務和方案。"
   },
   {
     "id": "WARNING: Unsharing this service instance will remove any service bindings that exist in any spaces that this instance is shared into. This could cause applications to stop working.",
     "translation": "警告: 解除共用此服務實例將會移除共用此實例之任何空間中的任何服務連結。這可能會導致應用程式停止運作。"
+  },
+  {
+    "id": "Wait for the entire deployment to complete",
+    "translation": "等待整個部署完成"
   },
   {
     "id": "Waiting for API to complete processing droplet...",
@@ -7542,6 +7918,14 @@
   {
     "id": "[--allow-paid-service-plans] ",
     "translation": "[--allow-paid-service-plans] "
+  },
+  {
+    "id": "[Experimental] Disable access to a service from a specific service broker",
+    "translation": "[實驗性] 停用從特定服務分配管理系統存取某個服務"
+  },
+  {
+    "id": "[Experimental] Enable access to a service from a specific service broker",
+    "translation": "[實驗性] 啟用從特定服務分配管理系統存取某個服務"
   },
   {
     "id": "[MULTIPART/FORM-DATA CONTENT HIDDEN]",
@@ -7656,6 +8040,10 @@
     "translation": "已連結的應用程式:"
   },
   {
+    "id": "broker",
+    "translation": "分配管理系統"
+  },
+  {
     "id": "broker: {{.BrokerName}}",
     "translation": "分配管理系統: {{.BrokerName}}"
   },
@@ -7753,7 +8141,7 @@
   },
   {
     "id": "created",
-    "translation": "已建立"
+    "translation": "created"
   },
   {
     "id": "created executable copy",
@@ -7782,6 +8170,14 @@
   {
     "id": "destination",
     "translation": "目的地"
+  },
+  {
+    "id": "destination org",
+    "translation": "目的地組織"
+  },
+  {
+    "id": "destination space",
+    "translation": "目的地空間"
   },
   {
     "id": "details",
@@ -7904,12 +8300,16 @@
     "translation": "executablePath"
   },
   {
+    "id": "fail",
+    "translation": "失敗"
+  },
+  {
     "id": "failed turning off console echo for password entry:\n{{.ErrorDescription}}",
     "translation": "關閉密碼輸入的主控台回應時失敗:\n{{.ErrorDescription}}"
   },
   {
     "id": "features",
-    "translation": "特性"
+    "translation": "features"
   },
   {
     "id": "file",
@@ -7934,6 +8334,10 @@
   {
     "id": "getPluginBinaryAndSource",
     "translation": "getPluginBinaryAndSource"
+  },
+  {
+    "id": "getting application summary info",
+    "translation": "正在取得應用程式摘要資訊"
   },
   {
     "id": "health check",
@@ -7965,7 +8369,11 @@
   },
   {
     "id": "host",
-    "translation": "主機"
+    "translation": "host"
+  },
+  {
+    "id": "https",
+    "translation": "https"
   },
   {
     "id": "image",
@@ -8020,6 +8428,10 @@
     "translation": "整數"
   },
   {
+    "id": "internal",
+    "translation": "內部"
+  },
+  {
     "id": "invalid argument for flag '--port' (expected int > 0)",
     "translation": "旗標 '--port' 的引數無效（預期為 int > 0）"
   },
@@ -8061,7 +8473,7 @@
   },
   {
     "id": "label",
-    "translation": "標籤"
+    "translation": "label"
   },
   {
     "id": "last operation",
@@ -8100,8 +8512,12 @@
     "translation": "建立 tempPluginDir 目錄"
   },
   {
+    "id": "manifestPath",
+    "translation": "manifestPath"
+  },
+  {
     "id": "memory",
-    "translation": "記憶體"
+    "translation": "memory"
   },
   {
     "id": "memory usage:",
@@ -8168,6 +8584,10 @@
     "translation": "network-policies"
   },
   {
+    "id": "no manifest exists",
+    "translation": "沒有資訊清單存在"
+  },
+  {
     "id": "non basic services",
     "translation": "非基本服務"
   },
@@ -8220,6 +8640,10 @@
     "translation": "路徑"
   },
   {
+    "id": "path to manifest",
+    "translation": "資訊清單的路徑"
+  },
+  {
     "id": "path:",
     "translation": "路徑:"
   },
@@ -8260,6 +8684,10 @@
     "translation": "位置"
   },
   {
+    "id": "positional-args:\"Yes\"",
+    "translation": "positional-args:\"Yes\""
+  },
+  {
     "id": "processes",
     "translation": "處理程序"
   },
@@ -8274,6 +8702,14 @@
   {
     "id": "quota:",
     "translation": "配額: "
+  },
+  {
+    "id": "reading '-f' provided manifest",
+    "translation": "正在讀取 '-f' 提供的資訊清單"
+  },
+  {
+    "id": "reading manifest if exists",
+    "translation": "讀取存在的資訊清單"
   },
   {
     "id": "remove-network-policy",
@@ -8324,6 +8760,10 @@
     "translation": "路徑埠"
   },
   {
+    "id": "route service url:",
+    "translation": "路徑服務 URL:"
+  },
+  {
     "id": "routes",
     "translation": "路徑"
   },
@@ -8362,6 +8802,10 @@
   {
     "id": "service auth token",
     "translation": "服務鑑別記號"
+  },
+  {
+    "id": "service broker:",
+    "translation": "服務分配管理系統:"
   },
   {
     "id": "service instance",
@@ -8529,7 +8973,7 @@
   },
   {
     "id": "state",
-    "translation": "狀態"
+    "translation": "state"
   },
   {
     "id": "state:",
@@ -8593,7 +9037,7 @@
   },
   {
     "id": "type",
-    "translation": "類型"
+    "translation": "type"
   },
   {
     "id": "type:",
@@ -8661,11 +9105,7 @@
   },
   {
     "id": "username",
-    "translation": "使用者名稱"
-  },
-  {
-    "id": "using v2 for app display",
-    "translation": "使用第 2 版來顯示應用程式"
+    "translation": "username"
   },
   {
     "id": "using v3 for app display",
@@ -8792,6 +9232,10 @@
     "translation": "{{.AppInstanceLimit}} 個應用程式實例限制"
   },
   {
+    "id": "{{.BaseError}}\n\nTIP: {{.Tip}}",
+    "translation": "{{.BaseError}}\n\n提示:{{.Tip}}"
+  },
+  {
     "id": "{{.BinaryName}} version {{.VersionString}}",
     "translation": "{{.BinaryName}} {{.VersionString}} 版"
   },
@@ -8862,10 +9306,6 @@
   {
     "id": "{{.MemoryLimit}}M memory limit",
     "translation": "{{.MemoryLimit}}M 記憶體限制"
-  },
-  {
-    "id": "{{.MemorySize}} x {{.NumInstances}} instances",
-    "translation": "{{.MemorySize}} x {{.NumInstances}} 個實例"
   },
   {
     "id": "{{.Message}}\nThis command requires CF API version 3.0.0 or higher.",
